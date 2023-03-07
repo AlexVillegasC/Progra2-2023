@@ -34,6 +34,7 @@ public class Program
 {
     public static void Main()
     {
+        // Hola.
         Transporte[] figuras = new Transporte[3];
 
         figuras[0] = new Avion();
