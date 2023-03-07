@@ -1,0 +1,17 @@
+# .NET Core CLI
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+*.cache
+*.log
+project.lock.json
+project.fragment.lock.json
+.nuget/
+.vscode/
+*.vs/
+*.csproj.user
+*.userprefs
