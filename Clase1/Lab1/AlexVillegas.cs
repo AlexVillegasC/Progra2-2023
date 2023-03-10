@@ -2,33 +2,33 @@
 
 public class Transporte
 {
-    public virtual void Dibujar()
+    public virtual void Avanzar()
     {
-        Console.WriteLine("Dibujando una figura genérica");
+        Console.WriteLine("Avanzar de forma genérica");
     }
 }
 
 public class Avion : Transporte
 {
-    public override void Dibujar()
+    public override void Avanzar()
     {
-        Console.WriteLine("Dibujando un triángulo");
+        Console.WriteLine("Volando!");
     }
 }
 
 public class Caballo : Transporte
 {
-    public override void Dibujar()
+    public override void Avanzar()
     {
-        Console.WriteLine("Dibujando un círculo");
+        Console.WriteLine("Galopando!");
     }
 }
 
 public class Carro : Transporte
 {
-    public override void Dibujar()
+    public override void Avanzar()
     {
-        Console.WriteLine("Dibujando un cuadrado");
+        Console.WriteLine("Rodando!");
     }
 }
 
@@ -36,16 +36,15 @@ internal class AlexVillegas
 {
     public static void Run()
     {
-        // Alex VC - 503990937
-        Transporte[] transporte = new Transporte[3];
+        Transporte[] transportes = new Transporte[3];
 
-        transporte[0] = new Avion();
-        transporte[1] = new Caballo();
-        transporte[2] = new Carro();
+        transportes[0] = new Avion();
+        transportes[1] = new Caballo();
+        transportes[2] = new Carro();
 
-        foreach (Transporte figura in transporte)
+        foreach (Transporte transporte in transportes)
         {
-            figura.Dibujar();
+            transporte.Avanzar();
         }
     }
 }
