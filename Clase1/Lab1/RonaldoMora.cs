@@ -59,20 +59,20 @@ namespace Clase1.Lab1
             //Definiendo arreglo DispositivoElectronico con 3 elementos
             DispositivoElectronico[] dispositivos = new DispositivoElectronico[3];
 
-        //Instanciando objetos de las clases Televisor, Smartphone y Laptop
-        dispositivos[0] = new Televisor();
-        dispositivos[1] = new Smartphone();
-        dispositivos[2] = new Laptop();
+            //Instanciando objetos de las clases Televisor, Smartphone y Laptop
+            dispositivos[0] = new Televisor();
+            dispositivos[1] = new Smartphone();
+            dispositivos[2] = new Laptop();
 
-        //Llamando al método Encender() en cada objeto.
-        foreach (DispositivoElectronico dispositivo in dispositivos)
-        {
+            //Llamando al método Encender() en cada objeto.
+            foreach (DispositivoElectronico dispositivo in dispositivos)
+            {
 
-            dispositivo.Encender();
+                dispositivo.Encender();
+            }
+
+            Console.ReadKey();
         }
-
-    Console.ReadKey();
-    }
 
 
     }
