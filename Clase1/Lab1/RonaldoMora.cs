@@ -71,7 +71,6 @@ namespace Clase1.Lab1
                 dispositivo.Encender();
             }
 
-            Console.ReadKey();
         }
 
 
