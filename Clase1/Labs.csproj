@@ -7,4 +7,8 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <Compile Include="C:\Users\gene-\OneDrive\Documents\I CICLO 2023\Programación ll\GenesisGomez.cs" Link="GenesisGomez.cs" />
+	</ItemGroup>
+
 </Project>
