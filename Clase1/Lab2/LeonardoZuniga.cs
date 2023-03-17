@@ -5,15 +5,13 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Clase1.Lab2
 {
     public class Transporte2x4
     {
 
         public virtual void Avanzari()
-        {
-            Console.WriteLine("Avanza");
-        }
 
     }
 
@@ -21,29 +19,21 @@ namespace Clase1.Lab2
     {
 
         public override void Avanzari()
-        {
-            Console.WriteLine("Vuela");
-        }
 
     }
-
+    
     public class Caballo3 : Transporte2x4
     {
         public override void Avanzari()
-        {
-            Console.WriteLine("Galopa");
-        }
 
     }
 
     public class Carro3 : Transporte2x4
     {
         public override void Avanzari()
-        {
-            Console.WriteLine("Rodando");
-        }
 
     }
+    
     class LeonardoZuniga
     {
         public static void Run()
@@ -57,8 +47,8 @@ namespace Clase1.Lab2
 
                 foreach (Transporte2x4 t in transportes) { 
                     t.Avanzari();
-                }
+                    }
             
-        }
+        
     }
 }
