@@ -5,78 +5,50 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab2.Lab2
+
+namespace Clase1.Lab2
 {
-    public class Transporte
+    public class Transporte2x4
     {
 
-        public virtual void Avanzar()
-        {
-            Console.WriteLine("Avanza");
-        }
+        public virtual void Avanzari()
 
     }
 
-    public class Avion : Transporte
+    public class Avion3 : Transporte2x4
     {
 
-        public override void Avanzar()
-        {
-            Console.WriteLine("Vuela");
-        }
+        public override void Avanzari()
+
+    }
+    
+    public class Caballo3 : Transporte2x4
+    {
+        public override void Avanzari()
 
     }
 
-    public class Caballo : Transporte
+    public class Carro3 : Transporte2x4
     {
-        public override void Avanzar()
-        {
-            Console.WriteLine("Galopa");
-        }
+        public override void Avanzari()
 
     }
-
-    public class Carro : Transporte
-    {
-        public override void Avanzar()
-        {
-            Console.WriteLine("Rodando");
-        }
-
-    }
+    
     class LeonardoZuniga
     {
         public static void Run()
         {
+            Avion3 boeing = new Avion3();
+            Caballo3 caballo = new Caballo3();
+            Carro3 carro = new Carro3();
 
-            bool continuar = true;
-            string opcion;
-
-            Avion boeing = new Avion();
-            Caballo caballo = new Caballo();
-            Carro carro = new Carro();
-
-            Transporte[] transportes = new Transporte[]{ boeing, caballo, carro};
-
-            do
-            {
-                foreach (Transporte t in transportes) { 
-                    t.Avanzar();
-                }
-                Console.WriteLine("Desea Salir?");
-
-                opcion = Console.ReadLine();
-                if (opcion == "Yes")
-                {
-                    continuar = false;
-                }
-
-            } while (continuar == true);
+            Transporte2x4[] transportes = new Transporte2x4[]{ boeing, caballo, carro};
 
 
-
-
+                foreach (Transporte2x4 t in transportes) { 
+                    t.Avanzari();
+                    }
             
-        }
+        
     }
 }
