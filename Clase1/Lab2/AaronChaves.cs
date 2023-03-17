@@ -87,6 +87,7 @@ internal class AaronChaves
         jugadores[2] = new Mediocampista();
         jugadores[3] = new Delantero();
 
+        
         foreach (Jugador jugador in jugadores)
         {
 
