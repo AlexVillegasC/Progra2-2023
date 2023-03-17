@@ -18,5 +18,6 @@ Lab1.AaronChaves.Run();
 
 /// Sobrecarga de métodos y sobre escritura.
 Lab2.AlexVillegas.Run();
+Lab2.JosePabloS_Sobrecaga.Run();
 
 #endregion Lab2;
