@@ -9,7 +9,7 @@ Lab1.RonaldoMora.Run();
 Lab1.JosePablo.Run();
 Lab1.ErickMora.Run();
 Lab1.AshlyVargas.Run();
-Lab1.AaronChaves.Run();
+Lab1.AaronChavesB.Run();
 
 #endregion Lab1;
 
@@ -18,5 +18,8 @@ Lab1.AaronChaves.Run();
 
 /// Sobrecarga de métodos y sobre escritura.
 Lab2.AlexVillegas.Run();
+Lab2.AaronChaves.Run();
+
+
 
 #endregion Lab2;
