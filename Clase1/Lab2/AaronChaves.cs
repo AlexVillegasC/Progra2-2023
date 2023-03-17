@@ -1,5 +1,8 @@
 ﻿namespace Clase1.Lab2;
 
+
+
+
 public class Jugador
 
 {
