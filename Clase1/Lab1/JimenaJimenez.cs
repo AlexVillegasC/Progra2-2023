@@ -45,7 +45,7 @@ internal class JimenaJimenez
 
         foreach (Formas formas in Formas)
         {
-            Formas.Avanzar();
+         //   Formas.Avanzar();
         }
     }
 }

@@ -7,8 +7,4 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <Compile Include="C:\Users\Estudiantes UNA\Desktop\Progra\Lab1\SofiaSJ.Lab1" Link="SofiaSJ.Lab1" />
-	</ItemGroup>
-
 </Project>
