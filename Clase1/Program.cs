@@ -22,6 +22,6 @@ Lab1.LeonardoZuniga.Run();
 Lab2.AlexVillegas.Run();
 Lab2.JosePabloS_Sobrecaga.Run();
 Lab2.LeonardoZuniga.Run();
-
+Lab2.AkionCheng.Run();
 
 #endregion Lab2;
