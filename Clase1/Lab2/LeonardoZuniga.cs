@@ -8,47 +8,78 @@ using System.Threading.Tasks;
 
 namespace Clase1.Lab2
 {
-    public class Transporte2x4
+    public class Transporte4x4
     {
-
-        public virtual void Avanzari()
+        public virtual void Avanzare()
+        {
+            Console.WriteLine("Avanza...");
+        }
+        public virtual void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Avanza a " + velocidad);
+        }
 
     }
 
-    public class Avion3 : Transporte2x4
+    public class Avion4 : Transporte4x4
     {
-
-        public override void Avanzari()
+        public override void Avanzare()
+        {
+            Console.WriteLine("Vuela...");
+        }
+        public override void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Vuela a " + velocidad);
+        }
 
     }
-    
-    public class Caballo3 : Transporte2x4
+
+    public class Caballo4 : Transporte4x4
     {
-        public override void Avanzari()
+        public override void Avanzare()
+        {
+            Console.WriteLine("Galopa...");
+        }
+        public override void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Galopa a " + velocidad);
+        }
 
     }
 
-    public class Carro3 : Transporte2x4
+    public class Carro4 : Transporte4x4
     {
-        public override void Avanzari()
+        public override void Avanzare()
+        {
+            Console.WriteLine("Rodando...");
+        }
+        public override void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Rodando " + velocidad);
+        }
 
     }
-    
-    class LeonardoZuniga
+
+    public class LeonardoZuniga
+
     {
         public static void Run()
         {
-            Avion3 boeing = new Avion3();
-            Caballo3 caballo = new Caballo3();
-            Carro3 carro = new Carro3();
 
-            Transporte2x4[] transportes = new Transporte2x4[]{ boeing, caballo, carro};
+            Avion4 boeing = new Avion4();
+            Caballo4 caballo = new Caballo4();
+            Carro4 carro = new Carro4();
+
+            Transporte4x4[] transportes = new Transporte4x4[] { boeing, caballo, carro };
 
 
-                foreach (Transporte2x4 t in transportes) { 
-                    t.Avanzari();
-                    }
-            
-        
+
+            foreach (Transporte4x4 t in transportes)
+            {
+                t.Avanzare(3);
+            }
+
+
+        }
     }
-}
+    }
