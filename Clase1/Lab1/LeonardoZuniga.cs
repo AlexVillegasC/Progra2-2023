@@ -7,63 +7,58 @@ using System.Threading.Tasks;
 
 namespace Clase1.Lab1
 {
-    public class Transporte4x4
+    public class Transporte2x4
+    {
+        public virtual void Avanzari()
+        {
+            Console.WriteLine("Avanza");
+        }
+
+
+    }
+
+    public class Avion3 : Transporte2x4
     {
 
-
-        public virtual void Avanzare(int velocidad)
+        public override void Avanzari()
         {
-            Console.WriteLine("Avanza a " + velocidad);
+            Console.WriteLine("Vuela");
         }
 
     }
 
-    public class Avion4 : Transporte4x4
+    public class Caballo3 : Transporte2x4
     {
-
-        public override void Avanzare(int velocidad)
+        public override void Avanzari()
         {
-            Console.WriteLine("Vuela a " + velocidad);
+            Console.WriteLine("Galopa");
         }
 
     }
 
-    public class Caballo4 : Transporte4x4
+    public class Carro3 : Transporte2x4
     {
-        public override void Avanzare(int velocidad)
+        public override void Avanzari()
         {
-            Console.WriteLine("Galopa a " + velocidad);
+            Console.WriteLine("Rodando");
         }
 
     }
-
-    public class Carro4 : Transporte4x4
-    {
-        public override void Avanzare(int velocidad)
-        {
-            Console.WriteLine("Rodando " + velocidad);
-        }
-
-    }
-    public class LeonardoZuniga
+    class LeonardoZuniga
     {
         public static void Run()
         {
+            Avion3 boeing = new Avion3();
+            Caballo3 caballo = new Caballo3();
+            Carro3 carro = new Carro3();
 
-  
+            Transporte2x4[] transportes = new Transporte2x4[] { boeing, caballo, carro };
 
-            Avion4 boeing = new Avion4();
-            Caballo4 caballo = new Caballo4();
-            Carro4 carro = new Carro4();
 
-            Transporte4x4[] transportes = new Transporte4x4[]{ boeing, caballo, carro};
-                
-            
-            
-            foreach (Transporte4x4 t in transportes) { 
-                    t.Avanzare(3);
-                }
-               
+            foreach (Transporte2x4 t in transportes)
+            {
+                t.Avanzari();
+            }
 
         }
     }

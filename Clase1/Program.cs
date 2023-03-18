@@ -11,6 +11,7 @@ Lab1.ErickMora.Run();
 Lab1.AshlyVargas.Run();
 Lab1.AaronChaves.Run();
 Lab1.AkionCheng.Run();
+Lab1.LeonardoZuniga.Run();
 
 #endregion Lab1;
 
@@ -20,5 +21,7 @@ Lab1.AkionCheng.Run();
 /// Sobrecarga de métodos y sobre escritura.
 Lab2.AlexVillegas.Run();
 Lab2.JosePabloS_Sobrecaga.Run();
+Lab2.LeonardoZuniga.Run();
+
 
 #endregion Lab2;
