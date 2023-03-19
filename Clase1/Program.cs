@@ -3,7 +3,7 @@ using Lab2 = Clase1.Lab2;
 
 #region Lab1;
 
-/// Polimorfismo.
+/// Polimorfismo..
 Lab1.AlexVillegas.Run();
 Lab1.RonaldoMora.Run();
 Lab1.JosePablo.Run();
