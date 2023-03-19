@@ -12,6 +12,7 @@ Lab1.AshlyVargas.Run();
 Lab1.AaronChaves.Run();
 Lab1.AkionCheng.Run();
 Lab1.LeonardoZuniga.Run();
+Lab1.PruebaIgnorar.Run();
 
 #endregion Lab1;
 
