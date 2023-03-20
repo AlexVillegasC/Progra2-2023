@@ -1,5 +1,8 @@
 ﻿using System;
 namespace Clase1.Lab1;
+   
+
+
 
 
 public class Motocicleta
