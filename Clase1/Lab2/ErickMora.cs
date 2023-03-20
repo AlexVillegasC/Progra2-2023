@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Clase2.Lab1;
+namespace Clase1.Lab2;
 
 
 public class Motocicleta
