@@ -60,7 +60,7 @@ public class Enduro : Motocicleta
 
 
 
-internal class Erick 
+internal class ErickMora
 {
     public static void Run()
     {
