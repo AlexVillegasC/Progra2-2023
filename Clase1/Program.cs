@@ -1,5 +1,5 @@
-﻿using Lab1 = Clase1.Lab1;
-using Lab2 = Clase1.Lab2;
+﻿using Lab1 = Labs.Lab1;
+using Lab2 = Labs.Lab2;
 
 #region Lab1;
 
@@ -27,5 +27,5 @@ Lab2.JosePabloS_Sobrecaga.Run();
 Lab2.LeonardoZuniga.Run();
 Lab2.AkionCheng.Run();
 Lab2.RonaldoMora.Run();
-Lab2.Wilson.Chavarria.Run();
+Lab2.WilsonChavarria.Run();
 #endregion Lab2;

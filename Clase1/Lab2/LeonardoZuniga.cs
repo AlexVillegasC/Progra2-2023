@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Clase1.Lab2
+namespace Labs.Lab2
 {
     public class Transporte4x4
     {
