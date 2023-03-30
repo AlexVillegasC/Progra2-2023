@@ -14,7 +14,7 @@ Lab1.AkionCheng.Run();
 Lab1.LeonardoZuniga.Run();
 Lab1.PruebaIgnorar.Run();
 Labs.Lab1.JosueFernandez.Run();
-
+Labs.Lab1.WilsonChavarria.Run(); 
 #endregion Lab1;
 
 
