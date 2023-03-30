@@ -3,7 +3,7 @@ using Lab2 = Labs.Lab2;
 
 #region Lab1;
 
-/// Polimorfismo..
+/// Polimorfismo.
 Lab1.AlexVillegas.Run();
 Lab1.RonaldoMora.Run();
 Lab1.JosePablo.Run();
@@ -14,6 +14,7 @@ Lab1.AkionCheng.Run();
 Lab1.LeonardoZuniga.Run();
 Lab1.PruebaIgnorar.Run();
 Labs.Lab1.JosueFernandez.Run();
+
 #endregion Lab1;
 
 
@@ -28,4 +29,5 @@ Lab2.LeonardoZuniga.Run();
 Lab2.AkionCheng.Run();
 Lab2.RonaldoMora.Run();
 Lab2.WilsonChavarria.Run();
+
 #endregion Lab2;
