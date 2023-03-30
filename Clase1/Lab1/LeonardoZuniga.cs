@@ -5,7 +5,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clase1.Lab1
+namespace Labs.Lab1
 {
     public class Transporte2x4
     {

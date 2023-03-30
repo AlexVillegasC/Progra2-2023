@@ -49,7 +49,7 @@ public class Laptop : DispositivoElectronico
 
 
 
-namespace Clase1.Lab1
+namespace Labs.Lab1
 {
     internal class RonaldoMora
     {
