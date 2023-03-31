@@ -1,6 +1,8 @@
 ﻿using Lab1 = Labs.Lab1;
 using Lab2 = Labs.Lab2;
 
+
+
 #region Lab1;
 
 /// Polimorfismo.
