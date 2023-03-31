@@ -18,7 +18,7 @@ namespace Labs.Lab4
         {
             get { return accountNumber; }
 
-            // "AccountNumber" can only be set once and cannot be changed thereafter.
+            // "AccountNumber" can only be set once and cannot be changed thereafter..
             set
             {
                 if (string.IsNullOrEmpty(accountNumber))
