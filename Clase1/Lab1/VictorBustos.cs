@@ -1,6 +1,7 @@
-﻿namespace Labs.Lab1;
+﻿
+namespace Labs.Lab1;
 
-public class Transporte
+public class TransporteJB
 {
     public virtual void Avanzar()
     {
@@ -8,7 +9,7 @@ public class Transporte
     }
 }
 
-public class Avion : Transporte
+public class Helicoptero : Transporte
 {
     public override void Avanzar()
     {
@@ -16,7 +17,7 @@ public class Avion : Transporte
     }
 }
 
-public class Caballo : Transporte
+public class Vaca : Transporte
 {
     public override void Avanzar()
     {
@@ -24,7 +25,7 @@ public class Caballo : Transporte
     }
 }
 
-public class Carro : Transporte
+public class Moto    : Transporte
 {
     public override void Avanzar()
     {
@@ -32,15 +33,15 @@ public class Carro : Transporte
     }
 }
 
-internal class AlexVillegas
+internal class VictorBustos
 {
     public static void Run()
     {
         Transporte[] transportes = new Transporte[3];
 
-        transportes[0] = new Avion();
-        transportes[1] = new Caballo();
-        transportes[2] = new Carro();
+        transportes[0] = new Helicoptero();
+        transportes[1] = new Vaca();
+        transportes[2] = new Moto();
 
         foreach (Transporte transporte in transportes)
         {

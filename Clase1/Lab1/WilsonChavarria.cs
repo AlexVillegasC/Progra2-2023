@@ -1,122 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Labs.Lab1;
 
-namespace Labs.Lab1
+
+public class Personas
 {
-    using HolaMundo;
-    using System;
+    public string? Nombre { get; set; }
 
-
-    namespace HolaMundo
+    public virtual string Saludar() 
     {
-        class Animal
-        {
-            virtual public void comer()
-            {
-                Console.WriteLine("Los animales comen");
-            }
-            virtual public void correr()
-            {
-                Console.WriteLine("Los animales corren");
-
-            }
-        }
+        return "Saludo Generico";        
     }
+}
 
-
-
-    namespace HolaMundo
+public class Alumno : Personas
+{
+    public Alumno(string nombre)
     {
-        class Humano : Animal
-        {
-            override public void comer()
-            {
-                Console.WriteLine("Soy human como en platos");
-            }
-            override public void correr()
-            {
-                Console.WriteLine("Soy humano y corro con tenis");
-            }
-        }
+        this.Nombre = nombre;
     }
-
-
-    namespace HolaMundo
+    public override string Saludar()
     {
-        class Pajaro : Animal
-        {
-            override public void comer()
-            {
-                Console.WriteLine("Los pajaros comemos frutas del campo");
-            }
-            public void volar()
-            {
-                Console.WriteLine("Los pajaros volamos");
-            }
-
-        }
+        string saludo = "Hola, mi nombre es " + this.Nombre + " y soy un alumno";
+        return saludo;
     }
+}
 
-    namespace HolaMundo
+
+public class Empleado : Personas
+{
+    public Empleado(string nombre)
     {
-        class Perro : Animal
-        {
-            override public void comer()
-            {
-                Console.WriteLine("Los perros  comemos consentrado en una taza");
-            }
-            public override void correr()
-            {
-                Console.WriteLine("los perros corremos en cuatro patas  ");
-            }
-
-        }
+        this.Nombre = nombre;
     }
-    class Conejo : Animal
+    public override string Saludar()
     {
-        override public void comer()
-        {
-            Console.WriteLine("los conejos comemos hierbas");
-        }
-        public override void correr()
-        {
-            Console.WriteLine("los conejos corremos dando saltos");
-        }
+        string saludo = "Hola, mi nombre es " + this.Nombre + " y soy un empleado";
+        return saludo;
     }
+}
 
-
-    namespace HolaMundo
+internal class WilsonChavarria
+{
+    public static void Run()
     {
-        class Program
+
+        Personas[] personas = new Personas[2];
+        personas[0] = new Alumno("Jaime Correa");
+        personas[1] = new Empleado("Juan Perez");
+        for (int i = 0; i < personas.Length; i++)
         {
-            static void Main(string[] args)
-            {
-
-                Animal a = new Animal();
-                a.comer();
-                a.correr();
-
-                Conejo c = new Conejo();
-                c.correr();
-                c.comer();
-
-                Humano h = new Humano();
-                h.comer();
-                h.correr();
-
-                Perro perro = new Perro();
-                perro.comer();
-                perro.correr();
-
-
-                Pajaro pa = new Pajaro();
-                pa.comer();
-                pa.volar();
-
-            }
+            Console.WriteLine(personas[i].Saludar());
         }
     }
 }
+
+
