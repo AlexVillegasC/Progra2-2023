@@ -35,4 +35,5 @@ Lab2.RonaldoMora.Run();
 Lab2.JOSUE_fernandez.Run();
 Lab2.VictorBustos.Run();
 Lab2.YoilinCastrillo.Run();
+Lab2.IvánAgüero.Run();
 #endregion Lab2;
