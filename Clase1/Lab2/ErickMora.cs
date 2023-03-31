@@ -1,13 +1,18 @@
 ﻿using System;
-namespace Labs.Lab1;
+namespace Labs.Lab2;
 
 
 public class Motocicleta
 {
     public virtual void Avanzar()
     {
-        Console.WriteLine("Avanzar de forma genérica");
+        Console.WriteLine("Avanzar de forma general");
     }
+    public virtual void Avanzar(int velocidad = 8)
+    {
+        Console.WriteLine("Avanzar de forma general a velocidad: " + velocidad);
+    }
+
 }
 
 
@@ -18,6 +23,12 @@ public class Deportiva : Motocicleta
     {
         Console.WriteLine("Estoy conduciendo una motocicleta deportiva...");
     }
+    public override void Avanzar(int velocidad = 280)
+    {
+        velocidad = velocidad * 2;
+        Console.WriteLine("Avanzar a velocidad: " + velocidad);
+    }
+
 }
 
 public class Chopper : Motocicleta
@@ -26,6 +37,11 @@ public class Chopper : Motocicleta
     {
         Console.WriteLine("Estoy conduciendo una motocicleta chopper...");
     }
+    public override void Avanzar(int velocidad = 150)
+    {
+        velocidad = velocidad * 2;
+        Console.WriteLine("Rodando a velocidad: " + velocidad);
+    }
 }
 
 public class Enduro : Motocicleta
@@ -33,6 +49,11 @@ public class Enduro : Motocicleta
     public override void Avanzar()
     {
         Console.WriteLine("Estoy conduciendo una motocicleta enduro...");
+    }
+    public override void Avanzar(int velocidad = 160)
+    {
+        velocidad = velocidad * 2;
+        Console.WriteLine("Avanzar a velocidad: " + velocidad);
     }
 }
 
@@ -50,7 +71,7 @@ internal class ErickMora
 
         foreach (Motocicleta motocicleta in motocicletas)
         {
-            motocicleta.Avanzar();
+            motocicleta.Avanzar(200);
         }
 
     }
