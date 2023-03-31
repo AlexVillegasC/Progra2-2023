@@ -12,9 +12,9 @@ public class Personas
 {
     public string? Nombre { get; set; }
 
-    public virtual string Saludar() 
+    public virtual string Saludar()
     {
-        return "Saludo Generico";        
+        return "Saludo Generico";
     }
 }
 
@@ -58,6 +58,3 @@ internal class WilsonChavarria
             Console.WriteLine(personas[i].Saludar());
         }
     }
-}
-
-
