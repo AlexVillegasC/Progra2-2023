@@ -27,7 +27,7 @@ Lab2.JosePabloS_Sobrecaga.Run();
 Lab2.LeonardoZuniga.Run();
 Lab2.AkionCheng.Run();
 Lab2.RonaldoMora.Run();
-// Lab2.WilsonChavarria.Run(); -- // Reparar.
+Lab2.WilsonChavarria2.Run();
 Lab2.JOSUE_fernandez.Run();
 
 #endregion Lab2;

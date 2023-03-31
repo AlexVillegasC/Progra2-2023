@@ -81,7 +81,7 @@ namespace WilsonChavarria2
 
 
 
-    class WilsonChavarria2
+    class program
     {
         static void Main(string[] args)
         {
