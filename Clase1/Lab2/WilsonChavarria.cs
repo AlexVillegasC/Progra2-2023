@@ -1,8 +1,5 @@
 ﻿namespace Labs.Lab2;
 
-using HolaMundo;
-using System;
-
 // Repara el Namespace, debes fijarte en los otros ejemplos.
 //namespace HolaMundo
 //{
