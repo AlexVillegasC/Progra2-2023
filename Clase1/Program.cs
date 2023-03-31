@@ -14,6 +14,7 @@ Lab1.AkionCheng.Run();
 Lab1.LeonardoZuniga.Run();
 Lab1.JosueFernandez.Run();
 Lab1.WilsonChavarria.Run(); 
+Lab1.VictorBustos.Run();
 #endregion Lab1;
 
 
@@ -29,5 +30,6 @@ Lab2.AkionCheng.Run();
 Lab2.RonaldoMora.Run();
 // Lab2.WilsonChavarria.Run(); -- // Reparar.
 Lab2.JOSUE_fernandez.Run();
+Lab2.VictorBustos.Run();
 
 #endregion Lab2;
