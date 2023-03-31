@@ -15,6 +15,7 @@ Lab1.LeonardoZuniga.Run();
 Lab1.JosueFernandez.Run();
 Lab1.WilsonChavarria.Run(); 
 Lab1.VictorBustos.Run();
+Lab1.IvánAgüero.Run();
 #endregion Lab1;
 
 
