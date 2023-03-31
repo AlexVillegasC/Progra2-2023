@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 
 
-namespace WilsonChavarria2
+namespaces Labs.Lab2
 {
     class Animales
     {
