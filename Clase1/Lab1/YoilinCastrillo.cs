@@ -10,7 +10,7 @@ namespace Clase1.Lab1
     {
         public virtual void Jugar()
         {
-            Console.WriteLine("Jugar ");
+            Console.WriteLine("Jugar a ");
         }
         public virtual void Jugar(int velocidad = 0)
         {
