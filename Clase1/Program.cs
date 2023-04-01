@@ -37,4 +37,5 @@ Lab2.JOSUE_fernandez.Run();
 Lab2.VictorBustos.Run();
 Lab2.YoilinCastrillo.Run();
 Lab2.EmmanuelPineda.Run();
+Lab2.JimenaJimenez.Run();
 #endregion Lab2;
