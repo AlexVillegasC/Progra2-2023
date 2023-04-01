@@ -18,6 +18,7 @@ Lab1.JosueFernandez.Run();
 Lab1.WilsonChavarria.Run();
 Lab1.VictorBustos.Run();
 Lab1.YoilinCastrillo.Run();
+Lab1.EmmanuelPineda.Run();
 #endregion Lab1;
 
 
@@ -35,4 +36,5 @@ Lab2.RonaldoMora.Run();
 Lab2.JOSUE_fernandez.Run();
 Lab2.VictorBustos.Run();
 Lab2.YoilinCastrillo.Run();
+Lab2.EmmanuelPineda.Run();
 #endregion Lab2;
