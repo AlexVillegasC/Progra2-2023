@@ -1,3 +1,3 @@
 ﻿using Lab4 = Labs.Lab4;
 
-Lab4.AlexVillegasProgram.Run();
+// No agregar código aquí. Solamente utilizar esta clase para probar!
