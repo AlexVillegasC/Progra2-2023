@@ -1,6 +1,5 @@
-﻿namespace Labs2.Lab2;
+﻿namespace Labs.Lab2;
 
-using Labs.Lab2;
 public class LineasTelefonicas
 {
     public virtual void Plan() { }

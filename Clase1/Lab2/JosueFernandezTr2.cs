@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Labs.Lab2;
 
-namespace Labs.Lab2;
-
-    public class Instrumento
+public class Instrumento
 
     {
         public virtual void Tocar()
@@ -39,6 +33,7 @@ namespace Labs.Lab2;
         {
             Console.WriteLine("Teclas!");
         }
+
         public override void Tocar(int velocidad = 0)
         {
             Console.WriteLine("Teclas  a velocidad: " + velocidad);

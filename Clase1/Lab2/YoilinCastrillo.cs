@@ -1,66 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Labs.Lab2;
 
-namespace Labs.Lab2
+public class Especie
 {
-    internal class YoilinCastrillo
+    public virtual void Jugar()
     {
+        Console.WriteLine("Jugar ");
     }
+}
 
-﻿namespace Labs.Lab2
+public class Borrego : Especie
 {
-    public class Especie
+    public override void Jugar()
     {
-        public virtual void Jugar()
-        {
-            Console.WriteLine("Jugar ");
-        }
+        Console.WriteLine("Jugar con pelota");
     }
+}
 
-    public class Borrego : Especie
+public class Conejo : Especie
+{
+    public override void Jugar()
     {
-        public override void Jugar()
-        {
-            Console.WriteLine("Jugar con pelota");
-        }
+        Console.WriteLine("Jugar con raton");
     }
+}
 
-    public class Conejo : Especie
+public class Tortuga : Especie
+{
+    public override void Jugar()
     {
-        public override void Jugar()
-        {
-            Console.WriteLine("Jugar con raton");
-        }
+        Console.WriteLine("Jugar con barro");
     }
+}
 
-    public class Tortuga : Especie
+public class YoilinCastrillo
+{
+
+    public static void Run()
     {
-        public override void Jugar()
+        Especie[] especies = new Especie[3];
+
+        especies[0] = new Borrego();
+        especies[1] = new Conejo();
+        especies[2] = new Tortuga();
+
+        foreach (Especie especie in especies)
         {
-            Console.WriteLine("Jugar con barro");
+            especie.Jugar();
         }
+
     }
-
-    public class YoilinCastrillo
-    {
-
-        public static void Run()
-        {
-            Especie[] especies = new Especie[3];
-
-            especies[0] = new Borrego();
-            especies[1] = new Conejo();
-            especies[2] = new Tortuga();
-
-            foreach (Especie especie in especies)
-            {
-                especie.Jugar();
-            }
-
-        }
-    }
-
 }
