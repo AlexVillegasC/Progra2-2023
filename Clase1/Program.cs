@@ -5,7 +5,7 @@ using Lab2 = Labs.Lab2;
 
 #region Lab1;
 
-/// Polimorfismo.
+/// Polimorfismo..
 Lab1.AlexVillegas.Run();
 Lab1.RonaldoMora.Run();
 Lab1.JosePablo.Run();
@@ -17,9 +17,11 @@ Lab1.LeonardoZuniga.Run();
 Lab1.JosueFernandez.Run();
 Lab1.WilsonChavarria.Run();
 Lab1.VictorBustos.Run();
+Lab1.IvánAgüero.Run();
 Lab1.YoilinCastrillo.Run();
 Lab1.EmmanuelPineda.Run();
 Lab1.EmmanuelPorras.Run();
+
 #endregion Lab1;
 
 
