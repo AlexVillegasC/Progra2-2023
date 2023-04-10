@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Labs.Lab2
-{
-    internal class YoilinCastrillo
-    {
-    }
-
-﻿namespace Labs.Lab2
+﻿namespace Labs.Lab1
 {
     public class Especie
     {
         public virtual void Jugar()
         {
-            Console.WriteLine("Jugar ");
+            Console.WriteLine("Jugar a ");
         }
+        public virtual void Jugar(int velocidad = 0)
+        {
+            Console.WriteLine("Jugar a velocidad: " + velocidad);
+        }
+     
     }
 
     public class Borrego : Especie
@@ -25,6 +18,10 @@ namespace Labs.Lab2
         public override void Jugar()
         {
             Console.WriteLine("Jugar con pelota");
+        }
+        public override void Jugar(int velocidad = 0)
+        {
+            Console.WriteLine("Jugando a velocidad: " + velocidad);
         }
     }
 
@@ -34,6 +31,10 @@ namespace Labs.Lab2
         {
             Console.WriteLine("Jugar con raton");
         }
+        public override void Jugar(int velocidad = 0)
+        {
+            Console.WriteLine("Jugando a velocidad: " + velocidad);
+        }
     }
 
     public class Tortuga : Especie
@@ -41,6 +42,11 @@ namespace Labs.Lab2
         public override void Jugar()
         {
             Console.WriteLine("Jugar con barro");
+        }
+        public override void Jugar(int velocidad = 0)
+        {
+            velocidad = velocidad * 4;
+            Console.WriteLine("Jugando a velocidad: " + velocidad);
         }
     }
 
@@ -57,7 +63,7 @@ namespace Labs.Lab2
 
             foreach (Especie especie in especies)
             {
-                especie.Jugar();
+                especie.Jugar(1);
             }
 
         }
