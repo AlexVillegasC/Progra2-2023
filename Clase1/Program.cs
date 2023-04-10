@@ -36,6 +36,7 @@ Lab2.JosePabloS_Sobrecaga.Run();
 Lab2.LeonardoZuniga.Run();
 Lab2.AkionCheng.Run();
 Lab2.RonaldoMora.Run();
+Labs.Lab2.JosueFernandezTr2.Run();
 Lab2.WilsonChavarria2.Run();
 Lab2.WilsonChavarria.Run();
 Lab2.DannyJimenez.Run();
@@ -48,5 +49,6 @@ Lab2.SofiaSJ.Run();
 Lab2.EmmanuelPineda.Run();
 Lab2.JimenaJimenez.Run();
 Lab2.EmmanuelPorras.Run();
+
 
 #endregion Lab2;
