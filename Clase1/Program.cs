@@ -1,6 +1,8 @@
 ﻿using Lab1 = Labs.Lab1;
 using Lab2 = Labs.Lab2;
 
+
+
 #region Lab1;
 
 /// Polimorfismo..
@@ -13,9 +15,13 @@ Lab1.AaronChavesB.Run();
 Lab1.AkionCheng.Run();
 Lab1.LeonardoZuniga.Run();
 Lab1.JosueFernandez.Run();
-Lab1.WilsonChavarria.Run(); 
+Lab1.WilsonChavarria.Run();
 Lab1.VictorBustos.Run();
 Lab1.IvánAgüero.Run();
+Lab1.YoilinCastrillo.Run();
+Lab1.EmmanuelPineda.Run();
+Lab1.EmmanuelPorras.Run();
+
 #endregion Lab1;
 
 
@@ -32,5 +38,11 @@ Lab2.RonaldoMora.Run();
 // Lab2.WilsonChavarria.Run(); -- // Reparar.
 Lab2.JOSUE_fernandez.Run();
 Lab2.VictorBustos.Run();
+Lab2.YoilinCastrillo.Run();
+Lab2.IvánAgüero.Run();
+Lab2.SofiaSJ.Run();
+Lab2.EmmanuelPineda.Run();
+Lab2.JimenaJimenez.Run();
+Lab2.EmmanuelPorras.Run();
 
 #endregion Lab2;
