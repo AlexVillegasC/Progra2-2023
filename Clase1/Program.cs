@@ -1,8 +1,6 @@
 ﻿using Lab1 = Labs.Lab1;
 using Lab2 = Labs.Lab2;
 
-
-
 #region Lab1;
 
 /// Polimorfismo..
@@ -38,6 +36,7 @@ Lab2.JosePabloS_Sobrecaga.Run();
 Lab2.LeonardoZuniga.Run();
 Lab2.AkionCheng.Run();
 Lab2.RonaldoMora.Run();
+Lab2.WilsonChavarria2.Run();
 Lab2.WilsonChavarria.Run();
 Lab2.DannyJimenez.Run();
 // Lab2.WilsonChavarria.Run(); -- // Reparar.
