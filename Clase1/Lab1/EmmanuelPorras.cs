@@ -1,6 +1,4 @@
-﻿namespace Labs1.Lab1;
-
-using Labs.Lab2;
+﻿namespace Labs.Lab1;
 using System;
 
 public class LineasTelefonicas
