@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Labs.Lab2
 {
-    internal class PruebaIgnorar
+    internal class Jimena
     {
     }
 }

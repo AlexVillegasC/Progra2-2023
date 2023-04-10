@@ -1,4 +1,4 @@
-﻿namespace Clase1.Lab1;
+﻿namespace Labs.Lab1;
 
 public class Jugador
 
