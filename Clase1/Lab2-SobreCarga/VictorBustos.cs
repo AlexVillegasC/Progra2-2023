@@ -14,7 +14,7 @@ public class Vehiculo
     }
 }
 
-public class Helicoptero : Transporte
+public class Helicoptero : Vehiculo
 {
     public override void Avanzar()
     {
@@ -27,7 +27,7 @@ public class Helicoptero : Transporte
     }
 }
 
-public class Vaca : Transporte
+public class Vaca : Vehiculo
 {
     public override void Avanzar()
     {
@@ -39,7 +39,7 @@ public class Vaca : Transporte
     }
 }
 
-public class Moto : Transporte
+public class Moto : Vehiculo
 {
     public override void Avanzar()
     {
@@ -57,13 +57,13 @@ internal class VictorBustos
 {
     public static void Run()
     {
-        Transporte[] transportes = new Transporte[3];
+        Vehiculo[] transportes = new Vehiculo[3];
 
         transportes[0] = new Helicoptero();
         transportes[1] = new Vaca();
         transportes[2] = new Moto();
 
-        foreach (Transporte transporte in transportes)
+        foreach (Vehiculo transporte in transportes)
         {
             transporte.Avanzar(1);
         }
