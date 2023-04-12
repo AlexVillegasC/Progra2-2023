@@ -6,6 +6,11 @@ public class Animal
     {
         Console.WriteLine("Desplazarse de forma generica ");
     }
+
+    internal void comer()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class Conejo : Animal
