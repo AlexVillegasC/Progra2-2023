@@ -9,9 +9,9 @@ namespace Labs.Lab2
 {
     public class Transporte4x4
     {
-        public virtual void Avanzari(double velocidad)
+        public virtual void Avanzari(double velocidad) 
         {
-            Console.WriteLine("Avanza a " + velocidad);
+            Console.WriteLine("Avanza a " + velocidad );
         }
 
 
