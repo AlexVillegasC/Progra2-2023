@@ -33,5 +33,8 @@ internal class AshlyVargasProgram
         Nixon.Enseñar();
 
     }
+<<<<<<< HEAD
     //Hola
+=======
+>>>>>>> origin/AshlyVargas-Lab4
 }
