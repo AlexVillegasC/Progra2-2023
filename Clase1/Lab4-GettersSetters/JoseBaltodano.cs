@@ -66,5 +66,6 @@ public class JoseBaltodano
         Console.WriteLine("La marca es: " + tenis2.Marca);
         Console.WriteLine("La talla es: " + tenis2.Talla);
         Console.WriteLine("El Color es: " + tenis2.Color);
+
     }
 }
