@@ -5,78 +5,81 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab2.Lab2
+
+namespace Labs.Lab2
 {
-    public class Transporte
+    public class Transporte4x4
     {
-
-        public virtual void Avanzar()
+        public virtual void Avanzare()
         {
-            Console.WriteLine("Avanza");
+            Console.WriteLine("Avanza...");
+        }
+        public virtual void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Avanza a " + velocidad);
         }
 
     }
 
-    public class Avion : Transporte
+    public class Avion4 : Transporte4x4
     {
-
-        public override void Avanzar()
+        public override void Avanzare()
         {
-            Console.WriteLine("Vuela");
+            Console.WriteLine("Vuela...");
+        }
+        public override void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Vuela a " + velocidad);
         }
 
     }
 
-    public class Caballo : Transporte
+    public class Caballo4 : Transporte4x4
     {
-        public override void Avanzar()
+        public override void Avanzare()
         {
-            Console.WriteLine("Galopa");
+            Console.WriteLine("Galopa...");
+        }
+        public override void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Galopa a " + velocidad);
         }
 
     }
 
-    public class Carro : Transporte
+    public class Carro4 : Transporte4x4
     {
-        public override void Avanzar()
+        public override void Avanzare()
         {
-            Console.WriteLine("Rodando");
+            Console.WriteLine("Rodando...");
+        }
+        public override void Avanzare(int velocidad)
+        {
+            Console.WriteLine("Rodando " + velocidad);
         }
 
     }
-    class LeonardoZuniga
+
+    public class LeonardoZuniga
+
     {
         public static void Run()
         {
 
-            bool continuar = true;
-            string opcion;
+            Avion4 boeing = new Avion4();
+            Caballo4 caballo = new Caballo4();
+            Carro4 carro = new Carro4();
 
-            Avion boeing = new Avion();
-            Caballo caballo = new Caballo();
-            Carro carro = new Carro();
+            Transporte4x4[] transportes = new Transporte4x4[] { boeing, caballo, carro };
 
-            Transporte[] transportes = new Transporte[]{ boeing, caballo, carro};
 
-            do
+
+            foreach (Transporte4x4 t in transportes)
             {
-                foreach (Transporte t in transportes) { 
-                    t.Avanzar();
-                }
-                Console.WriteLine("Desea Salir?");
-
-                opcion = Console.ReadLine();
-                if (opcion == "Yes")
-                {
-                    continuar = false;
-                }
-
-            } while (continuar == true);
+                t.Avanzare(3);
+            }
 
 
-
-
-            
         }
     }
-}
+    }

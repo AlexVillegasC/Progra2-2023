@@ -1,4 +1,4 @@
-﻿namespace Clase1.Lab1;
+﻿namespace Labs.Lab1;
 
 public class Formas 
 {
@@ -45,7 +45,7 @@ internal class JimenaJimenez
 
         foreach (Formas formas in Formas)
         {
-            Formas.Avanzar();
+         //   Formas.Avanzar();
         }
     }
 }
