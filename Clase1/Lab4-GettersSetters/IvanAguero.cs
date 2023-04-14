@@ -46,8 +46,8 @@ namespace Labs.Lab4_GettersSetters
         {
             // Ejemplo 1:
             Estudiante estudiante1 = new Estudiante();
-            estudiante1.Nombre = "Julio";
-            estudiante1.Carrera = "Turismo";
+            estudiante1.Nombre = "Julio.";
+            estudiante1.Carrera = "Turismo.";
             Console.WriteLine("Nombre del estudiante: " + estudiante1.Nombre);
             Console.WriteLine("Carrera de estudiante : " + estudiante1.Carrera);
 
