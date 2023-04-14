@@ -1,4 +1,4 @@
-﻿using Lab1 = Labs.Lab1;
+using Lab1 = Labs.Lab1;
 using Lab2 = Labs.Lab2;
 using Lab4 = Labs.Lab4;
 using Lab5 = Labs.Lab5;
