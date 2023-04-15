@@ -25,3 +25,4 @@ public class Vaca : ICaminar, ICorrer
         Console.WriteLine("La vaca está corriendo");
     }
 }
+
