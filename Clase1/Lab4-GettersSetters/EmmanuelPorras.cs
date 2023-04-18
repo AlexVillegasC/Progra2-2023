@@ -32,7 +32,7 @@ internal class EmmanuelPorras
     {
 
         Producto producto = new Producto();
-        producto.Cantidad = -10; // Test
+        producto.Cantidad = -10; // Test.
 
         producto.Cantidad = 5;
 
