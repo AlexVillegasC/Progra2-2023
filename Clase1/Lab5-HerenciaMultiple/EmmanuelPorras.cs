@@ -4,9 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labs.Lab5_HerenciaMultiple
+namespace Labs.Lab5;
+
+public interface Volar {
+    void Aereo();
+}
+public interface Navegar {
+    void Maritimo();
+}
+public class Transporte : Volar, Navegar
 {
-    internal class EmmanuelPorras
+    public void Aereo()
     {
+        Console.WriteLine("El transporte es Aereo");
+    }
+
+    public void Maritimo()
+    {
+        Console.WriteLine("El transporte es Maritimo");
     }
 }
+
+
+ internal class EmmanuelPorras
+{
+    public static void Run()
+    {
+        Transporte Porras = Transporte();
+        Porras.Aereo();
+        Porras.Maritimo();
+    }
+
+    private static Transporte Transporte()
+    {
+        throw new NotImplementedException();
+    }
+}
+   
+    
+
