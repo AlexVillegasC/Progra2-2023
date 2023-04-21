@@ -30,15 +30,12 @@ public class Transporte : Volar, Navegar
 {
     public static void Run()
     {
-        Transporte Porras = Transporte();
+        Transporte Porras = new Transporte();
         Porras.Aereo();
         Porras.Maritimo();
     }
 
-    private static Transporte Transporte()
-    {
-        throw new NotImplementedException();
-    }
+   
 }
    
     
