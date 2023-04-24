@@ -5,5 +5,3 @@ using Lab5 = Labs.Lab5;
 
 // No agregar código aquí. Solamente utilizar esta clase para probar!
 //Lab4.AlexVillegasProgram.Run();
-//Lab4.JoséPabloProgram.Run();
-//Lab4.AaronChavesProgram.Run();
