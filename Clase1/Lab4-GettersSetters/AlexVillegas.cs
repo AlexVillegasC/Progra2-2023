@@ -1,4 +1,4 @@
-﻿namespace Labs.Lab4;
+﻿namespace Labs.Lab4;        
 
 public class Person
 {
