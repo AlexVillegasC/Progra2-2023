@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Progra2.API.Grupo0": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:60466;http://localhost:60467"
+    }
+  }
+}
