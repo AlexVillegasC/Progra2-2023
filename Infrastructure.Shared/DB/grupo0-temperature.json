@@ -1,0 +1,52 @@
+[
+  {
+    "Date": "2023-04-24",
+    "TemperatureC": 20,
+    "Summary": "Sunny"
+  },
+  {
+    "Date": "2023-04-25",
+    "TemperatureC": 18,
+    "Summary": "Partly cloudy"
+  },
+  {
+    "Date": "2023-04-26",
+    "TemperatureC": 16,
+    "Summary": "Mostly cloudy"
+  },
+  {
+    "Date": "2023-04-27",
+    "TemperatureC": 22,
+    "Summary": "Partly sunny"
+  },
+  {
+    "Date": "2023-04-28",
+    "TemperatureC": 24,
+    "Summary": "Mostly sunny"
+  },
+  {
+    "Date": "2023-04-29",
+    "TemperatureC": 19,
+    "Summary": "Rainy"
+  },
+  {
+    "Date": "2023-04-30",
+    "TemperatureC": 21,
+    "Summary": "Thunderstorm"
+  },
+  {
+    "Date": "2023-05-01",
+    "TemperatureC": 17,
+    "Summary": "Foggy"
+  },
+  {
+    "Date": "2023-05-02",
+    "TemperatureC": 15,
+    "Summary": "Windy"
+  },
+  {
+    "Date": "2023-05-03",
+    "TemperatureC": 23,
+    "Summary": "Partly cloudy"
+  }
+]

@@ -1,14 +1,12 @@
-﻿namespace Labs.Lab4;        
-
-public class Person
+﻿using System;
+public class Sujeto
 {
     private string _firstName;
     private string _lastName;
 
+    public Sujeto() { }
 
-    public Person() { }
-
-    public Person(string firstName, string lastName)
+    public Sujeto(string firstName, string lastName)
     {
         _firstName = firstName;
         _lastName = lastName;
@@ -23,31 +21,31 @@ public class Person
     public string LastName
     {
         get { return _lastName; }
-        
+
         set
         {
             if (!value.Equals(""))
-            {             
+            {
                 _lastName = value;
             }
         }
     }
 }
 
-public class AlexVillegasProgram
+public class MyProgram
 {
     public static void Run()
     {
         // 1st Example:
-        Person person1 = new Person();
-        person1.FirstName = "John";
-        person1.LastName = "Doe";
+        Sujeto person1 = new Sujeto();
+        person1.FirstName = "Emily";
+        person1.LastName = "Johnson";
         Console.WriteLine("First Name: " + person1.FirstName);
         Console.WriteLine("Last Name: " + person1.LastName);
 
         // 2nd Example:
-        Person person2 = new Person("Alex", "Villegas");
+        Sujeto person2 = new Sujeto("David", "Smith");
         Console.WriteLine("First Name: " + person2.FirstName);
-        Console.WriteLine("Last Name: " + person2.LastName);        
+        Console.WriteLine("Last Name: " + person2.LastName);
     }
 }
