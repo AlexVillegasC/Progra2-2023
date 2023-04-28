@@ -1,7 +1,7 @@
-﻿namespace Labs.Lab2;
+﻿namespace Clase1.Lab2;
 
 
-public class Vehiculo
+public class Transporte
 {
     public virtual void Avanzar()
     {
@@ -14,7 +14,7 @@ public class Vehiculo
     }
 }
 
-public class Helicoptero : Vehiculo
+public class Avion : Transporte
 {
     public override void Avanzar()
     {
@@ -27,19 +27,19 @@ public class Helicoptero : Vehiculo
     }
 }
 
-public class Vaca : Vehiculo
+public class Caballo : Transporte
 {
     public override void Avanzar()
     {
         Console.WriteLine("Galopando!");
     }
     public override void Avanzar(int velocidad = 0)
-    {
+    {        
         Console.WriteLine("Galopando a velocidad: " + velocidad);
     }
 }
 
-public class Moto : Vehiculo
+public class Carro : Transporte
 {
     public override void Avanzar()
     {
@@ -53,17 +53,17 @@ public class Moto : Vehiculo
     }
 }
 
-internal class VictorBustos
+internal class AlexVillegas
 {
     public static void Run()
     {
-        Vehiculo[] transportes = new Vehiculo[3];
+        Transporte[] transportes = new Transporte[3];
 
-        transportes[0] = new Helicoptero();
-        transportes[1] = new Vaca();
-        transportes[2] = new Moto();
+        transportes[0] = new Avion();
+        transportes[1] = new Caballo();
+        transportes[2] = new Carro();
 
-        foreach (Vehiculo transporte in transportes)
+        foreach (Transporte transporte in transportes)
         {
             transporte.Avanzar(1);
         }
