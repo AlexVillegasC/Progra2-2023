@@ -31,8 +31,6 @@
             Desarrollador Alex = new Desarrollador();
             Alex.Jugar();
             Alex.Programar();
-
-
         }
     }
 }
