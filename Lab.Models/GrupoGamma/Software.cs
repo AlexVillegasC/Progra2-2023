@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.GrupoGamma
 {
-    internal class Software
+    public class Software
     {
+        private String Nombre_app { set; get; }
+        private String funcion { set; get; }
+        private String Requerimientos { set; get; }
+        private DateOnly fecha_inicio { set; get; }
+        private DateOnly fecha_entrega { set; get; }
+
     }
 }
