@@ -22,7 +22,7 @@ public class CPU
 
     public void Start()
     {
-        // Inicia el encendido del CPU
+        // Inicia el encendido del CPU.
     }
 
     public void ShutDown()
