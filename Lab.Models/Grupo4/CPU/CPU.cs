@@ -5,9 +5,9 @@ using System.Linq;
 using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
-using static Lab.Models.Grupo4.CPU;
+using static Lab.Models.Grupo4.CPU.CPU;
 
-namespace Lab.Models.Grupo4;
+namespace Lab.Models.Grupo4.CPU;
 
 
 public class CPU
