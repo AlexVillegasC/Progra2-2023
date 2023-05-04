@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Lab.Models.Grupo4.CPU.CPU;
+using static Lab.Models.Grupo4.CPU;
 
-namespace Lab.Models.Grupo4.CPU.CPU
+namespace Lab.Models.Grupo4
 {
     internal class Componentes
     {
