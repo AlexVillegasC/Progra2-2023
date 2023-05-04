@@ -1,5 +1,6 @@
 ﻿using System;
 class Almacenamiento
+    //Test
 {
     private int id;
     private string nombre;
