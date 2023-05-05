@@ -1,20 +1,8 @@
 ﻿
 
 namespace Lab.Models.Grupo5;
-public class Artistas
+class Artista : Canciones
 {
-    private string nombre;
-
-    public Artistas (string nombre)
-    {
-        this.nombre = nombre;
-    }
-
-
-    public string Nombre
-    {
-        get { return nombre; }
-        set { nombre = value; }
-    }
+    public string NombreArtista { get; set; }
 }
 
