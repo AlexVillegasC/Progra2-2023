@@ -1,14 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace Lab.Models.Grupo5
+namespace Lab.Models.Grupo5;
+public class Artistas
 {
-    internal class Artistas
+    private string nombre;
+
+    public Artistas (string nombre)
     {
+        this.nombre = nombre;
+    }
 
 
+    public string Nombre
+    {
+        get { return nombre; }
+        set { nombre = value; }
     }
 }
+
