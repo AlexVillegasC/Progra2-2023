@@ -1,5 +1,5 @@
 ﻿using System;
-class Grafica
+public class Grafica
     //test
 {
     private int id;
