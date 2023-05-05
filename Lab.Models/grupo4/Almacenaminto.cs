@@ -1,5 +1,5 @@
 ﻿using System;
-class Almacenamiento
+public class Almacenamiento
     //Test
 {
     private int id;
