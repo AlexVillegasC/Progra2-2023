@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Grupo4\" />
-    <Folder Include="Grupo9\" />
   </ItemGroup>
 
 </Project>
