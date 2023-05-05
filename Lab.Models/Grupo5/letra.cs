@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo5
 {
-    internal class Canciones
+    internal class Generos
     {
+
     }
 }

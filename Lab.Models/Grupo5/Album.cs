@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab.Models.Grupo5
+namespace Lab.Models.Grupo5;
+
+class Album : Canciones
 {
-    internal class Canciones
-    {
-    }
+    public string NombreAlbum { get; set; }
 }
