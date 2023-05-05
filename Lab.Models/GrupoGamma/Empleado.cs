@@ -9,9 +9,9 @@ namespace Lab.Models.GrupoGamma
     public class Empleado
     {
         private int id;
-        private string Nombre_emp;
-        private int Telefono_emp;
-        private string campo;
+        private string Nombre_emp { get; set; }
+        private int Telefono_emp { get; set; }
+        private string campo { get; set; }
 
 
 
