@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo5
 {
-    internal class Generos
+    internal class letra
     {
 
     }
