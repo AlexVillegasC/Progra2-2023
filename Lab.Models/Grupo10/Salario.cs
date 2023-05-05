@@ -2,12 +2,12 @@
 
 public class Salario
 {
-    public int sueldo_base { get; set; }
-    public int horas_extra { get; set; }
-    public int bonificaciones { get; set; }
+    public int Id { get; set; }
+    public string Roll { get; set; }
+    public int Monto { get; set; }
 
-    public double CalcularSalario()
+    public double ObtenerSalario()
     {
-        return CalcularSalario();
+        return ObtenerSalario();
     }
 }
