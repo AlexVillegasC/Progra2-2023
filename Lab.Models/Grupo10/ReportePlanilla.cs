@@ -1,11 +1,13 @@
 ﻿namespace Lab.Models.Grupo10;
+
 using System.Collections.Generic;
-public class HR
+public class ReportePlanilla
 {
     private List<Empleado> empleados;
     private List<Departamento> departamentos;
+    private List<Salario> Salarios;
 
-    public HR()
+    public ReportePlanilla()
     {
         empleados = new List<Empleado>();
         departamentos = new List<Departamento>();
