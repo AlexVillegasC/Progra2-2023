@@ -1,4 +1,5 @@
 ﻿namespace Lab.Models.Grupo10;
+
 using System.Collections.Generic;
 public class HR
 {
