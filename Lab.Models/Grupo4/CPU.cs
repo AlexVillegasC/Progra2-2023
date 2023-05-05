@@ -9,32 +9,16 @@ using static Lab.Models.Grupo4.CPU;
 
 namespace Lab.Models.Grupo4;
 
-
 public class CPU
-
 {
-    private Componentes componentes;
-
-    public CPU(Componentes componentes)
-    {
-        this.componentes = componentes;
-    }
-
-    public void Start()
-    {
-        // Inicia el encendido del CPU.
-    }
-
-    public void ShutDown()
-    {
-        // Apaga el CPU
-    }
-
-    public class Componentes
-    {
-        public string motherboard;
-        public string ram;
-        public string hardDrive;
-        public string powerSupply;
-    }
+    public Almacenamiento Almacenamiento { get; set; }
+    public Case Case { get; set; }
+    public Grafica TarjetaGrafica { get; set; }
 }
+
+//    CPU miCPU = new CPU();
+
+//    CPU.Almacenamiento = new Almacenamiento();
+//    CPU.Case = new Case();
+//    CPU.TarjetaGrafica = new Grafica();
+//}
