@@ -9,5 +9,6 @@ namespace Lab.Models.Grupo5
     internal class Artistas
     {
 
+
     }
 }
