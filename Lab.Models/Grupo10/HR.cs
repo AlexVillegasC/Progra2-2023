@@ -1,42 +1,45 @@
 ﻿namespace Lab.Models.Grupo10;
-
+using System.Collections.Generic;
 public class HR
 {
-    public string Nombre;
-    public List<Empleado> Empleados;
-    public Empleado Gerente;
-    public string Ubicacion;
-     
+    private List<Empleado> empleados;
+    private List<Departamento> departamentos;
+
+    public HR()
+    {
+        empleados = new List<Empleado>();
+        departamentos = new List<Departamento>();
+    }
+
     public void Contratar(Empleado empleado)
     {
-        Empleados.Add(empleado);
+        empleados.Add(empleado);
     }
-    
+
     public void Despedir(Empleado empleado)
     {
-        Empleados.Remove(empleado);
+        empleados.Remove(empleado);
     }
-    
-    public void Promover(Empleado empleado)
+
+    public Empleado BuscarEmpleado(int id)
     {
-        Gerente = empleado;
+        return empleados.Find(empleado => empleado.Id == id);
     }
-    
-    public void CambiarUbicacion(string ubicacion)
+
+    public double CalcularSalarioTotal()
     {
-        Ubicacion = ubicacion;
+        double totalSalario = 0;
+        foreach (Empleado empleado in empleados)
+        {
+            totalSalario += empleado.ObtenerSalario().CalcularSalario();
+        }
+        return totalSalario;
     }
-    
-    public List<Empleado> ObtenerEmpleados()
+
+    public double CalcularSalarioPromedio()
     {
-        return Empleados;
-    }
-    
-    public class Empleado
-    {
-        public string nombre;
-        public int edad;
-        public string puesto;
-        public float salario;
+        double totalSalario = CalcularSalarioTotal();
+        int numEmpleados = empleados.Count;
+        return totalSalario / numEmpleados;
     }
 }
