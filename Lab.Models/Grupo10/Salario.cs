@@ -6,8 +6,8 @@ public class Salario
     public int horas_extra { get; set; }
     public int bonificaciones { get; set; }
 
-    public double CalcularSalarioTotal()
+    public double CalcularSalario()
     {
-        return CalcularSalarioTotal();
+        return CalcularSalario();
     }
 }
