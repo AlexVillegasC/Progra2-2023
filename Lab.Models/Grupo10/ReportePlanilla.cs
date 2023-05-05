@@ -5,7 +5,7 @@ public class ReportePlanilla
 {
     private List<Empleado> empleados;
     private List<Departamento> departamentos;
-    private 
+    private List<Salario> Salarios;
 
     public ReportePlanilla()
     {
