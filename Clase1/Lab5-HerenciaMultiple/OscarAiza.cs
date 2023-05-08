@@ -8,20 +8,20 @@ using System.Threading.Tasks;
 namespace Labs.Lab5_HerenciaMultiple
 {
 
-    public interface IHerenciaMultiple
+    public interface IHerencia
     {
-        void nadar();
+        void correr();
     }
 
-    public interface IIHerenciaMultiple 
+    public interface IIHerencia 
     {
         void comer();
     }
 
-    public class Pez : IHerenciaMultiple ,  IIHerenciaMultiple
+    public class Caballo : IHerencia ,  IIHerencia
     {
-        public void nadar() {
-            Console.WriteLine("Esta nadando");
+        public void correr() {
+            Console.WriteLine("Esta corriendo");
         }
 
         public void comer()
@@ -30,13 +30,13 @@ namespace Labs.Lab5_HerenciaMultiple
         }
 
     }
-    public class LeonardoZuniga
+    public class OscarAiza
     {
         public static void Run() { 
 
-            Pez pez = new Pez();
-            pez.nadar();
-            pez.comer();
+            Caballo caballo = new Caballo();
+            caballo.correr();
+            caballo.comer();
         
         }
 

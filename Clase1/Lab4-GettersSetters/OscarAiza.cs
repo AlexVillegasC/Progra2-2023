@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace Labs.Lab4_GettersSetters
 {
-    public class Bicicleta
+    public class Carro
     {
         private string _marca;
-        private bool _esDeMontana;
+        private bool _toyota;
 
-        Bicicleta() { }
+        Carro() { }
 
-        Bicicleta(string marca, bool esDeMontana) {
+        Carro(string marca, bool toyota) {
             _marca = marca;
-            _esDeMontana = esDeMontana;
+            _toyota = toyota;
         }
 
         public string Marca { 
@@ -25,25 +25,25 @@ namespace Labs.Lab4_GettersSetters
             set { _marca = value; } 
         }
 
-        public bool getEsDeMontana()
+        public bool getToyota()
         {
-            return _esDeMontana;
+            return _toyota;
         }
 
-        public void setEsDeMontana(bool esDeMontana) 
+        public void setToyota(bool toyota) 
         {
-            _esDeMontana = esDeMontana;
+            _toyota = toyota;
         }
 
-        public class LeonardoZuniga {
+        public class OscarAiza {
             public static void Run()
             {
                 // 1st Example:
-                Bicicleta bicicleta = new Bicicleta();
-                bicicleta.Marca = "Scott";
-                bicicleta.setEsDeMontana(true);
-                Console.WriteLine("Marca: " + bicicleta.Marca);
-                Console.WriteLine("Es de montaña: " + bicicleta.getEsDeMontana);
+                Carro carro = new Carro();
+                carro.Marca = "Scott";
+                carro.setToyota(true);
+                Console.WriteLine("Marca: " + carro.Marca);
+                Console.WriteLine("toyota: " + carro.getToyota);
 
             }
         }
