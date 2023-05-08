@@ -1,38 +1,38 @@
-using System;
+using program
 
-class Program
+public class Cliente
 {
-    static void Main(string[] args)
+    private string nombre;
+    private string matricula;
+    private string carrera;
+
+    public Cliente()
     {
 
     }
 
-
-    public class Cliente
+    public Cliente(string nombre, string matricula, string carrera)
     {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Cedula { get; set; }
-        public string Carrera { get; set; }
-
-        public Cliente(int id, string nombre, string cedula, string carrera)
-        {
-            Id = id;
-            Nombre = nombre;
-            Cedula = cedula;
-            Carrera = carrera;
-        }
-
-        public void SolicitarPrestamo(string mensaje)
-        {
-            Console.WriteLine("Indique su nombre completo y carrera " + Nombre + " (" + Carrera + ")");
-            Console.WriteLine("Mensaje: " + mensaje);
-        }
-
-        public override string ToString()
-        {
-            return "El Cliente" + Id + ": " + Nombre + " (" + Cedula + ")";
-        }
+        this.nombre = nombre;
+        this.matricula = matricula;
+        this.carrera = carrera;
     }
 
+    public string nombre
+    {
+        get { return nombre; }
+        set { nombre = value; }
+    }
+
+    public string matricula
+    {
+        get { return matricula; }
+        set { matricula = value; }
+    }
+
+    public string carrera
+    {
+        get { return carrera; }
+        set { carrera = value; }
+    }
 }
