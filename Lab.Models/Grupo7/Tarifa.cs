@@ -1,8 +1,41 @@
 ﻿using System;
 
-public class Class1
+public class Tarifa
 {
-	public Class1()
+	public int ID { get; set; }
+	public decimal CostoDia { get; set; }
+	public int DiasMaximo { get; set; }
+	public int DiasMinimo { get; set; }
+
+	public Tarifa(int ID, decimal CostoDia, int DiasMaximo, int DiasMinimo)
 	{
+		this.ID = ID;
+		this.CostoDia = CostoDia;
+		this.DiasMaximo = DiasMaximo;
+		this.DiasMinimo = DiasMinimo;
+	}
+
+	public int ID
+	{
+		get { return ID; }
+		set { ID = value; }
+	}
+
+	public decimal CostoDia
+	{
+		get { return CostoDia; }
+		set { CostoDia = value; }
+	}
+
+	public int DiasMaximo
+	{
+		get { return DiasMaximo; }
+		set { DiasMaximo = value; }
+	}
+
+	public int DiasMinimo
+	{
+		get { return DiasMinimo; }
+		set { DiasMinimo = value; }
 	}
 }
