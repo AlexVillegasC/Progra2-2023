@@ -11,6 +11,7 @@ public class ReportePlanilla
     {
         empleados = new List<Empleado>();
         departamentos = new List<Departamento>();
+        Salarios = new List<Salario>();
     }
 
     public void Contratar(Empleado empleado)
@@ -33,7 +34,7 @@ public class ReportePlanilla
         double totalSalario = 0;
         foreach (Empleado empleado in empleados)
         {
-            totalSalario += empleado.ObtenerSalario().CalcularSalario();
+            totalSalario += empleado.ObtenerSalario();
         }
         return totalSalario;
     }
