@@ -77,10 +77,10 @@ namespace Lab.Models.Grupo7
                 miLibro.setEditorial("Santillana");
                 miLibro.setAutor("Miguel De Cervantes");
 
-                Console.WriteLine("Id:150918 " + miLibro.getId());
-                Console.WriteLine("Categoría: Novela " + miLibro.getCategoria());
-                Console.WriteLine("Editorial: Santillana" + miLibro.getEditorial());
-                Console.WriteLine("Autor: Miguel De Cervantes " + miLibro.getAutor());
+                Console.WriteLine("Id: " + miLibro.getId());
+                Console.WriteLine("Categoría: " + miLibro.getCategoria());
+                Console.WriteLine("Editorial: " + miLibro.getEditorial());
+                Console.WriteLine("Autor: " + miLibro.getAutor());
             }
         }
 
