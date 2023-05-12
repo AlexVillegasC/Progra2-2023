@@ -11,10 +11,7 @@ namespace Lab.Models.Grupo7
 
         public Libro()
         {
-            id = 150918;
-            categoria = "Novela";
-            editorial = "Santillana";
-            autor = "Miguel De Cervantes";
+
         }
 
         public Libro(int id, string categoria, string editorial, string autor)
