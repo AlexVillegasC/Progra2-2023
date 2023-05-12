@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo5;
-class Letra : Canciones
+ public class Letra : Canciones
 {
     public string Contenido { get; set; }
 }

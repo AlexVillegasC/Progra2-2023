@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace Lab.Models.Grupo5;
 
 
-class Canciones
+public class Canciones
 {
-    private List<string> listaCanciones = new List<string>();
-    private List<Album> listaAlbums = new List<Album>();
-    private List<Artista> listaArtistas = new List<Artista>();
-    private List<Letra> listaLetras = new List<Letra>();
+    public  List<string> listaCanciones = new List<string>();
+    public List<Album> listaAlbums = new List<Album>();
+    public List<Artista> listaArtistas = new List<Artista>();
+    public List<Letra> listaLetras = new List<Letra>();
 
     public void AgregarCancion(string nombreCancion, Album album, Artista artista, Letra letra)
     {
