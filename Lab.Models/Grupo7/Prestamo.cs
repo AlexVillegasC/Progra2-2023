@@ -5,7 +5,10 @@ public class Prestamos
     private DateTime fechaPréstamo;
     private DateTime fechaDevolución;
     private int idLibro;
-    private string cliente;
+
+    public Cliente Cliente { get; set; }
+    public Tarifa Tarifa { get; set; }
+   
 
     public DateTime FechaPréstamo
     {
@@ -25,11 +28,6 @@ public class Prestamos
         set { idLibro = value; }
     }
 
-    public string Cliente
-    {
-        get { return cliente; }
-        set { cliente = value; }
-    }
 
     public static void Préstamo(string[] args)
     {
