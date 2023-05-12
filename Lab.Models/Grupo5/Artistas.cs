@@ -1,7 +1,7 @@
 ﻿
 
 namespace Lab.Models.Grupo5;
-class Artista : Canciones
+public class Artista 
 {
     public string NombreArtista { get; set; }
 }
