@@ -27,24 +27,5 @@ public class Prestamos
         get { return idLibro; }
         set { idLibro = value; }
     }
-
-
-    public static void Préstamo(string[] args)
-    {
-        
-        Prestamos prestamo = new Prestamos();
-
-       
-        prestamo.FechaPréstamo = DateTime.Now;
-        prestamo.FechaDevolución = DateTime.Now.AddDays(14);
-        prestamo.IDLibro = 150418;
-        prestamo.Cliente = "Luis Gómez";
-
-        
-        Console.WriteLine("Fecha de Préstamo: " + prestamo.FechaPréstamo);
-        Console.WriteLine("Fecha de Devolución: " + prestamo.FechaDevolución);
-        Console.WriteLine("ID del Libro: " + prestamo.IDLibro);
-        Console.WriteLine("Cliente: " + prestamo.Cliente);
-    }
 }
 
