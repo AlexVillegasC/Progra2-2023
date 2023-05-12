@@ -1,4 +1,4 @@
-using program
+using System;
 
 public class Cliente
 {
@@ -11,28 +11,19 @@ public class Cliente
 
     }
 
-    public Cliente(string nombre, string matricula, string carrera)
+    public Cliente(string nombre, string matricula, string carrera, string autor)
     {
         this.nombre = nombre;
         this.matricula = matricula;
         this.carrera = carrera;
     }
 
-    public string nombre
-    {
-        get { return nombre; }
-        set { nombre = value; }
-    }
+    public int Id { get; set; }
+    public String Categoria { get; set; }
+    public String Editorial { get; set; }
+    public String Autor { get; set; }
 
-    public string matricula
-    {
-        get { return matricula; }
-        set { matricula = value; }
-    }
-
-    public string carrera
-    {
-        get { return carrera; }
-        set { carrera = value; }
-    }
 }
+
+
+

@@ -25,45 +25,11 @@ namespace Lab.Models.Grupo7
             this.autor = autor;
         }
 
-        public int getId()
-        {
-            return id;
-        }
+        public int Id { get; set; }
+        public String Categoria { get; set; }
+        public String Editorial { get; set; }
+        public String Autor { get; set; }
 
-        public void setId(int id)
-        {
-            this.id = id;
-        }
-
-        public string getCategoria()
-        {
-            return categoria;
-        }
-
-        public void setCategoria(string categoria)
-        {
-            this.categoria = categoria;
-        }
-
-        public string getEditorial()
-        {
-            return editorial;
-        }
-
-        public void setEditorial(string editorial)
-        {
-            this.editorial = editorial;
-        }
-
-        public string getAutor()
-        {
-            return autor;
-        }
-
-        public void setAutor(string autor)
-        {
-            this.autor = autor;
-        }
     }
 }
 

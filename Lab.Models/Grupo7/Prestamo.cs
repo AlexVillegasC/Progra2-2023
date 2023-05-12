@@ -34,7 +34,7 @@ public class Prestamos
     public static void Préstamo(string[] args)
     {
         
-        PrestamoDeLibro prestamo = new PrestamoDeLibro();
+        Prestamos prestamo = new Prestamos();
 
        
         prestamo.FechaPréstamo = DateTime.Now;

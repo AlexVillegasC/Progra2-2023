@@ -15,12 +15,4 @@ public class Tarifa
 		this.DiasMaximo = DiasMaximo;
 		this.DiasMinimo = DiasMinimo;
 	}
-
-	public int ID
-	{
-		get { return ID; }
-		set { ID = value; }
-	}
-
-}
 }
