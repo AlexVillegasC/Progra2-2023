@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo5;
 
-class Album : Canciones
+ public class Album 
 {
     public string NombreAlbum { get; set; }
 }
