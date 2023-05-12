@@ -7,6 +7,7 @@ public class Tarifa
 	public int DiasMaximo { get; set; }
 	public int DiasMinimo { get; set; }
 
+
 	public Tarifa(int ID, decimal CostoDia, int DiasMaximo, int DiasMinimo)
 	{
 		this.ID = ID;
@@ -21,21 +22,5 @@ public class Tarifa
 		set { ID = value; }
 	}
 
-	public decimal CostoDia
-	{
-		get { return CostoDia; }
-		set { CostoDia = value; }
-	}
-
-	public int DiasMaximo
-	{
-		get { return DiasMaximo; }
-		set { DiasMaximo = value; }
-	}
-
-	public int DiasMinimo
-	{
-		get { return DiasMinimo; }
-		set { DiasMinimo = value; }
-	}
+}
 }

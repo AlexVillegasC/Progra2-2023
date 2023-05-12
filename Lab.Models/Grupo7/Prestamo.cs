@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class PrestamoDeLibro
+public class Prestamos
 {
     private DateTime fechaPréstamo;
     private DateTime fechaDevolución;
