@@ -16,14 +16,4 @@ namespace Lab.Models.Grupo9
         }
     }
 
-    public class Program
-    {
-        public static void Main()
-        {
-            Cliente nuevoCliente = new Cliente();
-            nuevoCliente.AgregarCliente("Juan", "Calle 123, Ciudad");
-            Console.WriteLine("El cliente {0} vive en {1}", nuevoCliente.Nombre, nuevoCliente.Direccion);
-        }
-    }
-
 }
