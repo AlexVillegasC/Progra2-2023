@@ -11,8 +11,10 @@ namespace Lab.Models.Grupo3
         public class Bateria
         {
             public int Capacidad { get; set; }
+
+            public int Porcentaje { get; set; }
           
-            public bool Estado { get; set; }
+            public String Estado { get; set; }
             
 
               

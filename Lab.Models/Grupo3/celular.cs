@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo3
 {
-    internal class celular
+    public class Celular
     {
-        public Bateria bateria { get; set; }
-        public Memoria memoria { get; set; }
-        public TarjetaSim tarjetaSim { get; set; }
+        public List<Bateria> bateria { get; set; }
+        public List<Memoria> memoria { get; set; }
+
 
         public string Marca { get; set; }
         public string Modelo { get; set; }  
