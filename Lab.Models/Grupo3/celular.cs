@@ -10,7 +10,7 @@ namespace Lab.Models.Grupo3
     {
         public Bateria bateria { get; set; }
         public Memoria memoria { get; set; }
-        public TarjetaSim tarjetaSim { get; set; }
+       
 
         public string Marca { get; set; }
         public string Modelo { get; set; }  
