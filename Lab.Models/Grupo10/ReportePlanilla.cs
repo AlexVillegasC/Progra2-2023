@@ -3,9 +3,9 @@
 using System.Collections.Generic;
 public class ReportePlanilla
 {
-    private List<Empleado> empleados;
-    private List<Departamento> departamentos;
-    private List<Salario> Salarios;
+    public List<Empleado> empleados;
+    public List<Departamento> departamentos;
+    public List<Salario> Salarios;
 
     public ReportePlanilla()
     {
