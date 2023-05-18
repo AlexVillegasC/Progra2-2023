@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab.Models.Grupo7;
+using System;
 
 public class Prestamos
 {
@@ -8,7 +9,8 @@ public class Prestamos
 
     public Cliente Cliente { get; set; }
     public Tarifa Tarifa { get; set; }
-   
+    public Libro Libro { get; set; }
+
 
     public DateTime FechaPréstamo
     {
