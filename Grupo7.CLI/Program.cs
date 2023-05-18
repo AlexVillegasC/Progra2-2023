@@ -1,14 +1,15 @@
 ﻿
 
+using Lab.Models.Grupo7;
+
 Prestamos prestamos = new Prestamos();
-prestamos.Prestamos = new List<libro>();
+prestamos.Libro = new List<Libro>();
 
 
 Libro ListaLibros = new Libro();
-primerLibro.id = "150918";
-primerLibro.categoria = "Novela";
-primerLibro.editorial = "Santillana";
-primerLibro.autor = "Miguel De Cervantes";
+ListaLibros.Categoria = "Novela";
+ListaLibros.Editorial = "Santillana";
+ListaLibros.Autor = "Miguel De Cervantes";
 
-prestamos.Libro.Add(primerLibro);
+prestamos.Libro.Add(ListaLibros);
 

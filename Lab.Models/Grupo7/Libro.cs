@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Lab.Models.Grupo7
 {
 
@@ -27,6 +28,15 @@ namespace Lab.Models.Grupo7
         public String Editorial { get; set; }
         public String Autor { get; set; }
 
+        public void Add(object primerLibro)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator Libro(List<Libro> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
