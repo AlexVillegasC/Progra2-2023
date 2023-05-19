@@ -1,31 +1,34 @@
 ﻿
 using Lab.Models.GrupoGamma;
 
-Empresa empresa = new Empresa();
+Empresa R_Empresa()
+{
+    
+}
 
-empresa.Cliente = new List<Cliente>();
-Cliente primerCliente = new Cliente();
-primerCliente.Nombre = "Edgardo Mora";
-primerCliente.Id = 504320687;
-primerCliente.Telefono = 26561482;
-empresa.Cliente.Add(primerCliente);
-Console.WriteLine(empresa.Cliente[0]);
+Empresa empresa = new Empresa();    
 
-empresa.Empleado = new List<Empleado>();
-Empleado primerEmpleado = new Empleado();
-primerEmpleado.id = 403240675;
-primerEmpleado.Nombre_emp = "José Hernandez";
-primerEmpleado.Telefono_emp = 62613482;
-primerEmpleado.campo = "Programacion";
-empresa.Empleado.Add(primerEmpleado);
-Console.WriteLine(empresa.Empleado[0]);
+foreach (var cliente in empresa.Cliente)
+{
+    Console.WriteLine(cliente.Nombre);
+    Console.WriteLine(cliente.Id);
+    Console.WriteLine(cliente.Telefono);
+}
 
-empresa.Software = new List<Software>();
-Software primerSoftware = new Software();
-primerSoftware.Nombre_app = "EasyMap";
-primerSoftware.funcion = "Creación de mapas conseptuales";
-primerSoftware.Requerimientos = "Existir (opcional)";
-primerSoftware.fecha_inicio = DateTime.Now;
-primerSoftware.fecha_entrega = new DateTime(2024, 12, 23);
-empresa.Software.Add(primerSoftware);
-Console.WriteLine(empresa.Software[0]);
+foreach ( var empleado in empresa.Empleado)
+{
+    Console.WriteLine(empleado.Nombre_emp);
+    Console.WriteLine(empleado.id);
+    Console.WriteLine(empleado.campo);
+    Console.WriteLine(empleado.Telefono_emp);
+}
+
+foreach (var software in empresa.Software)
+{
+    Console.WriteLine(software.Nombre_app);
+    Console.WriteLine(software.funcion);
+    Console.WriteLine(software.Requerimientos);
+    Console.WriteLine(software.fecha_inicio);
+    Console.WriteLine(software.fecha_entrega);
+        
+}
