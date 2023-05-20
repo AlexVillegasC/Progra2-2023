@@ -1,3 +1,53 @@
-{
+[
+  {
+    "Nombre": "Jimena",
+    "Matricula": "123456",
+    "Carrera": "Turismo"
+  },
+  {
+    "Nombre": "Luis",
+    "Matricula": "234567",
+    "Carrera": "Comercio"
+  },
+  {
+    "Nombre": "Fiorella",
+    "Matricula": "345678",
+    "Carrera": "Turismo"
+  },
+  {
+    "Nombre": "Sofia",
+    "Matricula": "456789",
+    "Carrera": "Turismo"
+  },
+  {
+    "Nombre": "Esteban",
+    "Matricula": "567890",
+    "Carrera": "Sistemas"
+  },
+  {
+    "Nombre": "Aaron",
+    "Matricula": "678901",
+    "Carrera": "Sistemas"
+  },
+  {
+    "Nombre": "Ana",
+    "Matricula": "789012",
+    "Carrera": "Pedagogia"
+  },
+  {
+    "Nombre": "Maria",
+    "Matricula": "890123",
+    "Carrera": "Pedagogia"
+  },
+  {
+    "Nombre": "Jose",
+    "Matricula": "901234",
+    "Carrera": "Administracion"
+  },
+  {
+    "Nombre": "Alex",
+    "Matricula": "012345",
+    "Carrera": "Sistema"
+  }
+]
 
-}
