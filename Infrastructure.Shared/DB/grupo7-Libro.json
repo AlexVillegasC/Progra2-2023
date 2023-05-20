@@ -1,3 +1,62 @@
-{
-
-}
+[
+  {
+    "Id": 150918,
+    "Categoria": "Ficción",
+    "Editorial": "Santillana",
+    "Autor": "Emmanuel Pineda"
+  },
+  {
+    "Id": 778556,
+    "Categoria": "Literatura",
+    "Editorial": "Editorial Bloomsbury Publishing",
+    "Autor": "Jimena Jimenez"
+  },
+  {
+    "Id": 325493,
+    "Categoria": "Fantasía",
+    "Editorial": "Editorial Pearson Education,",
+    "Autor": "Olga Jimenez"
+  },
+  {
+    "Id": 187594,
+    "Categoria": "Comedia",
+    "Editorial": "Editorial Simon & Schuster",
+    "Autor": "Luis Gomez"
+  },
+  {
+    "Id": 456982,
+    "Categoria": "Ciencia",
+    "Editorial": "Editorial Scholastic Corporation",
+    "Autor": "Esteban Goluboay"
+  },
+  {
+    "Id": 592483,
+    "Categoria": "Fantasía",
+    "Editorial": "Editorial Routledge",
+    "Autor": "Brianna Sánchez"
+  },
+  {
+    "Id": 785946,
+    "Categoria": "Romance",
+    "Editorial": "Editorial Elsevier",
+    "Autor": "Tairon Sánchez"
+  },
+  {
+    "Id": 6549725,
+    "Categoria": "Novela",
+    "Editorial": "Editorial Springer",
+    "Autor": "Diara Sequeira"
+  },
+  {
+    "Id": 564981,
+    "Categoria": "Terror",
+    "Editorial": "Editorial Wiley,",
+    "Autor": "Berta Rodriguez"
+  },
+  {
+    "Id": 875459,
+    "Categoria": "Ciencia ficción",
+    "Editorial": "Editorial HarperCollins",
+    "Autor": "Cuper Picado"
+  }
+]
