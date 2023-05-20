@@ -1,15 +1,16 @@
-﻿
+﻿using Lab.Models.Grupo7;
 
-using Lab.Models.Grupo7;
+Prestamos ListaPrestamos() 
+{
+    //Datos de archivos JSon
+}
 
-Prestamos prestamos = new Prestamos();
-prestamos.Libro = new List<Libro>();
+Prestamos obtenerPrestamo = ListaPrestamos();
 
-
-Libro ListaLibros = new Libro();
-ListaLibros.Categoria = "Novela";
-ListaLibros.Editorial = "Santillana";
-ListaLibros.Autor = "Miguel De Cervantes";
-
-prestamos.Libro.Add(ListaLibros);
-
+foreach ( var libro in obtenerPrestamo.Libros)
+{
+    Console.WriteLine(libro.Id);
+    Console.WriteLine(libro.Categoria);
+    Console.WriteLine(libro.Editorial);
+    Console.WriteLine(libro.Autor);
+}
