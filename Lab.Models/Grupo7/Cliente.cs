@@ -9,7 +9,3 @@ public class Cliente
     public string Carrera { get; set; }
 }
 
-
-
-
-
