@@ -1,33 +1,10 @@
-﻿using Lab.Models.Grupo7;
-using System;
+﻿namespace Lab.Models.Grupo7;
 
 public class Prestamos
 {
-    private DateTime fechaPréstamo;
-    private DateTime fechaDevolución;
-    private int idLibro;
+    public List<Cliente> Clientes { get; set; }
 
-    public Cliente Cliente { get; set; }
-    public Tarifa Tarifa { get; set; }
-    public Libro Libro { get; set; }
+    public List<Libro> Libros { get; set; }
 
-
-    public DateTime FechaPréstamo
-    {
-        get { return fechaPréstamo; }
-        set { fechaPréstamo = value; }
-    }
-
-    public DateTime FechaDevolución
-    {
-        get { return fechaDevolución; }
-        set { fechaDevolución = value; }
-    }
-
-    public int IDLibro
-    {
-        get { return idLibro; }
-        set { idLibro = value; }
-    }
+    public List<Tarifa> Tarifas { get; set; }
 }
-
