@@ -3,36 +3,36 @@
 using System.Collections.Generic;
 public class ReportePlanilla
 {
-    public List<Empleado> empleados;
-    public List<Departamento> departamentos;
+    public List<Empleado> Empleados;
+    public List<Departamento> Departamentos;
     public List<Salario> Salarios;
 
     public ReportePlanilla()
     {
-        empleados = new List<Empleado>();
-        departamentos = new List<Departamento>();
+        Empleados = new List<Empleado>();
+        Departamentos = new List<Departamento>();
         Salarios = new List<Salario>();
     }
 
     public void Contratar(Empleado empleado)
     {
-        empleados.Add(empleado);
+        Empleados.Add(empleado);
     }
 
     public void Despedir(Empleado empleado)
     {
-        empleados.Remove(empleado);
+        Empleados.Remove(empleado);
     }
 
-    public Empleado BuscarEmpleado(int id)
+    public Empleado? BuscarEmpleado(int id)
     {
-        return empleados.Find(empleado => empleado.Id == id);
+        return Empleados.Find(empleado => empleado.Id == id);
     }
 
     public double CalcularSalarioTotal()
     {
         double totalSalario = 0;
-        foreach (Empleado empleado in empleados)
+        foreach (Empleado empleado in Empleados)
         {
             totalSalario += empleado.ObtenerSalario();
         }
@@ -42,7 +42,7 @@ public class ReportePlanilla
     public double CalcularSalarioPromedio()
     {
         double totalSalario = CalcularSalarioTotal();
-        int numEmpleados = empleados.Count;
+        int numEmpleados = Empleados.Count;
         return totalSalario / numEmpleados;
     }
 }

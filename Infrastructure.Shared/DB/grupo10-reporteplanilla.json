@@ -1,0 +1,112 @@
+﻿[
+  {
+    "Id": 1,
+    "Nombre": "Juan",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 2,
+    "Nombre": "Pedro",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 3,
+    "Nombre": "Maria",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 4,
+    "Nombre": "Jose",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 5,
+    "Nombre": "Luis",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 6,
+    "Nombre": "Carlos",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 7,
+    "Nombre": "Ana",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 8,
+    "Nombre": "Luisa",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Vendedor",
+      "Monto": 1000
+    }
+  },
+  {
+    "Id": 9,
+    "Nombre": "Marta",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Gerente",
+      "Monto": 2000
+    }
+  },
+  {
+    "Id": 10,
+    "Nombre": "Jorge",
+    "Departamento": {
+      "NombreDepartamento": "Ventas"
+    },
+    "Salario": {
+      "Roll": "Gerente",
+      "Monto": 2000
+    }
+  }
+]

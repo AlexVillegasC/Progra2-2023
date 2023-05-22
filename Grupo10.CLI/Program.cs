@@ -1,20 +1,24 @@
 ﻿using Lab.Models.Grupo10;
+using Newtonsoft.Json;
 
-ReportePlanilla reportePlanilla = new ReportePlanilla();
-reportePlanilla.empleados = new List<Empleado>();
-reportePlanilla.departamentos = new List<Departamento>();
-reportePlanilla.Salarios = new List<Salario>();
 
-Empleado empleado1 = new Empleado();
-empleado1.Id = 1;
-empleado1.Nombre = "Juan";
-empleado1.Departamento = new Departamento();
-empleado1.Departamento.IdDepartamento = 1;
-empleado1.Departamento.NombreDepartamento = "Contabilidad";
-empleado1.Salario = new Salario();
-empleado1.Salario.Id = 1;
-empleado1.Salario.Roll = "Contador";
-empleado1.Salario.Monto = 1000;
-reportePlanilla.empleados.Add(empleado1);
+ReportePlanilla GetReportePlanilla()
+{
+    string json = File.ReadAllText("C:/Users/Suare/RiderProjects/Progra2/Infrastructure.Shared/DB/grupo10-reporteplanilla.json");
+    Empleado[]? listEmpleados = JsonConvert.DeserializeObject<Empleado[]>(json);
+    ReportePlanilla reportePlanilla = new ReportePlanilla();
+    reportePlanilla.Empleados = listEmpleados != null ? new List<Empleado>(listEmpleados) : new List<Empleado>();
+    return reportePlanilla;
+}
 
-Console.WriteLine(reportePlanilla.empleados[0].Nombre);
+ReportePlanilla reportePlanilla = GetReportePlanilla();
+
+foreach(var empleado in reportePlanilla.Empleados)
+{ 
+    Console.WriteLine("El id del empleado es: " + empleado.Id);
+    Console.WriteLine("El nombre del empleado es:" + empleado.Nombre);
+    Console.WriteLine("Su departamento es: " + empleado.Departamento?.NombreDepartamento);
+    Console.WriteLine("Su roll es: " + empleado.Salario?.Roll);
+    Console.WriteLine("Su salario es: " + empleado.Salario?.Monto);
+    Console.WriteLine("");
+}
