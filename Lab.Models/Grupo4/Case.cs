@@ -35,6 +35,5 @@ namespace Lab.Models.Grupo4
         public void setCosto(decimal costo) { this.Costo = costo; }
 
 
-
     }
 }
