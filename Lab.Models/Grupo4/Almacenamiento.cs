@@ -17,6 +17,10 @@ public class Almacenamiento
         this.costo = costo;
     }
 
+    public Almacenamiento()
+    {
+    }
+
     public int GetId()
     {
         return this.id;

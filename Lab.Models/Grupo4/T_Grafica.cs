@@ -19,6 +19,10 @@ public class T_Grafica
         this.costo = costo;
     }
 
+    public T_Grafica()
+    {
+    }
+
     public int GetId()
     {
         return this.id;
