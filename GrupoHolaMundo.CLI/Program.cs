@@ -45,3 +45,5 @@ for (int i = 0; i < 5; i++)
     Console.WriteLine(alquiler.cliente[i]);
     Console.WriteLine(alquiler.casa[i]);
 }
+
+//Agregar implementación de clases en este archivo. Revisar el codigo comentado en alquiler commo guía
