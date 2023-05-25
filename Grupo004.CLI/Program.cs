@@ -19,3 +19,15 @@ Case dato1 = new Case();
 }
 cpu.Case.Add(dato1);
 Console.WriteLine(cpu.Case[0].Color);
+
+foreach (var Case in cpu.Case)
+    {
+    Console.WriteLine(Case.Id);
+    Console.WriteLine(Case.Nombre);
+    Console.WriteLine(Case.Tamanno);
+    Console.WriteLine(Case.Color);
+    Console.WriteLine(Case.Costo);
+    Console.WriteLine(Case.Forma);
+    }
+
+    
