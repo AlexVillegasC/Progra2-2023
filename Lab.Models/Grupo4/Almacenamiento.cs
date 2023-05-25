@@ -1,22 +1,24 @@
 ﻿using System;
-public class Grafica
-    //test
+public class Almacenamiento
+//Test
 {
     private int id;
     private string nombre;
-    private int vram;
-    private string conectores;
-    private string marca;
+    private int capacidad;
+    private string dimensiones;
     private double costo;
 
-    public Grafica(int id, string nombre, int vram, string conectores, string marca, double costo)
+    public Almacenamiento(int id, string nombre, int capacidad, string dimensiones, double costo)
     {
         this.id = id;
         this.nombre = nombre;
-        this.vram = vram;
-        this.conectores = conectores;
-        this.marca = marca;
+        this.capacidad = capacidad;
+        this.dimensiones = dimensiones;
         this.costo = costo;
+    }
+
+    public Almacenamiento()
+    {
     }
 
     public int GetId()
@@ -39,34 +41,24 @@ public class Grafica
         this.nombre = newNombre;
     }
 
-    public int GetVram()
+    public int GetCapacidad()
     {
-        return this.vram;
+        return this.capacidad;
     }
 
-    public void SetVram(int newVram)
+    public void SetCapacidad(int newCapacidad)
     {
-        this.vram = newVram;
+        this.capacidad = newCapacidad;
     }
 
-    public string GetConectores()
+    public string GetDimensiones()
     {
-        return this.conectores;
+        return this.dimensiones;
     }
 
-    public void SetConectores(string newConectores)
+    public void SetDimensiones(string newDimensiones)
     {
-        this.conectores = newConectores;
-    }
-
-    public string GetMarca()
-    {
-        return this.marca;
-    }
-
-    public void SetMarca(string newMarca)
-    {
-        this.marca = newMarca;
+        this.dimensiones = newDimensiones;
     }
 
     public double GetCosto()
