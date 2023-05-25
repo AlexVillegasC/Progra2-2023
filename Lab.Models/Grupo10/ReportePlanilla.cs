@@ -1,14 +1,17 @@
 ﻿namespace Lab.Models.Grupo10;
-using System.Collections.Generic;
-public class HR
-{
-    private List<Empleado> empleados;
-    private List<Departamento> departamentos;
 
-    public HR()
+using System.Collections.Generic;
+public class ReportePlanilla
+{
+    public List<Empleado> empleados;
+    public List<Departamento> departamentos;
+    public List<Salario> Salarios;
+
+    public ReportePlanilla()
     {
         empleados = new List<Empleado>();
         departamentos = new List<Departamento>();
+        Salarios = new List<Salario>();
     }
 
     public void Contratar(Empleado empleado)
@@ -31,7 +34,7 @@ public class HR
         double totalSalario = 0;
         foreach (Empleado empleado in empleados)
         {
-            totalSalario += empleado.ObtenerSalario().CalcularSalario();
+            totalSalario += empleado.ObtenerSalario();
         }
         return totalSalario;
     }
