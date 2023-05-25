@@ -1,3 +1,62 @@
-{
-
-}
+[
+  {
+    "Id": 150918,
+    "CostoDia": "1300",
+    "DiasMaximos": "20",
+    "DiasMinimos": "7"
+  },
+  {
+    "Id": 778556,
+    "CostoDia": "1000",
+    "DiasMaximos": "21",
+    "DiasMinimos": "5"
+  },
+  {
+    "Id": 325493,
+    "CostoDia": "1000",
+    "DiasMaximos": "15",
+    "DiasMinimos": "7"
+  },
+  {
+    "Id": 187594,
+    "CostoDia": "1800",
+    "DiasMaximos": "31",
+    "DiasMinimos": "8"
+  },
+  {
+    "Id": 456982,
+    "CostoDia": "1000",
+    "DiasMaximos":"31",
+    "DiasMinimos":"7",
+  },
+  {
+    "Id": 592483,
+    "CostoDia": "1000",
+    "DiasMaximos": "22",
+    "DiasMinimos": "3"
+  },
+  {
+    "Id": 785946,
+    "CostoDia": "1500",
+    "DiasMaximos": "10",
+    "DiasMinimos": "3",
+  },
+  {
+    "Id": 6549725,
+    "CostoDia": "1000",
+    "DiasMaximos": "30",
+    "DiasMinimos": "10",
+  },
+  {
+    "Id": 564981,
+    "CostoDia": "1250",
+    "DiasMaximos": "8",
+    "DiasMinimos": "2",
+  },
+  {
+    "Id": 875459,
+    "CostoDia": "2000",
+    "DiasMaximos": "22",
+    "DiasMinimos": "5",
+  }
+]
