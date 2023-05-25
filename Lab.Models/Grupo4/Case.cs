@@ -44,5 +44,6 @@ namespace Lab.Models.Grupo4
         public void SetForma(string forma) { this.Forma = forma; }
        
 
+
     }
 }
