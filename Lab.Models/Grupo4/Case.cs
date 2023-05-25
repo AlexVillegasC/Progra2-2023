@@ -8,32 +8,41 @@ namespace Lab.Models.Grupo4
 {
     public class Case
     {
-        int Id;
-        string Nombre;
-        double Tamanno;
-        string Color;
-        decimal Costo;
+        public int Id;
+        public string Nombre;
+        public double Tamanno;
+        public string Color;
+        public decimal Costo;
+        public string Forma;
 
-        public Case(int id, string nombre, double tamanno, string color, decimal costo)
+        public Case(int id, string nombre, double tamanno, string color, decimal costo, string forma)
         {
             this.Id = id;
-            Nombre = nombre;
-            Tamanno = tamanno;
-            Color = color;
-            Costo = costo;
+            this.Nombre = nombre;
+            this.Tamanno = tamanno;
+            this.Color = color;
+            this.Costo = costo;
+            this.Forma = forma;
         }
-        public int getId() { return Id; }
-        public string getNombre() {  return Nombre; }
-        public double getTamanno() { return Tamanno; }
-        public string getColor() { return Color; }
-        public decimal getCosto() {  return Costo; }
 
-        public void setId(int id) { this.Id = id; }
-        public void setNombre(string nombre) { this.Nombre = nombre; }
-        public void setTamanno(double tamanno) { this.Tamanno = tamanno; }
-        public void setColor(string color) {  this.Color = color; }
-        public void setCosto(decimal costo) { this.Costo = costo; }
+        public Case()
+        {
+        }
+    
+        public int GetId() { return Id; }
+        public string GetNombre() { return Nombre; }
+        public double GetTamanno() { return Tamanno; }
+        public string GetColor() { return Color; }
+        public decimal GetCosto() { return Costo; }
+        public string GetForma() { return Forma; }
 
+        public void SetId(int id) { this.Id = id; }
+        public void SetNombre(string nombre) { this.Nombre = nombre; }
+        public void SetTamanno(double tamanno) { this.Tamanno = tamanno; }
+        public void SetColor(string color) { this.Color = color; }
+        public void SetCosto(decimal costo) { this.Costo = costo; }
+        public void SetForma(string forma) { this.Forma = forma; }
+       
 
     }
 }
