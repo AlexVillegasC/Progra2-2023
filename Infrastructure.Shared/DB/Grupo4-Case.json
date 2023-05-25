@@ -1,10 +1,8 @@
 {
-  "exclude": [
-    "**/bin",
-    "**/bower_components",
-    "**/jspm_packages",
-    "**/node_modules",
-    "**/obj",
-    "**/platforms"
-  ]
+  "Id": 1,
+  "Nombre": "Nombre del case",
+  "Tamanno": 10.5,
+  "Color": "Rojo",
+  "Costo": 19.99,
+  "Forma": "Rectangular"
 }
