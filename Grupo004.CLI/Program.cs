@@ -1,6 +1,6 @@
 ﻿
 
-
+using Lab.Models.Grupo4;
 
 CPU cpu = new CPU();
 
