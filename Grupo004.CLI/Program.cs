@@ -1,6 +1,6 @@
 ﻿
 
-using Lab.Models.Grupo4;
+
 
 CPU cpu = new CPU();
 
@@ -18,4 +18,6 @@ Case dato1 = new Case();
     dato1.Forma = "Cuadrado";
 }
 cpu.Case.Add(dato1);
+
 Console.WriteLine(cpu.Case[0].Color);
+

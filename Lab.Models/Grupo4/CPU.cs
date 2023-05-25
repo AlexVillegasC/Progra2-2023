@@ -11,9 +11,9 @@ namespace Lab.Models.Grupo4;
 
 public class CPU
 {
-    public List<Almacenamiento> Almacenamiento { get; set; }
-    public List<Case> Case { get; set; }
-    public List<T_Grafica> T_Grafica { get; set; }
+    public List<Almacenamiento> Almacenamientos { get; set; }
+    public List<Case> Cases { get; set; }
+    public List<T_Grafica> T_Graficas { get; set; }
 }
 
 
