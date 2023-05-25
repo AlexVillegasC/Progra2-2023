@@ -18,25 +18,30 @@ namespace Lab.Models.Grupo4
         public Case(int id, string nombre, double tamanno, string color, decimal costo, string forma)
         {
             this.Id = id;
-            Nombre = nombre;
-            Tamanno = tamanno;
-            Color = color;
-            Costo = costo;
-            Forma = forma;
+            this.Nombre = nombre;
+            this.Tamanno = tamanno;
+            this.Color = color;
+            this.Costo = costo;
+            this.Forma = forma;
         }
-        public int getId() { return Id; }
-        public string getNombre() { return Nombre; }
-        public double getTamanno() { return Tamanno; }
-        public string getColor() { return Color; }
-        public decimal getCosto() { return Costo; }
-        public string getForma() { return Forma; }
 
-        public void setId(int id) { this.Id = id; }
-        public void setNombre(string nombre) { this.Nombre = nombre; }
-        public void setTamanno(double tamanno) { this.Tamanno = tamanno; }
-        public void setColor(string color) { this.Color = color; }
-        public void setCosto(decimal costo) { this.Costo = costo; }
-        public void setForma(string forma) { this.Forma = forma; }
+        public Case()
+        {
+        }
+
+        public int GetId() { return Id; }
+        public string GetNombre() { return Nombre; }
+        public double GetTamanno() { return Tamanno; }
+        public string GetColor() { return Color; }
+        public decimal GetCosto() { return Costo; }
+        public string GetForma() { return Forma; }
+
+        public void SetId(int id) { this.Id = id; }
+        public void SetNombre(string nombre) { this.Nombre = nombre; }
+        public void SetTamanno(double tamanno) { this.Tamanno = tamanno; }
+        public void SetColor(string color) { this.Color = color; }
+        public void SetCosto(decimal costo) { this.Costo = costo; }
+        public void SetForma(string forma) { this.Forma = forma; }
 
 
 
