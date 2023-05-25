@@ -8,12 +8,12 @@ namespace Lab.Models.Grupo4
 {
     public class Case
     {
-        int Id;
-        string Nombre;
-        double Tamanno;
-        string Color;
-        decimal Costo;
-        string Forma;
+        public int Id;
+        public string Nombre;
+        public double Tamanno;
+        public string Color;
+        public decimal Costo;
+        public string Forma;
 
         public Case(int id, string nombre, double tamanno, string color, decimal costo, string forma)
         {
@@ -28,7 +28,7 @@ namespace Lab.Models.Grupo4
         public Case()
         {
         }
-
+    
         public int GetId() { return Id; }
         public string GetNombre() { return Nombre; }
         public double GetTamanno() { return Tamanno; }
@@ -42,7 +42,7 @@ namespace Lab.Models.Grupo4
         public void SetColor(string color) { this.Color = color; }
         public void SetCosto(decimal costo) { this.Costo = costo; }
         public void SetForma(string forma) { this.Forma = forma; }
-
+       
 
 
     }
