@@ -10,6 +10,6 @@ public class Empleado
 
     public double ObtenerSalario()
     {
-        return Salario.CalcularSalario();
+        return 0;
     }
 }
