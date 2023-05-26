@@ -6,8 +6,8 @@ namespace Lab.Models.Grupo9
     public class Cliente
    
     {
-        public string Nombre;
-        public string Direccion;
+        public string Nombre { get; set; }
+        public string Direccion { get; set; }
 
         public void AgregarCliente(string Nombre, string Direccion)
         {
