@@ -1,6 +1,7 @@
-﻿using System;
-namespace Labs.Lab2_SobreCarga;
+﻿
 
+namespace Labs.Lab1_Polimorfismo;
+using System;
 
 public interface IRutina
 {
@@ -69,7 +70,7 @@ public class Crossfit : EjercicioBase
 
 internal class GabrielGonzalez
 {
-    public static void Run()
+    public static void Run(string[] args)
     {
         EjercicioBase gym = new Ejercicio("Rutina de Gym", "Plan alimenticio para Gym");
         EjercicioBase calistenia = new Calistenia("Rutina de Calistenia", "Plan alimenticio para Calistenia");
