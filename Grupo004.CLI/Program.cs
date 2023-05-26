@@ -4,9 +4,9 @@ using Lab.Models.Grupo4;
 
 CPU cpu = new CPU();
 
-cpu.Case = new List<Case>();
-cpu.T_Grafica = new List<T_Grafica>();
-cpu.Almacenamiento = new List<Almacenamiento>();
+cpu.Cases = new List<Case>();
+cpu.T_Graficas = new List<T_Grafica>();
+cpu.Almacenamientos = new List<Almacenamiento>();
 
 Case dato1 = new Case();
 {
@@ -17,10 +17,10 @@ Case dato1 = new Case();
     dato1.Costo = 130000;
     dato1.Forma = "Cuadrado";
 }
-cpu.Case.Add(dato1);
-Console.WriteLine(cpu.Case[0].Color);
+cpu.Cases.Add(dato1);
+Console.WriteLine(cpu.Cases[0].Color);
 
-foreach (var Case in cpu.Case)
+foreach (var Case in cpu.Cases)
     {
     Console.WriteLine(Case.Id);
     Console.WriteLine(Case.Nombre);
