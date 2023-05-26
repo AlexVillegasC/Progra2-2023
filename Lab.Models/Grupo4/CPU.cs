@@ -10,8 +10,7 @@ using static Lab.Models.Grupo4.CPU;
 namespace Lab.Models.Grupo4;
 
 public class CPU
-{
-    public Almacenamiento Almacenamiento { get; set; }
+{    
     public Case Case { get; set; }
     public Grafica TarjetaGrafica { get; set; }
 }
