@@ -5,7 +5,7 @@ using Lab.Models.Grupo4;
 CPU cpu = new CPU();
 
 cpu.Cases = new List<Case>();
-cpu.T_Graficas = new List<T_Grafica>();
+cpu.TarjetaGraficas = new List<T_Grafica>();
 cpu.Almacenamientos = new List<Almacenamiento>();
 
 Case dato1 = new Case();
