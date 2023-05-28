@@ -1,0 +1,46 @@
+{
+  "empresa": {
+    "Cliente": [
+      {
+        "Nombre": "Edgardo Mora",
+        "Id": 504320687,
+        "Telefono": 26561482
+      },
+      {
+        "Nombre": "María López",
+        "Id": 123456789,
+        "Telefono": 987654321
+      },
+      {
+        "Nombre": "Juan Pérez",
+        "Id": 987654321,
+        "Telefono": 123456789
+      },
+      {
+        "Nombre": "Laura Rodríguez",
+        "Id": 456789123,
+        "Telefono": 159357486
+      },
+      {
+        "Nombre": "Carlos Ramírez",
+        "Id": 789123456,
+        "Telefono": 456789123
+      },
+      {
+        "Nombre": "Ana García",
+        "Id": 321654987,
+        "Telefono": 852963741
+      },
+      {
+        "Nombre": "Pedro Martínez",
+        "Id": 654987321,
+        "Telefono": 369852147
+      },
+      {
+        "Nombre": "Sofía Castro",
+        "Id": 852741369,
+        "Telefono": 741369852
+      }
+    ]
+  }
+}
