@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab.Models", "Lab.Models\La
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projecto-1", "Projecto-1", "{BD62A89E-C312-4EC3-866C-AF60A734C9C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo02.CLI", "Grupo02.CLI\Grupo02.CLI.csproj", "{9CECA2F6-0714-4A92-9611-B771387F47E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,9 +31,16 @@ Global
 		{F90C0A01-A8AE-488A-8A0E-84E46D0D3103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F90C0A01-A8AE-488A-8A0E-84E46D0D3103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F90C0A01-A8AE-488A-8A0E-84E46D0D3103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CECA2F6-0714-4A92-9611-B771387F47E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CECA2F6-0714-4A92-9611-B771387F47E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CECA2F6-0714-4A92-9611-B771387F47E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CECA2F6-0714-4A92-9611-B771387F47E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9CECA2F6-0714-4A92-9611-B771387F47E0} = {BD62A89E-C312-4EC3-866C-AF60A734C9C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E1AAEDC-9F71-4C25-AE94-6E2529F9AFF6}

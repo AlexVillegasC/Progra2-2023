@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo2
 {
-    internal class Carnes
+    public class Carnes
+
     {
+        public int Kilos { get; set; }
+        public DateOnly DateEntrgea { get; set; }
+        public  string TipoCarne { get;  set; }
+
     }
 }

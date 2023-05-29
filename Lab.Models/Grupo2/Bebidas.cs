@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo2
 {
-    internal class Bebidas
+    public class Bebidas
     {
+        public string Marcas { get; set; }
+        public string Tipo { get; set; }
+        public DateOnly FechaEntrega { get; set; }
     }
 }

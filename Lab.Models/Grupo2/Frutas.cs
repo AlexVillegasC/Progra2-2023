@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.Grupo2
 {
-    internal class SuperMarket
+    public class Frutas
     {
+        public int Cantidad { get; set; }
+        public string TipoFruta { get; set; }
+        
     }
 }
