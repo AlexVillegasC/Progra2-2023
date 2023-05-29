@@ -8,10 +8,10 @@ namespace Lab.Models.GrupoGamma
 {
     public class Empleado
     {
-        private int id;
-        private string Nombre_emp;
-        private int Telefono_emp;
-        private string campo;
+        public int id;
+        public string Nombre_emp;
+        public int Telefono_emp;
+        public string campo;
 
 
 

@@ -8,11 +8,11 @@ namespace Lab.Models.GrupoGamma
 {
     public class Software
     {
-        private String Nombre_app { set; get; }
-        private String funcion { set; get; }
-        private String Requerimientos { set; get; }
-        private DateOnly fecha_inicio { set; get; }
-        private DateOnly fecha_entrega { set; get; }
+        public String Nombre_app { set; get; }
+        public String funcion { set; get; }
+        public String Requerimientos { set; get; }
+        public DateTime fecha_inicio { set; get; }
+        public DateTime fecha_entrega { set; get; }
 
     }
 }
