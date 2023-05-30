@@ -3,35 +3,45 @@
 using System.Collections.Generic;
 public class ReportePlanilla
 {
-    public List<Empleado> Empleados { get;  set; }
-    public List<Departamento> Departamentos { get;  set; }
-    public List<Salario> Salarios { get;  set; }
+    private List<Empleado> empleados;
+    private List<Departamento> departamentos;
+    private List<Salario> Salarios;
 
     public ReportePlanilla()
     {
-        Empleados = new List<Empleado>();
-        Departamentos = new List<Departamento>();
-        Salarios = new List<Salario>();
+        empleados = new List<Empleado>();
+        departamentos = new List<Departamento>();
     }
-    public IEnumerable<Empleado> BuscarEmpleado(int id)
-    {
-        return Empleados.Where(empleado => empleado.Id == id);
-    }
-    
+
     public void Contratar(Empleado empleado)
     {
-        Empleados.Add(empleado);
+        empleados.Add(empleado);
     }
 
     public void Despedir(Empleado empleado)
     {
-        Empleados.Remove(empleado);
+        empleados.Remove(empleado);
     }
-    
-    //LINQ (Language-Integrated Query) es una característica de C# que proporciona una forma unificada de consultar
-    //y manipular datos desde diversas fuentes de datos, como colecciones, bases de datos, servicios web, etc.
-    public double SalarioTotal => Empleados.Sum(empleado => empleado.Salario?.Monto ?? 0);
 
-    public double SalarioPromedio => Empleados.Any() ? SalarioTotal / Empleados.Count : 0;
-    
+    public Empleado BuscarEmpleado(int id)
+    {
+        return empleados.Find(empleado => empleado.Id == id);
+    }
+
+    public double CalcularSalarioTotal()
+    {
+        double totalSalario = 0;
+        foreach (Empleado empleado in empleados)
+        {
+            totalSalario += empleado.ObtenerSalario().CalcularSalario();
+        }
+        return totalSalario;
+    }
+
+    public double CalcularSalarioPromedio()
+    {
+        double totalSalario = CalcularSalarioTotal();
+        int numEmpleados = empleados.Count;
+        return totalSalario / numEmpleados;
+    }
 }
