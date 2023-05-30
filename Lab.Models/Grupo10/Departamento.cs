@@ -6,7 +6,7 @@ public class Departamento
     private List<Empleado> empleados;
     
     public string NombreDepartamento;
-        public string IdDepartamento;
+        public int IdDepartamento;
 
         public Departamento() {
             empleados = new List<Empleado>();
