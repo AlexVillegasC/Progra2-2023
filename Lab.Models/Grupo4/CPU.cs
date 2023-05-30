@@ -13,9 +13,8 @@ public class CPU
 {
 //    public Almacenamiento Almacenamiento { get; set; }
     public Case Case { get; set; }
-    public Grafica TarjetaGrafica { get; set; }
+    public T_Grafica TarjetaGrafica { get; set; }
 }
-
 
 //    CPU miCPU = new CPU();
 

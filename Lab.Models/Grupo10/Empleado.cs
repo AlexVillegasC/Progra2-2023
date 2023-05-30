@@ -3,18 +3,11 @@
 
 public class Empleado
 {
-    public int Id { get; }
+    public int Id { get; set; }
     public string Nombre { get; set; }
-    public Departamento? Departamento { get; set; }
-    public Salario? Salario { get; }
-    public Empleado(int id,string nombre, Departamento? departamento, Salario? salario)
-    {
-        Id = id;
-        Nombre = nombre;
-        Departamento = departamento;
-        Salario = salario;
-    }
-    
+    public Departamento Departamento { get; set; }
+    public Salario Salario { get; set; }
+
     public double ObtenerSalario()
     {
         if (Salario != null)
