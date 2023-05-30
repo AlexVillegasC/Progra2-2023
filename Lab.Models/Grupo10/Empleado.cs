@@ -10,6 +10,13 @@ public class Empleado
 
     public double ObtenerSalario()
     {
-        return Salario.CalcularSalario();
+        if (Salario != null)
+        {
+            return 0;
+        }
+        else
+        {
+            throw new Exception("El salario no está asignado.");
+        }
     }
 }
