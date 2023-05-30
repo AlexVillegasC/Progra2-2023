@@ -41,3 +41,11 @@ foreach (var winds in mySummary.Winds)
     Console.WriteLine(winds.Speed);
     Console.WriteLine(winds.Direction);
 }
+
+Console.WriteLine("Humedad:");
+foreach (var moisture in mySummary.Moistures)
+{
+    Console.WriteLine(moisture.Value);
+    Console.WriteLine(moisture.Unit);
+    Console.WriteLine(moisture.Date);
+}
