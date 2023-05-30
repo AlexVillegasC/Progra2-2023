@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Lab.Models.GrupoGamma;
 
-namespace Lab.Models.GrupoGamma
+public class Empresa
 {
-    public class Empresa
-    {
-        private Empleado Empleado { get; set; }
-        private Software Sofware { get; set; }
-        private Cliente Cliente { get; set; }
-        private String Nombre { get; set;}
-        private String Direccion { get; set;}
-        private int telefono { get; set;}
-        private String Correo { get; set;}
-    }
+    public List<Empleado> Empleado { get; set; }
+    public List<Software> Software { get; set; }
+    public List<Cliente> Cliente { get; set; }
+    public String Nombre { get; set; }
+    public String Direccion { get; set; }
+    public int Telefono { get; set; }
+    public String Correo { get; set; }
+}
 
 
 
-    }

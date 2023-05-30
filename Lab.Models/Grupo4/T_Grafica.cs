@@ -1,6 +1,6 @@
 ﻿using System;
-public class Grafica
-    //test
+public class T_Grafica
+//test
 {
     private int id;
     private string nombre;
@@ -9,7 +9,7 @@ public class Grafica
     private string marca;
     private double costo;
 
-    public Grafica(int id, string nombre, int vram, string conectores, string marca, double costo)
+    public T_Grafica(int id, string nombre, int vram, string conectores, string marca, double costo)
     {
         this.id = id;
         this.nombre = nombre;
@@ -17,6 +17,10 @@ public class Grafica
         this.conectores = conectores;
         this.marca = marca;
         this.costo = costo;
+    }
+
+    public T_Grafica()
+    {
     }
 
     public int GetId()
