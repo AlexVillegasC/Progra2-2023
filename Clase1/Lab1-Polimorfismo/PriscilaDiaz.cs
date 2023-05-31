@@ -74,5 +74,3 @@ namespace Labs.Lab1_Polimorfismo
         }
     }
 }
-
-}
