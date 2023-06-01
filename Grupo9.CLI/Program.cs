@@ -1,17 +1,34 @@
 ﻿
+using Infrastructure.Shared.Files;
+
 using Lab.Models.Grupo9;
-
-Envio envio = new Envio();
-
-envio.Cliente = new List<Cliente>();
-envio.Paquetes = new  List<Paquetes>();
-envio.Status = new List<Estatus>();
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
-Cliente primerCliente = new Cliente();
-primerCliente.Nombre = "Priscila Diaz";
-primerCliente.Direccion = "Quebrada Honda, Nicoya";
+Envio GetEnvio()
+{
+    var virtualPath = "../../../../Infrastructure.Shared/DB/Grupo9-Cliente.json";
+    FileRepository fileRepos = new FileRepository();
 
-envio.Cliente.Add(primerCliente);
+    //-string clienteJson = fileRepos.ReadJsonFileAsync<string>(virtualPath).Result;
+    List<Cliente> clientes = fileRepos.ReadJsonFileAsync<List<Cliente>>(virtualPath).Result;
 
-Console.WriteLine(envio.Cliente[0].Nombre);
+
+
+
+    Envio envio = new Envio();
+    envio.Clientes = clientes;
+    return envio;
+}
+
+ Envio envio = GetEnvio();
+
+foreach (var cliente in envio.Clientes)
+{
+    Console.WriteLine(cliente.Nombre);
+    Console.WriteLine(cliente.Direccion);
+    Console.WriteLine(cliente.Telefono);
+
+}

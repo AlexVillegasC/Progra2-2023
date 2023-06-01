@@ -1,0 +1,57 @@
+[
+    {
+        "Nombre": "John Smith",
+        "Direccion": "123 Main Street",
+        "Telefono": "555-1234"
+    },
+    {
+        "Nombre": "Jane Doe",
+        "Direccion": "456 Elm Avenue",
+        "Telefono": "555-5678"
+    },
+    {
+        "Nombre": "Michael Johnson",
+        "Direccion": "789 Oak Lane",
+        "Telefono": "555-9012"
+    },
+    {
+        "Nombre": "Emily Wilson",
+        "Direccion": "321 Pine Street",
+        "Telefono": "555-3456"
+    },
+    {
+        "Nombre": "Robert Anderson",
+        "Direccion": "654 Maple Drive",
+        "Telefono": "555-7890"
+    },
+    {
+        "Nombre": "Olivia Thompson",
+        "Direccion": "987 Cedar Road",
+        "Telefono": "555-2345"
+    },
+    {
+        "Nombre": "William Davis",
+        "Direccion": "741 Birch Court",
+        "Telefono": "555-6789"
+    },
+    {
+        "Nombre": "Sophia Martinez",
+        "Direccion": "369 Willow Lane",
+        "Telefono": "555-0123"
+    },
+    {
+        "Nombre": "James Taylor",
+        "Direccion": "258 Cherry Avenue",
+        "Telefono": "555-4567"
+    },
+    {
+        "Nombre": "Isabella Hernandez",
+        "Direccion": "603 Pine Street",
+        "Telefono": "555-8901"
+    }
+]
+
+
+
+
+
