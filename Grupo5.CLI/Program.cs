@@ -2,8 +2,14 @@
 
 using Lab.Models.Grupo5;
 
-Canciones canciones = new Canciones();
+Canciones GetMyCanciones()
+{
 
+}
+Canciones canciones = GetMyCanciones();
 
-
+foreach (var Album in canciones.Albums)
+{
+    Console.WriteLine(Album.NombreAlbum);
+}
 
