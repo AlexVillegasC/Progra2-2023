@@ -16,7 +16,7 @@ Prestamos ListaPrestamos()
     string clienteJson = fileRepo.ReadJsonFileAsync<string>(clientevirtualPath).Result;
     List<Libro> libros = JsonConvert.DeserializeObject<List<Libro>>(libroJson);
     List<Tarifa> tarifas = JsonConvert.DeserializeObject<List<Tarifa>>(tarifaJson);
-    List<Cliente> clientes = JsonConvert.DeserializeObject<List<Cliente>>(clienteJson);
+    List<Lab.Models.Grupo7.Cliente> clientes = JsonConvert.DeserializeObject<List<Lab.Models.Grupo7.Cliente>>(clienteJson);
 
     Prestamos prestamos = new Prestamos();
     prestamos.Libros = libros;
