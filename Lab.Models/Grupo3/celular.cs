@@ -8,8 +8,8 @@ namespace Lab.Models.Grupo3
 {
     public class Celular
     {
-        public List<Bateria> bateria { get; set; }
-        public List<Memoria> memoria { get; set; }
+        public List<Bateria> baterias { get; set; }
+        public List<Memoria> memorias { get; set; }
 
 
         public string Marca { get; set; }
