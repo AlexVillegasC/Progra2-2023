@@ -9,21 +9,10 @@ namespace Lab.Models.Grupo9
 
     public class Estatus
     {
-        private string codigo;
-        private string descripcion;
+        public string Codigo { get; set; }
+        public string Descripcion { get; set; }
 
-        public string Codigo
-        {
-            get { return codigo; }
-            set { codigo = value; }
-        }
-
-        public string Descripcion
-        {
-            get { return descripcion; }
-            set { descripcion = value; }
-        }
-
+  
 
 
         public void Registrar(string nuevoCodigo, string nuevaDescripcion)
