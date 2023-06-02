@@ -74,7 +74,7 @@ public class Crossfit : EjercicioBase
 
 internal class GabrielGonzalez
 {
-    public static void Run(string[] args)
+    public static void Run()
     {
         EjercicioBase gym = new Ejercicio("Rutina de Gym", "Plan alimenticio para Gym");
         EjercicioBase calistenia = new Calistenia("Rutina de Calistenia", "Plan alimenticio para Calistenia");
