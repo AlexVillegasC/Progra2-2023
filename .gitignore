@@ -15,3 +15,4 @@ project.fragment.lock.json
 *.vs/
 *.csproj.user
 *.userprefs
+/Lab.Models/Grupo6
