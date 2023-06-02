@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Grupo4\" />
+    <Compile Remove="Grupo4\**" />
+    <EmbeddedResource Remove="Grupo4\**" />
+    <None Remove="Grupo4\**" />
   </ItemGroup>
 
 </Project>

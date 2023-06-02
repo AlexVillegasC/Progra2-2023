@@ -1,0 +1,59 @@
+[
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 0.0,
+        "Status":"entregado"
+    },
+
+    {
+        "Codigo": 13,
+        "Remintente": "Andres Marin",
+        "Destinatario": "U Nacional ",
+        "Peso": 1.1,
+        "status": "Rechazado"
+    },
+
+    {
+        "Codigo": 14,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 2.2,
+        "Status": "Circulando"
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 3.3,
+        "Status": "Entregado"
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 4.4,
+        "Status": "Rechazado"
+
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 5.5,
+        "Status": "Circulando"
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 6.4,
+        "Status": "Entregado"
+    }
+ 
+]
