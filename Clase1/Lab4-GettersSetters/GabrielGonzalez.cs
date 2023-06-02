@@ -13,10 +13,10 @@ public interface IPlanAlimenticio
     void MostrarPlanAlimenticio();
 }
 
-public class EjercicioBase : IRutina, IPlanAlimenticio
+public abstract class EjercicioBase : IRutina, IPlanAlimenticio
 {
-    private string rutina;
-    private string planAlimenticio;
+    protected string rutina;
+    protected string planAlimenticio;
 
     public string Rutina
     {
@@ -36,21 +36,25 @@ public class EjercicioBase : IRutina, IPlanAlimenticio
         PlanAlimenticio = planAlimenticio;
     }
 
-    public void MostrarRutina()
-    {
-        Console.WriteLine("Rutina: " + Rutina);
-    }
+    public abstract void MostrarRutina();
 
-    public void MostrarPlanAlimenticio()
-    {
-        Console.WriteLine("Plan alimenticio: " + PlanAlimenticio);
-    }
+    public abstract void MostrarPlanAlimenticio();
 }
 
 public class Ejercicio : EjercicioBase
 {
     public Ejercicio(string rutina, string planAlimenticio) : base(rutina, planAlimenticio)
     {
+    }
+
+    public override void MostrarRutina()
+    {
+        Console.WriteLine("Rutina: " + Rutina);
+    }
+
+    public override void MostrarPlanAlimenticio()
+    {
+        Console.WriteLine("Plan alimenticio: " + PlanAlimenticio);
     }
 }
 
@@ -59,12 +63,32 @@ public class Calistenia : EjercicioBase
     public Calistenia(string rutina, string planAlimenticio) : base(rutina, planAlimenticio)
     {
     }
+
+    public override void MostrarRutina()
+    {
+        Console.WriteLine("Rutina de Calistenia: " + Rutina);
+    }
+
+    public override void MostrarPlanAlimenticio()
+    {
+        Console.WriteLine("Plan alimenticio para Calistenia: " + PlanAlimenticio);
+    }
 }
 
 public class Crossfit : EjercicioBase
 {
     public Crossfit(string rutina, string planAlimenticio) : base(rutina, planAlimenticio)
     {
+    }
+
+    public override void MostrarRutina()
+    {
+        Console.WriteLine("Rutina de Crossfit: " + Rutina);
+    }
+
+    public override void MostrarPlanAlimenticio()
+    {
+        Console.WriteLine("Plan alimenticio para Crossfit: " + PlanAlimenticio);
     }
 }
 
@@ -86,10 +110,5 @@ internal class GabrielGonzalez
     public static void MostrarInformacion(IRutina ejercicio)
     {
         ejercicio.MostrarRutina();
-    }
-
-    public static void MostrarInformacion(IPlanAlimenticio ejercicio)
-    {
-        ejercicio.MostrarPlanAlimenticio();
     }
 }
