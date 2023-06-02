@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 Prestamos ListaPrestamos() 
 {
-    //Datos de archivos JSon
+    //Datos de   archivos JSon
     var virtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Libro.json";
     var tarifavirtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Tarifa.json";
     var clientevirtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Cliente.json";
