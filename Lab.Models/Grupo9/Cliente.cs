@@ -8,12 +8,9 @@ namespace Lab.Models.Grupo9
     {
         public string Nombre { get; set; }
         public string Direccion { get; set; }
+        public string Telefono { get; set; }
 
-        public void AgregarCliente(string Nombre, string Direccion)
-        {
-            this.Nombre = Nombre;
-            this.Direccion = Direccion;
-        }
+    
     }
 
 }

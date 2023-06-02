@@ -9,6 +9,6 @@ public class Envio
 {
     public  List <Paquetes> Paquetes{ get; set; }
     public List <Estatus> Status { get; set; }
-    public List <Cliente> Cliente { get; set; }
+    public List <Cliente> Clientes { get; set; }
 
 }
