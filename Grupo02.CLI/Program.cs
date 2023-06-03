@@ -11,4 +11,8 @@ primerEntrega.Cantidad = 10;
 primerEntrega.TipoFruta = "verdura";
 
  inventario.Frutas.Add(primerEntrega);
+
+Console.WriteLine(primerEntrega.Cantidad);
+
+
         
