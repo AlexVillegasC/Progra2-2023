@@ -1,18 +1,26 @@
 ﻿
+using Infrastructure.Shared.Files;
 using Lab.Models.Grupo2;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 
-Inventario inventario = new Inventario();
+Inventario GetMyInventario()
+{   
+    var virtualPath = "../../../../Infrastructure.Shared/DB/Grupo02-Frutas.json";
+    FileRepository fileRepo = new FileRepository();
 
-inventario.Frutas = new List<Frutas>();
+    List<Frutas> frutas = fileRepo.ReadJsonFileAsync<List<Frutas>>(virtualPath).Result;
 
-Frutas primerEntrega = new Frutas();
+    Inventario inventario = new Inventario();
+    inventario.Frutas = frutas;
+    return inventario; 
+}
+ 
+Inventario myInventario = GetMyInventario();
 
-primerEntrega.Cantidad = 10;
-primerEntrega.TipoFruta = "verdura";
-
- inventario.Frutas.Add(primerEntrega);
-
-Console.WriteLine(primerEntrega.Cantidad);
-
-
-        
+    
+foreach (var frutas in myInventario.Frutas)
+{
+    Console.WriteLine(frutas.Cantidad);
+    Console.WriteLine(frutas.TipodeFruta);
+}
