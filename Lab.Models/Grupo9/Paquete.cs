@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
   namespace Lab.Models.Grupo9
   {
-        public class Paquetes
+        public class Paquete
         {
             public int Codigo { get; set; }
             public string Remitente { get; set; }
@@ -37,7 +37,7 @@ using System.Threading.Tasks;
         {
             public static void main()
             {
-                Paquetes miPaquete = new Paquetes();
+                Paquete miPaquete = new Paquete();
                 miPaquete.AgregarPaquete(1234, "Juan Perez", "Maria Gonzalez", 1.5);
                 miPaquete.ActualizarStatus("Entregado");
                 Console.WriteLine("El paquete", miPaquete.Codigo, miPaquete.Peso, miPaquete.Status);

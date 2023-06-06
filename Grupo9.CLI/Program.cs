@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
-Envio GetEnvio()
+Envio GetMiEnvio()
 {  
     //Datos del Archivo Json 
     var virtualPath = "../../../../Infrastructure.Shared/DB/Grupo9-Cliente.json";
@@ -15,28 +15,25 @@ Envio GetEnvio()
  
     FileRepository fileRepos = new FileRepository();
 
-
-    string clienteJson = fileRepos.ReadJsonFileAsync<string>(virtualPath).Result;
-    string statusJson = fileRepos.ReadJsonFileAsync<string>(virtualStatusPath).Result;
-    
-
-
-
-    List<Cliente> clientes = JsonConvert.DeserializeObject <List<Cliente>>(clienteJson);
-    List<Estatus> estatus = JsonConvert.DeserializeObject< List<Estatus>>(statusJson);
-    
+    List<Cliente> clientes = fileRepos.ReadJsonFileAsync<List<Cliente>>(virtualPath).Result;
+    List<Status> statuses = fileRepos.ReadJsonFileAsync<List<Status>>(virtualStatusPath).Result;
 
 
 
 
-    Envio envio = new Envio();
-    envio.Clientes = clientes;
-    envio.Status= estatus;
 
-    return envio;
+
+    Envio Mienvio = new Envio();
+    Mienvio.Clientes = clientes;
+    Mienvio.Statuses= statuses;
+
+    return Mienvio;
 }
 
- Envio envio = GetEnvio();
+ Envio envio = GetMiEnvio();
+
+Console.WriteLine("CLIENTE");
+Console.WriteLine("");
 
 foreach (var cliente in envio.Clientes)
 {
@@ -45,13 +42,15 @@ foreach (var cliente in envio.Clientes)
     Console.WriteLine(cliente.Telefono);
 
 }
+Console.WriteLine("");
+Console.WriteLine("STATUS");
+Console.WriteLine("");
 
-foreach(var status in envio.Status)
+foreach (var status in envio.Statuses)
 {
-    Console.WriteLine(status.Codigo);
-    Console.WriteLine(status.Descripcion);
+   Console.WriteLine(status.Codigo);
+   Console.WriteLine(status.Descripcion);
     
     
-
 }
 

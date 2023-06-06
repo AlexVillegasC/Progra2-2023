@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Lab.Models.Grupo9
 {
 
-    public class Estatus
+    public class Status
     {
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
