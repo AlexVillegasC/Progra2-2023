@@ -1,0 +1,62 @@
+[
+    {
+
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 0.0,
+        
+    },
+
+    {
+        "Codigo": 13,
+        "Remintente": "Andres Marin",
+        "Destinatario": "U Nacional ",
+        "Peso": 1.1,
+       
+    },
+
+    {
+        "Codigo": 14,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 2.2,
+       
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 3.3,
+        
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 4.4,
+        
+
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 5.5,
+       
+    },
+
+    {
+        "Codigo": 12,
+        "Remintente": "Josue Fernandez",
+        "Destinatario": "Universidad Nacional ",
+        "Peso": 6.4,
+        
+
+
+    }
+
+]

@@ -8,15 +8,19 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 Envio GetMiEnvio()
-{  
+{
     //Datos del Archivo Json 
     var virtualPath = "../../../../Infrastructure.Shared/DB/Grupo9-Cliente.json";
     var virtualStatusPath = "../../../../Infrastructure.Shared/DB/Grupo9-Status.json";
- 
+    //var virtualPaquetePath = "../../../../Infrastructure.Shared/DB/Grupo9-Paquete.json";
+
+
     FileRepository fileRepos = new FileRepository();
 
     List<Cliente> clientes = fileRepos.ReadJsonFileAsync<List<Cliente>>(virtualPath).Result;
     List<Status> statuses = fileRepos.ReadJsonFileAsync<List<Status>>(virtualStatusPath).Result;
+    //List<Paquete> paquetes = fileRepos.ReadJsonFileAsync<List<Status>>(virtualPaquetePath).Result;
+}
 
 
 
@@ -26,8 +30,9 @@ Envio GetMiEnvio()
     Envio Mienvio = new Envio();
     Mienvio.Clientes = clientes;
     Mienvio.Statuses= statuses;
+    //Mienvio.Paquetes = paquetes ;
 
-    return Mienvio;
+return Mienvio;
 }
 
  Envio envio = GetMiEnvio();
@@ -53,4 +58,6 @@ foreach (var status in envio.Statuses)
     
     
 }
+
+
 
