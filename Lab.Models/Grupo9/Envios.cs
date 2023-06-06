@@ -7,8 +7,8 @@ using Lab.Models.Grupo9;
 
 public class Envio
 {
-    public  List <Paquetes> Paquetes{ get; set; }
-    public List <Estatus> Status { get; set; }
+    public  List <Paquete> Paquetes{ get; set; }
+    public List <Status> Statuses { get; set; }
     public List <Cliente> Clientes { get; set; }
 
 }
