@@ -16,8 +16,8 @@ ReportePlanilla GetReportePlanilla()
 
 ReportePlanilla reportePlanilla = GetReportePlanilla();
 
-foreach(var empleado in reportePlanilla.Empleados)
-{ 
+foreach (var empleado in reportePlanilla.Empleados)
+{
     Console.WriteLine("El id del empleado es: " + empleado.Id);
     Console.WriteLine("El nombre del empleado es:" + empleado.Nombre);
     Console.WriteLine("Su departamento es: " + empleado.Departamento?.NombreDepartamento);
