@@ -1,0 +1,2 @@
+﻿
+Cotizaciones cotizaciones = new Cotizaciones();
