@@ -28,6 +28,9 @@ foreach (var frutas in myInventario.Frutas)
     Console.WriteLine(frutas.Cantidad);
     Console.WriteLine(frutas.TipodeFruta);
 }
+
+Console.WriteLine("Bebidas");
+
 foreach (var bebidas in myInventario.Bebidas)
 {
 	Console.WriteLine(bebidas.Marcas);
