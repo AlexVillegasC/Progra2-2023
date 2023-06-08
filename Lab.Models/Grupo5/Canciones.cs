@@ -11,7 +11,7 @@ public class Canciones
 {
     public  List<string> listaCanciones = new List<string>();
     public List<Album> Albums { get; set; }
-    public List<Artista> listaArtistas = new List<Artista>();
+    public List<Artista> Artistas { get; set; }
     public List<Letra> Letras { get; set; }
 
     /*  public void AgregarCancion(string nombreCancion, Album album, Artista artista, Letra letra)
