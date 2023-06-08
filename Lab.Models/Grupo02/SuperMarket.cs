@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab.Models.Grupo2
+namespace Lab.Models.Grupo02
 {
-    public class Frutas
+    internal class SuperMarket
     {
-        public int Cantidad { get; set; }
-        public string TipodeFruta { get; set; }
+        SuperMarket() 
+        { 
         
+        }
+
     }
 }
