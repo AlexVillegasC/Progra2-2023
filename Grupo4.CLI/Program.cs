@@ -2,31 +2,33 @@
 
 using Lab.Models.Grupo4;
 
-CPU cpu = new CPU();
-
-cpu.Cases = new List<Case>();
-cpu.TarjetaGraficas = new List<T_Grafica>();
-cpu.Almacenamientos = new List<Almacenamiento>();
-
-Case dato1 = new Case();
+internal class Program
 {
-    dato1.Id = 01;
-    dato1.Nombre = "Lian Li";
-    dato1.Tamanno = 2.5;
-    dato1.Color = "Blanco";
-    dato1.Costo = 130000;
-    dato1.Forma = "Cuadrado";
-}
-cpu.Cases.Add(dato1);
-Console.WriteLine(cpu.Cases[0].Color);
+    private static void Main(string[] args)
+    {
+        cpu GetCase()
+        {
+            var virtualPath = "Infrastructure.Shared\\DB\\Grupo4-Case.json"
+            FileRepository fileRepo = new FileRepository();
 
-foreach (var Case in cpu.Cases)
-{
-    Console.WriteLine(Case.Id);
-    Console.WriteLine(Case.Nombre);
-    Console.WriteLine(Case.Tamanno);
-    Console.WriteLine(Case.Color);
-    Console.WriteLine(Case.Costo);
-    Console.WriteLine(Case.Forma);
-}
+            string caseJson = fileRepo. ReadJsonFileAsync<string>(virtualPath).Result;
+            List <Case> Case = JsonConvert caseJson;
 
+            Cpu cpu = new cpu ();
+            cpu.case = case;
+            return cpu;
+        }
+
+        CPU cpu = new GetCase();
+
+        foreach (var Case in cpu.Cases)
+        {
+            Console.WriteLine(Case.Id);
+            Console.WriteLine(Case.Nombre);
+            Console.WriteLine(Case.Tamanno);
+            Console.WriteLine(Case.Color);
+            Console.WriteLine(Case.Costo);
+            Console.WriteLine(Case.Forma);
+        }
+    }
+}
