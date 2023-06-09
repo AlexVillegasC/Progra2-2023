@@ -1,0 +1,32 @@
+[
+  {
+    "Tarifa": 1400,
+    "Impuesto": 100,
+    "Descuento": 0,
+    "RangoDeCotizacion": "1KG-2KG"
+  },
+  {
+    "Tarifa": 2800,
+    "Impuesto": 150,
+    "Descuento": 0,
+    "RangoDeCotizacion": "2KG-3KG"
+  },
+  {
+    "Tarifa": 4200,
+    "Impuesto": 200,
+    "Descuento": 50,
+    "RangoDeCotizacion": "3KG-4KG"
+  },
+  {
+    "Tarifa": 5600,
+    "Impuesto": 250,
+    "Descuento": 25,
+    "RangoDeCotizacion": "4KG-5KG"
+  },
+  {
+    "Tarifa": 7000,
+    "Impuesto": 300,
+    "Descuento": 15,
+    "RangoDeCotizacion": "5KG-7sKG"
+  },
+]
