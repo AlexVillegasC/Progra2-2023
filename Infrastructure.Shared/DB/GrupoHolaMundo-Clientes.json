@@ -1,0 +1,52 @@
+[
+  {
+    "Nombre": "John",
+    "Apellidos": "Doe",
+    "Cedula": 123456789
+  },
+  {
+    "Nombre": "Jane",
+    "Apellidos": "Smith",
+    "Cedula": 987654321
+  },
+  {
+    "Nombre": "Michael",
+    "Apellidos": "Johnson",
+    "Cedula": 456789123
+  },
+  {
+    "Nombre": "Emily",
+    "Apellidos": "Brown",
+    "Cedula": 789123456
+  },
+  {
+    "Nombre": "Daniel",
+    "Apellidos": "Taylor",
+    "Cedula": 654321987
+  },
+  {
+    "Nombre": "Olivia",
+    "Apellidos": "Clark",
+    "Cedula": 321987654
+  },
+  {
+    "Nombre": "David",
+    "Apellidos": "Anderson",
+    "Cedula": 987654123
+  },
+  {
+    "Nombre": "Sophia",
+    "Apellidos": "Harris",
+    "Cedula": 654321789
+  },
+  {
+    "Nombre": "Andrew",
+    "Apellidos": "Walker",
+    "Cedula": 789123654
+  },
+  {
+    "Nombre": "Mia",
+    "Apellidos": "Lewis",
+    "Cedula": 456987321
+  }
+]
