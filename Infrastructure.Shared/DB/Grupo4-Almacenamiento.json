@@ -1,9 +1,23 @@
 [
   {
     "id": 1,
-    "nombre": "Almacenamiento 1",
+    "nombre": "Almacenamiento1",
     "capacidad": 500,
-    "dimensiones": "10x5x2",
-    "costo": 100.0
+    "dimensiones": "20x10x5",
+    "costo": 99.99
+  },
+  {
+    "id": 2,
+    "nombre": "Almacenamiento2",
+    "capacidad": 1000,
+    "dimensiones": "30x15x8",
+    "costo": 149.99
+  },
+  {
+    "id": 3,
+    "nombre": "Almacenamiento3",
+    "capacidad": 250,
+    "dimensiones": "15x8x3",
+    "costo": 49.99
   }
 ]
