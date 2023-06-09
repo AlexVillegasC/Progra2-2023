@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab.Models.GrupoGamma;
-
-public class Cliente
+namespace Lab.Models.GrupoGamma
 {
-    public string Nombre { get; set; }
-    public int Id { get; set; }
-    public int Telefono { get; set; }
+    public class Cliente
+    {
+        public string Nombre { get; set; }
+        public int Id { get; set; }
+        public int Telefono { get; set; }
+    }
 }
