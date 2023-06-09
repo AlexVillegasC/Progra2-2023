@@ -5,15 +5,15 @@ using Newtonsoft.Json;
         CPU GetCase()
         {
             // RUTA CASE
-            var PathCase = "C:\\repo_progra\\Infrastructure.Shared\\DB\\Grupo4-Case.json";
+            var PathCase = "C:\\Progra2\\Infrastructure.Shared\\DB\\Grupo4-Case.json";
             FileRepository fileRepoCase = new FileRepository();
             
             // RUTA ALMACENAMIENTO
-            var PathStorage = "C:\\repo_progra\\Infrastructure.Shared\\DB\\Grupo4-Almacenamiento.json";
+            var PathStorage = "C:\\Progra2\\Infrastructure.Shared\\DB\\Grupo4-Almacenamiento.json";
             FileRepository fileRepoStorage = new FileRepository();
 
            // RUTA T_GRAFICA 
-           var PathGraph = "C:\\repo_progra\\Infrastructure.Shared\\DB\\Grupo4-T_Grafica.json";
+           var PathGraph = "C:\\Progra2\\Infrastructure.Shared\\DB\\Grupo4-T_Grafica.json";
            FileRepository fileRepoGraph = new FileRepository();
 
 
