@@ -1,0 +1,45 @@
+
+  [
+
+    {
+      "Codigo": "001",
+      "Descripcion": "Enviado"
+    },
+    {
+      "Codigo": "002",
+      "Descripcion": "Entregado"
+    },
+    {
+      "Codigo": "003",
+      "Descripcion": "En Camino"
+    },
+    {
+      "Codigo": "004",
+      "Descripcion": "Enviado"
+    },
+    {
+      "Codigo": "005",
+      "Descripcion": "En Camino"
+    },
+    {
+      "Codigo": "006",
+      "Descripcion": "Entregado"
+    },
+    {
+      "Codigo": "007",
+      "Descripcion": "Enviado"
+    },
+    {
+      "Codigo": "008",
+      "Descripcion": "En Camino"
+    },
+    {
+      "Codigo": "009",
+      "Descripcion": "Entregado"
+    },
+    {
+      "Codigo": "010",
+      "Descripcion": "Enviado"
+    }
+
+  ]
