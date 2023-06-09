@@ -5,12 +5,12 @@ using Newtonsoft.Json;
 ReportePlanilla GetReportePlanilla()
 
 {
-    var virtualpath = "../../../../Infrastructure.Shared/DB/grupo10-Empleado.json";
+    var Empleadovirtualpath = "../../../../Infrastructure.Shared/DB/grupo10-Empleado.json";
     var DepartamentovirtualPath = "../../../../Infrastructure.Shared/DB/grupo10-departamento.json";
 
     FileRepository fileRepository = new FileRepository();
     
-    List<Empleado> empleados = fileRepository.ReadJsonFileAsync<List<Empleado>>(DepartamentovirtualPath).Result;
+    List<Empleado> empleados = fileRepository.ReadJsonFileAsync<List<Empleado>>(Empleadovirtualpath).Result;
     List<Departamento> departamentos = fileRepository.ReadJsonFileAsync<List<Departamento>>(DepartamentovirtualPath).Result;
 
     
@@ -24,7 +24,6 @@ ReportePlanilla GetReportePlanilla()
 ReportePlanilla reportePlanilla = GetReportePlanilla();
 
 foreach (var empleado in reportePlanilla.Empleados)
-foreach (var departamento in reportePlanilla.departamentos)
 {
     Console.WriteLine("El id del empleado es: " + empleado.Id);
     Console.WriteLine("El nombre del empleado es:" + empleado.Nombre);
