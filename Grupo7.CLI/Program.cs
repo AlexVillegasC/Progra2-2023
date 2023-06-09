@@ -11,7 +11,7 @@ Prestamos ListaPrestamos()
     var clientevirtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Cliente.json";
     FileRepository fileRepo = new FileRepository();
 
-    string libroJson = fileRepo.ReadJsonFileAsync<string>(virtualPath).Result;
+    string libroJson = fileRepo.ReadJsonFileAsync<string>(libroVirtualPath).Result;
     string tarifaJson = fileRepo.ReadJsonFileAsync<string>(tarifavirtualPath).Result;
     string clienteJson = fileRepo.ReadJsonFileAsync<string>(clientevirtualPath).Result;
     List<Libro> libros = JsonConvert.DeserializeObject<List<Libro>>(libroJson);
