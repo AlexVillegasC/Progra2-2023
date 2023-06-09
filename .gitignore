@@ -15,3 +15,4 @@ project.fragment.lock.json
 *.vs/
 *.csproj.user
 *.userprefs
+/Infrastructure.Shared/DB/Grupo4-Almacenamiento.json
