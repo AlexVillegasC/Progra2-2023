@@ -6,5 +6,5 @@ public interface IPrestamoRepository
 {
     Task<List<Libro>> GetLibros();
     Task<List<Tarifa>> GetTarifas();
-    Task<List<Cliente>> GetClientes();
+    Task<List<Lab.Models.Grupo7.Cliente>> GetClientes();
 }

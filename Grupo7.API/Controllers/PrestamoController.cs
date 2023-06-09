@@ -9,17 +9,17 @@ namespace Grupo7.API.Controllers
     public class PrestamoController : Controller
     {
 
-        private readonly PrestamoService prestamoServices;
+        private readonly PrestamoService _prestamoServices;
 
         public PrestamoController(PrestamoService prestamoServices) 
         {
-            _prestamoServices = prestamoService;
+            _prestamoServices = prestamoServices;
         }
 
         [HttpGet(Name = "GetPrestamo")]
         public Task<Prestamos> Get()
         {
-            return _prestamoServices.GetPrestamo();
+            return _prestamoServices.ListaPrestamo();
         }
     }
 }

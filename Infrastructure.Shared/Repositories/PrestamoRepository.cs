@@ -19,8 +19,8 @@ public class PrestamoRepository : FileRepository, IPrestamoRepository
         return await ReadJsonFileAsync<List<Tarifa>>(tarifavirtualPath);
     }
 
-    public async Task<List<Cliente>> GetClientes()
+    public async Task<List<Lab.Models.Grupo7.Cliente>> GetClientes()
     {
-        return await ReadJsonFileAsync<List<Cliente>>(clientevirtualPath);
+        return await ReadJsonFileAsync<List<Lab.Models.Grupo7.Cliente>>(clientevirtualPath);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Infrastructure.Shared.Repositories;
 using Lab.Models.Grupo7;
 
+
 namespace Proyecto.Application.Services;
 
 public class PrestamoService
@@ -16,7 +17,7 @@ public class PrestamoService
     public async Task<Prestamos> ListaPrestamo()
     {
         List<Libro> libros = await _prestamoRepository.GetLibros();
-        List<Cliente> clientes = await _prestamoRepository.GetClientes();
+        List<Lab.Models.Grupo7.Cliente> clientes = await _prestamoRepository.GetClientes();
         List<Tarifa> tarifas = await _prestamoRepository.GetTarifas();
 
 
