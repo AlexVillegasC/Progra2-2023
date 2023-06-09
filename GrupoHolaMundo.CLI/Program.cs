@@ -12,7 +12,7 @@ int cedula;
 
 for (int i = 0; i < 5; i++)
 {
-    Console.WriteLine("Ingrese los datos de los clientes en el siguiente orden (nombre, apellidos, cedula)", "", "Cliente "+ (i+1));
+    Console.WriteLine("Ingrese los datos de los clientes en el siguiente orden (nombre, apellidos, cedula)", "", "Cliente " + (i + 1));
 
     nombre = Console.ReadLine();
     apellidos = Console.ReadLine();
@@ -20,7 +20,7 @@ for (int i = 0; i < 5; i++)
     Cliente cliente = new Cliente() { Nombre = nombre, Apellidos = apellidos, Cedula = cedula };
     alquiler.cliente.Add(cliente);
     Console.Clear();
- }
+}
 
 
 
