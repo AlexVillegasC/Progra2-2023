@@ -1,8 +1,10 @@
-{
+[
+  {
     "id": 1,
     "nombre": "Grafica 1",
     "vram": 4,
     "conectores": "HDMI, DisplayPort",
     "marca": "Nvidia",
     "costo": 200.0
-}
+  }
+]
