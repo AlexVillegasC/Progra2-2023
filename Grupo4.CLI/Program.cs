@@ -1,20 +1,21 @@
 ﻿
 
+using Infrastructure.Shared.Files;
 using Lab.Models.Grupo4;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        cpu GetCase()
+        CPU GetCase()
         {
-            var virtualPath = "Infrastructure.Shared\\DB\\Grupo4-Case.json"
+            var virtualPath = "Infrastructure.Shared\\DB\\Grupo4-Case.json";
             FileRepository fileRepo = new FileRepository();
 
             string caseJson = fileRepo. ReadJsonFileAsync<string>(virtualPath).Result;
             List <Case> Case = JsonConvert caseJson;
 
-            Cpu cpu = new cpu ();
+            CPU cpu = new CPU ();
             cpu.case = case;
             return cpu;
         }
