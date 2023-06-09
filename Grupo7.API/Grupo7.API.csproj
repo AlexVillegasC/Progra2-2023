@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.Shared\Infrastructure.Shared.csproj" />
     <ProjectReference Include="..\Lab.Models\Lab.Models.csproj" />
+    <ProjectReference Include="..\Proyecto.Application\Proyecto.Application.csproj" />
   </ItemGroup>
 
 </Project>
