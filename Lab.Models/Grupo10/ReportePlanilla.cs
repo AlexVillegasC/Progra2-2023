@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 public class ReportePlanilla
 {
-    private List<Departamento> departamentos;
+    public List<Departamento> departamentos;
     private List<Salario> Salarios;
 
     public List<Empleado> Empleados { get; set; }

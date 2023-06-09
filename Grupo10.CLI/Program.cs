@@ -6,12 +6,18 @@ ReportePlanilla GetReportePlanilla()
 
 {
     var virtualpath = "../../../../Infrastructure.Shared/DB/grupo10-Empleado.json";
+    var DepartamentovirtualPath = "../../../../Infrastructure.Shared/DB/grupo10-departamento.json";
+
     FileRepository fileRepository = new FileRepository();
     
     List<Empleado> empleados = fileRepository.ReadJsonFileAsync<List<Empleado>>(virtualpath).Result;
+    List<Departamento> departamentos = fileRepository.ReadJsonFileAsync<List<Departamento>>(virtualpath).Result;
+
     
     ReportePlanilla reportePlanilla = new ReportePlanilla();
     reportePlanilla.Empleados = empleados;
+    reportePlanilla.departamentos = departamentos;
+    
     return reportePlanilla;
 }
 
