@@ -1,0 +1,52 @@
+[
+    {
+        "EspacioTotal": 123,
+        "EspacioUsado": 45,
+        "EspacioLibre": 78
+    },
+    {
+        "EspacioTotal": 456,
+        "EspacioUsado": 78,
+        "EspacioLibre": 378
+    },
+    {
+        "EspacioTotal": 789,
+        "EspacioUsado": 12,
+        "EspacioLibre": 777
+    },
+    {
+        "EspacioTotal": 321,
+        "EspacioUsado": 90,
+        "EspacioLibre": 231
+    },
+    {
+        "EspacioTotal": 654,
+        "EspacioUsado": 34,
+        "EspacioLibre": 620
+    },
+    {
+        "EspacioTotal": 987,
+        "EspacioUsado": 56,
+        "EspacioLibre": 931
+    },
+    {
+        "EspacioTotal": 135,
+        "EspacioUsado": 23,
+        "EspacioLibre": 112
+    },
+    {
+        "EspacioTotal": 246,
+        "EspacioUsado": 78,
+        "EspacioLibre": 168
+    },
+    {
+        "EspacioTotal": 579,
+        "EspacioUsado": 45,
+        "EspacioLibre": 534
+    },
+    {
+        "EspacioTotal": 864,
+        "EspacioUsado": 12,
+        "EspacioLibre": 852
+    }
+]
