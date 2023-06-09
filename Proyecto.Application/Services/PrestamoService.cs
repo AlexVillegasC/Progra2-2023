@@ -23,7 +23,7 @@ public class PrestamoService
         Prestamos Prestamo = new Prestamos()
         {
             Libros = libros,
-            Clientes = cliente,
+            Clientes = clientes,
             Tarifas = tarifas
         };
 
