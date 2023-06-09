@@ -15,12 +15,12 @@ Alquiler GetDatosAlquiler()
 
     List<Casa> casas = fileRepo.ReadJsonFileAsync<List<Casa>>(casasVirtualPath).Result;
     List<Cliente> clientes = fileRepo.ReadJsonFileAsync<List<Cliente>>(clientesVirtualPath).Result;
-    List<Paquetes> paquetes = fileRepo.ReadJsonFileAsync<List<Paquetes>>(paquetesVirtualPath).Result;
+    List<PaqueteInternet> paquetes = fileRepo.ReadJsonFileAsync<List<PaqueteInternet>>(paquetesVirtualPath).Result;
 
     Alquiler alquiler = new Alquiler();
-    alquiler.Casa = casas;
-    alquiler.Cliente = clientes;
-    alquiler.PaqueteInternet = paquetes;
+    alquiler.casa = casas;
+    alquiler.cliente = clientes;
+    alquiler.paquete = paquetes;
 
     return alquiler;
 }
@@ -29,28 +29,32 @@ Alquiler myAlquiler = GetDatosAlquiler();
 
 Console.WriteLine("Casa:");
 
-foreach (var casa in myAlquiler.Casas)
+foreach (var casa1 in myAlquiler.casa)
 {
-    Console.WriteLine(casa.habitaciones);
-    Console.WriteLine(casa.banos);
-    Console.WriteLine(casa.comedor);
-    Console.WriteLine(casa.piscina);
+    Console.WriteLine(casa1.Habitaciones);
+    Console.WriteLine(casa1.Banos);
+    Console.WriteLine(casa1.Comedor);
+    Console.WriteLine(casa1.Piscina);
 }
 
 Console.WriteLine("Cliente:");
-foreach (var clientes in myAlquiler.Clientes)
+foreach (var clientes in myAlquiler.cliente)
 {
-    Console.WriteLine(clientes.nombre);
-    Console.WriteLine(clientes.apellidos);
-    Console.WriteLine(clientes.cedula);
+    Console.WriteLine(clientes.Nombre);
+    Console.WriteLine(clientes.Apellidos);
+    Console.WriteLine(clientes.Cedula);
 }
 
 Console.WriteLine("Paquetes:");
-foreach (var paquetes in myAlquiler.Paquetes)
+foreach (var paquetes in myAlquiler.paquete)
 {
-    Console.WriteLine(paquetes.velocidad);
-    Console.WriteLine(paquetes.precio);
+    Console.WriteLine(paquetes.Velocidad);
+    Console.WriteLine(paquetes.Precio);
 }
+
+
+
+/*
 
     Alquiler alquiler = new Alquiler();
     alquiler.Casa = casas;
@@ -58,7 +62,7 @@ foreach (var paquetes in myAlquiler.Paquetes)
     alquiler.PaqueteInternet = paquetes;
 
     return alquiler;
-}
+}*/
 
 
 
