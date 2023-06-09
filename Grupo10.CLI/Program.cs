@@ -10,8 +10,8 @@ ReportePlanilla GetReportePlanilla()
 
     FileRepository fileRepository = new FileRepository();
     
-    List<Empleado> empleados = fileRepository.ReadJsonFileAsync<List<Empleado>>(virtualpath).Result;
-    List<Departamento> departamentos = fileRepository.ReadJsonFileAsync<List<Departamento>>(virtualpath).Result;
+    List<Empleado> empleados = fileRepository.ReadJsonFileAsync<List<Empleado>>(DepartamentovirtualPath).Result;
+    List<Departamento> departamentos = fileRepository.ReadJsonFileAsync<List<Departamento>>(DepartamentovirtualPath).Result;
 
     
     ReportePlanilla reportePlanilla = new ReportePlanilla();
@@ -24,6 +24,7 @@ ReportePlanilla GetReportePlanilla()
 ReportePlanilla reportePlanilla = GetReportePlanilla();
 
 foreach (var empleado in reportePlanilla.Empleados)
+foreach (var departamento in reportePlanilla.departamentos)
 {
     Console.WriteLine("El id del empleado es: " + empleado.Id);
     Console.WriteLine("El nombre del empleado es:" + empleado.Nombre);
