@@ -40,7 +40,6 @@ foreach (var box in cpu.Cases)
     Console.WriteLine(box.Costo);
     Console.WriteLine(box.Forma);
 }
-Console.WriteLine("++++++++++++++++++++++++++Cases++++++++++++++++++++++++++++++++++");
 
 Console.WriteLine("++++++++++++++++++++++++++Almacenamientos++++++++++++++++++++++++");
 foreach (var box in cpu.Almacenamientos)
@@ -51,7 +50,7 @@ foreach (var box in cpu.Almacenamientos)
     Console.WriteLine(box.dimensiones);
     Console.WriteLine(box.costo);
 }
-Console.WriteLine("++++++++++++++++++++++++++Almacenamientos++++++++++++++++++++++++");
+
 Console.WriteLine("++++++++++++++++++++++++++Tarjeta Graficas+++++++++++++++++++++++");
 foreach (var box in cpu.TarjetaGraficas)
 {
@@ -62,4 +61,3 @@ foreach (var box in cpu.TarjetaGraficas)
     Console.WriteLine(box.marca);
     Console.WriteLine(box.costo);
 }
-Console.WriteLine("++++++++++++++++++++++++++Tarjeta Graficas+++++++++++++++++++++++");
