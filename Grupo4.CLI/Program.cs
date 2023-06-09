@@ -1,26 +1,21 @@
-﻿
-
-using Infrastructure.Shared.Files;
+﻿using Infrastructure.Shared.Files;
 using Lab.Models.Grupo4;
+using Newtonsoft.Json;
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
         CPU GetCase()
         {
-            var virtualPath = "Infrastructure.Shared\\DB\\Grupo4-Case.json";
+            var virtualPath = "C:\\Users\\yoili\\Documents\\REPOSITORIO PROGRA\\Infrastructure.Shared\\DB\\Grupo4-Case.json";
             FileRepository fileRepo = new FileRepository();
 
-            string caseJson = fileRepo. ReadJsonFileAsync<string>(virtualPath).Result;
-            List <Case> Case = JsonConvert caseJson;
+            /*string caseJson = fileRepo. ReadJsonFileAsync<string>(virtualPath).Result;*/
+            List <Case> cases = fileRepo.ReadJsonFileAsync<List<Case>>(virtualPath).Result;
 
-            CPU cpu = new CPU ();
-            cpu.case = case;
-            return cpu;
+           CPU cpu = new CPU ();
+           cpu.Cases = cases;
+           return cpu;
         }
 
-        CPU cpu = new GetCase();
+      CPU cpu = GetCase();
 
         foreach (var Case in cpu.Cases)
         {
@@ -31,5 +26,3 @@ internal class Program
             Console.WriteLine(Case.Costo);
             Console.WriteLine(Case.Forma);
         }
-    }
-}
