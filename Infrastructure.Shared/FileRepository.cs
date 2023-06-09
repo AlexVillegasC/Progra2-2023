@@ -10,7 +10,7 @@ public class FileRepository : IFileRepository
         using StreamReader reader = new StreamReader(filePath);
         string json = await reader.ReadToEndAsync();
         return JsonConvert.DeserializeObject<T>(json);
-       // return await reader.ReadToEndAsync();
+
     }
 
     public async Task WriteJsonFileAsync<T>(string filePath, T data)
