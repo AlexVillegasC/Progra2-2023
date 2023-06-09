@@ -13,8 +13,8 @@ Alquiler GetDatosAlquiler()
 
     FileRepository fileRepo = new FileRepository();
 
-    List<Casas> casas = fileRepo.ReadJsonFileAsync<List<Casas>>(casasVirtualPath).Result;
-    List<Clientes> clientes = fileRepo.ReadJsonFileAsync<List<Clientes>>(clientesVirtualPath).Result;
+    List<Casa> casas = fileRepo.ReadJsonFileAsync<List<Casa>>(casasVirtualPath).Result;
+    List<Cliente> clientes = fileRepo.ReadJsonFileAsync<List<Cliente>>(clientesVirtualPath).Result;
     List<Paquetes> paquetes = fileRepo.ReadJsonFileAsync<List<Paquetes>>(paquetesVirtualPath).Result;
 
     Alquiler alquiler = new Alquiler();
