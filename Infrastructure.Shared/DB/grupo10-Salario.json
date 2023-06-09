@@ -2,53 +2,53 @@
   {
     "Id": "705690263",
     "Roll": "Gerente General",
-    "Monto" : "1 200 000"
+    "Monto" : 1200000
 
   },
   {
     "Id": "501230654",
     "Roll": "Secretaria",
-    "Monto" : "320 000"
+    "Monto" : 320000
   },
   {
     "Id": "102650456",
     "Roll": "Abogado",
-    "Monto" : "1 120 550"
+    "Monto" : 1120550
   },
   {
     "Id": "605660859",
     "Roll": "Contador",
-    "Monto" : "550 600"
+    "Monto" : 550600
   },
   {
     "Id": "208750412",
     "Roll": "Enfermero",
-    "Monto" : "856 580"
+    "Monto" : 856580
   },
   {
     "Id": "30560159",
     "Roll": "Diseñador Grafico",
-    "Monto" : "500 000"
+    "Monto" : 500000
   },
   {
     "Id": "408940785",
     "Roll": "Especialista en marketing digital",
-    "Monto" : "750 280"
+    "Monto" : 750280
   },
   {
     "Id": "508120645",
     "Roll": "Analista de recursos humanos",
-    "Monto" : "660 105"
+    "Monto" : 660105
   },
   {
     "Id": "604860512",
     "Roll": "ingeniero de software",
-    "Monto" : "1,068,413"
+    "Monto" : 1068413
   },
   {
     "Id": "20560159",
     "Roll": "Tecnico de soporte tecnico",
-    "Monto" : "672 480"
+    "Monto" : 672480
   }
 
 ]
