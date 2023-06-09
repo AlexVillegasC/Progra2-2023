@@ -30,12 +30,12 @@ Alquiler myAlquiler = GetDatosAlquiler();
 Console.WriteLine("Casa:");
 
 foreach (var casa in myAlquiler.Casas)
-    {
+{
     Console.WriteLine(casa.habitaciones);
     Console.WriteLine(casa.banos);
     Console.WriteLine(casa.comedor);
     Console.WriteLine(casa.piscina);
-    }
+}
 
 Console.WriteLine("Cliente:");
 foreach (var clientes in myAlquiler.Clientes)
@@ -43,7 +43,7 @@ foreach (var clientes in myAlquiler.Clientes)
     Console.WriteLine(clientes.nombre);
     Console.WriteLine(clientes.apellidos);
     Console.WriteLine(clientes.cedula);
-    }
+}
 
 Console.WriteLine("Paquetes:");
 foreach (var paquetes in myAlquiler.Paquetes)
