@@ -1,4 +1,4 @@
-﻿//CleanArchitectureJson.Infrastructure/FileRepository.cs
+﻿// CleanArchitectureJson.Infrastructure/FileRepository.cs
 using Newtonsoft.Json;
 
 namespace Infrastructure.Shared.Files;
@@ -10,7 +10,6 @@ public class FileRepository : IFileRepository
         using StreamReader reader = new StreamReader(filePath);
         string json = await reader.ReadToEndAsync();
         return JsonConvert.DeserializeObject<T>(json);
-
     }
 
     public async Task WriteJsonFileAsync<T>(string filePath, T data)
