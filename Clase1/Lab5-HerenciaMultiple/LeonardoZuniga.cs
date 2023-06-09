@@ -20,8 +20,8 @@ namespace Labs.Lab5_HerenciaMultiple
 
     public class Pez : IHerenciaMultiple ,  IIHerenciaMultiple
     {
-        public void nadar() {
-            Console.WriteLine("Esta nadando");
+        public void nadar() { 
+            Console.WriteLine("Esta nadando")
         }
 
         public void comer()

@@ -8,4 +8,3 @@ public class Wind
 
     public string Direction { get; set; } // Wind direction in compass direction (N, S, E, W, NE, NW, SE, SW)   
 }
-
