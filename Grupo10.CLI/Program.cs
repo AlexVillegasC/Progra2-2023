@@ -43,7 +43,7 @@ foreach (var departamento in reportePlanilla.departamentos)
     Console.WriteLine("");
     
 }
-
+Console.WriteLine("La lista de departamentos es: ");
 foreach (var salario in reportePlanilla.salarios)
     
 {
@@ -51,4 +51,5 @@ foreach (var salario in reportePlanilla.salarios)
     Console.WriteLine("El id del asalariado es " + salario.Id);
     Console.WriteLine("el roll del asalariado es " + salario.Roll);
     Console.WriteLine("el monto del asalariado es " + salario.Monto);
+    Console.WriteLine("");
 }
