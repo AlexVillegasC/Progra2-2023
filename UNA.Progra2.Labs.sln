@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab.Models", "Lab.Models\La
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projecto-1", "Projecto-1", "{BD62A89E-C312-4EC3-866C-AF60A734C9C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo3.CLI", "Grupo3.CLI\Grupo3.CLI.csproj", "{41ADA215-3320-47C1-A059-6A3F950BC85B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grupo3.CLI", "Grupo3.CLI\Grupo3.CLI.csproj", "{41ADA215-3320-47C1-A059-6A3F950BC85B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
