@@ -1,0 +1,52 @@
+[
+  {
+    "Speed": 15,
+    "Degree": 120,
+    "Direction": "SE"
+  },
+  {
+    "Speed": 10,
+    "Degree": 270,
+    "Direction": "W"
+  },
+  {
+    "Speed": 8,
+    "Degree": 45,
+    "Direction": "NE"
+  },
+  {
+    "Speed": 20,
+    "Degree": 180,
+    "Direction": "S"
+  },
+  {
+    "Speed": 12,
+    "Degree": 225,
+    "Direction": "SW"
+  },
+  {
+    "Speed": 18,
+    "Degree": 60,
+    "Direction": "NE"
+  },
+  {
+    "Speed": 5,
+    "Degree": 315,
+    "Direction": "NW"
+  },
+  {
+    "Speed": 14,
+    "Degree": 90,
+    "Direction": "E"
+  },
+  {
+    "Speed": 7,
+    "Degree": 135,
+    "Direction": "SE"
+  },
+  {
+    "Speed": 9,
+    "Degree": 200,
+    "Direction": "SW"
+  }
+]
