@@ -6,17 +6,19 @@ ReportePlanilla GetReportePlanilla()
 
 {
     var Empleadovirtualpath = "../../../../Infrastructure.Shared/DB/grupo10-Empleado.json";
-    var DepartamentovirtualPath = "../../../../Infrastructure.Shared/DB/grupo10-departamento.json";
+    var DepartamentovirtualPath = "../../../../Infrastructure.Shared/DB/grupo10-Departamento.json";
+    var SalariovirtualPath = "../../../../Infrastructure.Shared/DB/grupo10-Salario.json";
 
     FileRepository fileRepository = new FileRepository();
     
     List<Empleado> empleados = fileRepository.ReadJsonFileAsync<List<Empleado>>(Empleadovirtualpath).Result;
     List<Departamento> departamentos = fileRepository.ReadJsonFileAsync<List<Departamento>>(DepartamentovirtualPath).Result;
-
+    List<Salario> salarios = fileRepository.ReadJsonFileAsync<List<Salario>>(SalariovirtualPath).Result;
     
     ReportePlanilla reportePlanilla = new ReportePlanilla();
     reportePlanilla.Empleados = empleados;
     reportePlanilla.departamentos = departamentos;
+    reportePlanilla.salarios = salarios;
     
     return reportePlanilla;
 }
@@ -39,4 +41,13 @@ foreach (var departamento in reportePlanilla.departamentos)
     Console.WriteLine("El id del departamento es" + departamento.IdDepartamento);
     Console.WriteLine("El nombre del departamento es" + departamento.NombreDepartamento);
     
+}
+
+foreach (var salario in reportePlanilla.salarios)
+    
+{
+    
+    Console.WriteLine("El id del asalariado es" + salario.Id);
+    Console.WriteLine("el roll del asalariado es" + salario.Roll);
+    Console.WriteLine("el monto del asalariado es" + salario.Monto);
 }

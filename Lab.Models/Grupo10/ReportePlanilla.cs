@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class ReportePlanilla
 {
     public List<Departamento> departamentos;
-    private List<Salario> Salarios;
+    public List<Salario> salarios;
 
     public List<Empleado> Empleados { get; set; }
 
@@ -12,6 +12,7 @@ public class ReportePlanilla
     {
         Empleados = new List<Empleado>();
         departamentos = new List<Departamento>();
+        salarios = new List<Salario>();
     }
 
     public void Contratar(Empleado empleado)
