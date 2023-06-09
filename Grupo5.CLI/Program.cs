@@ -26,18 +26,29 @@ Canciones GetMyCanciones()
 
 Canciones canciones = GetMyCanciones();
 
+Console.WriteLine("----------Lista de Albums----------");
+Console.WriteLine("");
+
 foreach (var Album in canciones.Albums)
 {
     Console.WriteLine("Album: "+Album.NombreAlbum);
 }
-
+Console.WriteLine("");
+Console.WriteLine("----------Lista de Artistas----------");
+Console.WriteLine("");
 foreach (var Artista in canciones.Artistas)
 {
     Console.WriteLine("Artista: "+Artista.NombreArtista);
 }
+Console.WriteLine("");
+Console.WriteLine("----------Lista de Letras----------");
+Console.WriteLine("");
 
+var le = 1;
 foreach (var Letra in canciones.Letras)
 {
-    Console.WriteLine("letra: "+Letra.Contenido);
+    Console.WriteLine("Letra "+le+": "+Letra.Contenido);
+    Console.WriteLine("");
+    le = le +1;
 }
 
