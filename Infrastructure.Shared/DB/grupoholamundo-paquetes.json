@@ -1,0 +1,42 @@
+[
+  {
+    "Velocidad": 50.0,
+    "Precio": 29.99
+  },
+  {
+    "Velocidad": 100.0,
+    "Precio": 39.99
+  },
+  {
+    "Velocidad": 200.0,
+    "Precio": 49.99
+  },
+  {
+    "Velocidad": 150.0,
+    "Precio": 34.99
+  },
+  {
+    "Velocidad": 250.0,
+    "Precio": 59.99
+  },
+  {
+    "Velocidad": 75.0,
+    "Precio": 24.99
+  },
+  {
+    "Velocidad": 300.0,
+    "Precio": 69.99
+  },
+  {
+    "Velocidad": 125.0,
+    "Precio": 44.99
+  },
+  {
+    "Velocidad": 175.0,
+    "Precio": 39.99
+  },
+  {
+    "Velocidad": 225.0,
+    "Precio": 54.99
+  }
+]
