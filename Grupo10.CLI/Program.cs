@@ -20,7 +20,7 @@ ReportePlanilla GetReportePlanilla()
     
     return reportePlanilla;
 }
-
+ 
 ReportePlanilla reportePlanilla = GetReportePlanilla();
 
 foreach (var empleado in reportePlanilla.Empleados)
@@ -32,11 +32,12 @@ foreach (var empleado in reportePlanilla.Empleados)
     Console.WriteLine("Su salario es: " + empleado.Salario?.Monto + "$");
     Console.WriteLine("");
 }
-
+Console.WriteLine("La lista de departamentos es: ");
 foreach (var departamento in reportePlanilla.departamentos)
     
 {
-    Console.WriteLine("El id del departamento es" + departamento.IdDepartamento);
-    Console.WriteLine("El nombre del departamento es" + departamento.NombreDepartamento);
+    Console.WriteLine("El id del departamento es " + departamento.IdDepartamento);
+    Console.WriteLine("El nombre del departamento es " + departamento.NombreDepartamento);
+    Console.WriteLine("");
     
 }
