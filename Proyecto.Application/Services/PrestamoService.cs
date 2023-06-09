@@ -1,4 +1,5 @@
-﻿using Lab.Models.Grupo7;
+﻿using Infrastructure.Shared.Repositories;
+using Lab.Models.Grupo7;
 
 namespace Proyecto.Application.Services;
 
@@ -12,18 +13,18 @@ public class PrestamoService
          _prestamoRepository = prestamoRepository;
     }
 
-    public async Task<Prestamo> ListaPrestamo()
+    public async Task<Prestamos> ListaPrestamo()
     {
-        List<Libro> Libros = await _prestamoRepository.GetLibros();
-        List<Libro> Clientes = await _prestamoRepository.GetClientes();
-        List<Libro> Tarifas = await _prestamoRepository.GetTarifas();
+        List<Libro> libros = await _prestamoRepository.GetLibros();
+        List<Cliente> clientes = await _prestamoRepository.GetClientes();
+        List<Tarifa> tarifas = await _prestamoRepository.GetTarifas();
 
 
-        Prestamo Prestamo = new Prestamo()
+        Prestamos Prestamo = new Prestamos()
         {
-            Libros = Libros,
-            Clientes = Clientes,
-            Tarifas = Tarifas
+            Libros = libros,
+            Clientes = cliente,
+            Tarifas = tarifas
         };
 
         return Prestamo;
