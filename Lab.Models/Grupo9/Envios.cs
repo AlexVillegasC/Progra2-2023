@@ -9,6 +9,6 @@ public class Envio
 {
     public  List <Paquete> Paquetes{ get; set; }
     public List <Status> Statuses { get; set; }
-    public List <Cliente> Clientes { get; set; }
+    public List <Lab.Models.Grupo9.Cliente> Clientes { get; set; }
 
 }

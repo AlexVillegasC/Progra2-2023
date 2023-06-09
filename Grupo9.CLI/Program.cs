@@ -17,7 +17,7 @@ Envio GetMiEnvio()
 
     FileRepository fileRepos = new FileRepository();
 
-    List<Cliente> clientes = fileRepos.ReadJsonFileAsync<List<Cliente>>(virtualPath).Result;
+    List<Lab.Models.Grupo9.Cliente> clientes = fileRepos.ReadJsonFileAsync<List<Lab.Models.Grupo9.Cliente>>(virtualPath).Result;
     List<Status> statuses = fileRepos.ReadJsonFileAsync<List<Status>>(virtualStatusPath).Result;
     List<Paquete> paquetes = fileRepos.ReadJsonFileAsync<List<Paquete>>(virtualPaquetePath).Result;
 
@@ -41,8 +41,8 @@ Console.WriteLine("");
 foreach (var cliente in envio.Clientes)
 {
     Console.WriteLine(cliente.Nombre);
-    //Console.WriteLine(cliente.Direccion);
-    //Console.WriteLine(cliente.Telefono);
+    Console.WriteLine(cliente.Direccion);
+    Console.WriteLine(cliente.Telefono);
 
 }
 Console.WriteLine("");
