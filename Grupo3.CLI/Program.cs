@@ -1,35 +1,49 @@
 ﻿
-
+using Infrastructure.Shared.Files;
 using Lab.Models.Grupo3;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 
-Celular celular = new Celular();
+Celular GetMyCelular()
+{
+    // Read from file
 
-
-celular.bateria = new List<Bateria>();
-celular.memoria = new List<Memoria>();
-
-
-
-Bateria primeraBateria = new Bateria();
-primeraBateria.Capacidad = 5000;
-primeraBateria.Porcentaje = 80;
-primeraBateria.Estado = "Cargado";
-
-Memoria primerMemoria = new Memoria();
-primerMemoria.EspacioTotal = 256;
-primerMemoria.EspacioLibre = 200;
-primerMemoria.EspacioUsado = 56;
+    var Bateriavirtualpath = "../../../../Infrastructure.Shared/DB/grupo3-bateria.json/";
+    var Memoriavirtualpath = "../../../../Infrastructure.Shared/DB/grupo3-memoria.json/";
 
 
-celular.bateria.Add(primeraBateria);
-
-Console.WriteLine(celular.bateria[0].Capacidad);
-Console.WriteLine(celular.bateria[0].Porcentaje);
-Console.WriteLine(celular.bateria[0].Estado);
+    FileRepository filerepo = new FileRepository();
 
 
-celular.memoria.Add(primerMemoria);
+    List<Bateria> baterias = filerepo.ReadJsonFileAsync<List<Bateria>>(Bateriavirtualpath).Result;
+    List<Memoria> memorias = filerepo.ReadJsonFileAsync<List<Memoria>>(Memoriavirtualpath).Result;
 
-Console.WriteLine(celular.memoria[0].EspacioTotal);
-Console.WriteLine(celular.memoria[0].EspacioUsado);
-Console.WriteLine(celular.memoria[0].EspacioLibre);
+    Celular celBatery = new Celular();
+    celBatery.Baterias =baterias;
+    return celBatery;
+    
+    Celular celMemory = new Celular();
+    celMemory.Memorias = memorias;
+    return celMemory;
+
+
+}
+
+
+
+Celular celular = GetMyCelular();
+
+foreach (var bateria in celular.Baterias)
+{
+    
+    Console.WriteLine(bateria.Capacidad);
+    Console.WriteLine(bateria.Porcentaje);
+    Console.WriteLine(bateria.Estado);
+}
+
+foreach (var memoria in celular.Memorias)
+{   
+    Console.WriteLine(memoria.EspacioTotal);
+    Console.WriteLine(memoria.EspacioLibre);
+    Console.WriteLine(memoria.EspacioUsado);
+}
