@@ -1,0 +1,65 @@
+[
+    {
+        "nombre": "Proyecto ABC",
+        "funcion": "Desarrollo de una aplicación web",
+        "requerimiento": "Conocimiento en HTML, CSS y JavaScript",
+        "fechaInicio": "2023-01-15",
+        "fechaFin": "2023-06-30"
+    },
+
+    {
+        "nombre": "Proyecto XYZ",
+        "funcion": "Implementación de un sistema de gestión de inventario",
+        "requerimiento": "Experiencia en bases de datos y programación en C#",
+        "fechaInicio": "2023-03-10",
+        "fechaFin": "2023-09-30"
+    },
+
+    {
+        "nombre": "Proyecto Gamma",
+        "funcion": "Diseño de una interfaz de usuario para una aplicación móvil",
+        "requerimiento": "Conocimientos en diseño gráfico y experiencia en herramientas como Adobe XD",
+        "fechaInicio": "2023-02-20",
+        "fechaFin": "2023-05-15"
+    },
+
+    {
+        "nombre": "Proyecto Azul",
+        "funcion": "Desarrollo de un algoritmo de aprendizaje automático para clasificación de datos",
+        "requerimiento": "Conocimientos en Python, estadística y machine learning",
+        "fechaInicio": "2023-04-01",
+        "fechaFin": "2023-11-30"
+    },
+
+    {
+        "nombre": "Proyecto Hacereje",
+        "funcion": "Creación de contenido multimedia para campaña publicitaria",
+        "requerimiento": "Habilidades en diseño gráfico, edición de video y redacción creativa",
+        "fechaInicio": "2023-06-15",
+        "fechaFin": "2023-07-31"
+    },
+
+    {
+        "nombre": "Proyecto Saja",
+        "funcion": "Desarrollo de una aplicación móvil de comercio electrónico",
+        "requerimiento": "Experiencia en desarrollo de aplicaciones para Android e iOS",
+        "fechaInicio": "2023-08-01",
+        "fechaFin": "2024-02-28"
+    },
+
+    {
+        "nombre": "Proyecto Seje",
+        "funcion": "Configuración de servidores y despliegue de una aplicación web",
+        "requerimiento": "Conocimientos en administración de servidores y tecnologías como Docker",
+        "fechaInicio": "2023-07-10",
+        "fechaFin": "2023-09-15"
+    },
+
+    {
+        "nombre": "Proyecto Yanose",
+        "funcion": "Investigación y análisis de mercado para lanzamiento de un nuevo producto",
+        "requerimiento": "Habilidades en investigación de mercado y análisis de datos",
+        "fechaInicio": "2023-05-01",
+        "fechaFin": "2023-08-31"
+    }
+]

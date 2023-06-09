@@ -2,11 +2,11 @@
 public class Almacenamiento
 //Test
 {
-    private int id;
-    private string nombre;
-    private int capacidad;
-    private string dimensiones;
-    private double costo;
+    public int id;
+    public string nombre;
+    public int capacidad;
+    public string dimensiones;
+    public double costo;
 
     public Almacenamiento(int id, string nombre, int capacidad, string dimensiones, double costo)
     {
@@ -15,6 +15,10 @@ public class Almacenamiento
         this.capacidad = capacidad;
         this.dimensiones = dimensiones;
         this.costo = costo;
+    }
+
+    public Almacenamiento()
+    {
     }
 
     public int GetId()
