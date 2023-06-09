@@ -31,7 +31,7 @@ foreach (var Album in canciones.Albums)
 
 foreach (var Artista in canciones.Artistas)
 {
-    Console.WriteLine(Artista.NombreArtista);
+    Console.WriteLine("Artista: "+Artista.NombreArtista);
 }
 
 /*foreach (var Letra in canciones.Albums)
