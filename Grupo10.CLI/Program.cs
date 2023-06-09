@@ -1,16 +1,17 @@
-﻿using Lab.Models.Grupo10;
+﻿using Infrastructure.Shared.Files;
+using Lab.Models.Grupo10;
 using Newtonsoft.Json;
-using System.Text.Json;
 
 ReportePlanilla GetReportePlanilla()
 
 {
-    string json = File.ReadAllText("C:/Users/Suare/RiderProjects/Progra2/Infrastructure.Shared/DB/grupo10-Empleado.json");
-
-    Empleado[]? listEmpleados = JsonConvert.DeserializeObject<Empleado[]>(json);
+    var virtualpath = "../../../../Infrastructure.Shared/DB/grupo10-Empleado.json";
+    FileRepository fileRepository = new FileRepository();
+    
+    List<Empleado> empleados = fileRepository.ReadJsonFileAsync<List<Empleado>>(virtualpath).Result;
+    
     ReportePlanilla reportePlanilla = new ReportePlanilla();
-    reportePlanilla.Empleados = listEmpleados != null ? new List<Empleado>(listEmpleados) : new List<Empleado>();
-
+    reportePlanilla.Empleados = empleados;
     return reportePlanilla;
 }
 
