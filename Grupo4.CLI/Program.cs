@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
         CPU GetCase()
         {
-            var virtualPath = "C:\\Users\\yoili\\Documents\\REPOSITORIO PROGRA\\Infrastructure.Shared\\DB\\Grupo4-Case.json";
+            var virtualPath = "C:\\repo_progra\\Infrastructure.Shared\\DB\\Grupo4-Case.json";
             FileRepository fileRepo = new FileRepository();
 
             /*string caseJson = fileRepo. ReadJsonFileAsync<string>(virtualPath).Result;*/
@@ -17,12 +17,12 @@ using Newtonsoft.Json;
 
       CPU cpu = GetCase();
 
-        foreach (var Case in cpu.Cases)
+        foreach (var box in cpu.Cases)
         {
-            Console.WriteLine(Case.Id);
-            Console.WriteLine(Case.Nombre);
-            Console.WriteLine(Case.Tamanno);
-            Console.WriteLine(Case.Color);
-            Console.WriteLine(Case.Costo);
-            Console.WriteLine(Case.Forma);
+            Console.WriteLine(box.Id);
+            Console.WriteLine(box.Nombre);
+            Console.WriteLine(box.Tamanno);
+            Console.WriteLine(box.Color);
+            Console.WriteLine(box.Costo);
+            Console.WriteLine(box.Forma);
         }

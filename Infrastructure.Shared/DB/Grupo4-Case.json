@@ -14,5 +14,13 @@
     "Color": "Cian",
     "Costo": 20.99,
     "Forma": "Circular"
+  },
+  {
+    "Id": 3,
+    "Nombre": "Nombre del case",
+    "Tamanno": 16.5,
+    "Color": "amarillo",
+    "Costo": 40.99,
+    "Forma": "romboide"
   }
 ]
