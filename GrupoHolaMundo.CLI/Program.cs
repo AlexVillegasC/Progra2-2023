@@ -18,9 +18,9 @@ Alquiler GetDatosAlquiler()
     List<Paquetes> paquetes = fileRepo.ReadJsonFileAsync<List<Paquetes>>(paquetesVirtualPath).Result;
 
     Alquiler alquiler = new Alquiler();
-    alquiler.casa = casas;
-    alquiler.cliente = clientes;
-    alquiler.paquete = paquetes;
+    alquiler.Casa = casas;
+    alquiler.Cliente = clientes;
+    alquiler.PaqueteInternet = paquetes;
 
     return alquiler;
 }
@@ -29,7 +29,7 @@ Alquiler myAlquiler = GetDatosAlquiler();
 
 Console.WriteLine("Casa:");
 
-foreach (var casa in myAlquiler.casa)
+foreach (var casa in myAlquiler.Casas)
 {
     Console.WriteLine(casa.habitaciones);
     Console.WriteLine(casa.banos);
@@ -38,7 +38,7 @@ foreach (var casa in myAlquiler.casa)
 }
 
 Console.WriteLine("Cliente:");
-foreach (var clientes in myAlquiler.cliente)
+foreach (var clientes in myAlquiler.Clientes)
 {
     Console.WriteLine(clientes.nombre);
     Console.WriteLine(clientes.apellidos);
@@ -46,12 +46,35 @@ foreach (var clientes in myAlquiler.cliente)
 }
 
 Console.WriteLine("Paquetes:");
-
-foreach (var paquetes in myAlquiler.paquete)
+foreach (var paquetes in myAlquiler.Paquetes)
 {
     Console.WriteLine(paquetes.velocidad);
     Console.WriteLine(paquetes.precio);
 }
+
+    Alquiler alquiler = new Alquiler();
+    alquiler.Casa = casas;
+    alquiler.Cliente = clientes;
+    alquiler.PaqueteInternet = paquetes;
+
+    return alquiler;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
