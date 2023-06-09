@@ -1,0 +1,62 @@
+[
+  {
+    "Habitaciones": 3,
+    "Banos": 2,
+    "Comedor": 1,
+    "Piscina": 0
+  },
+  {
+    "Habitaciones": 4,
+    "Banos": 3,
+    "Comedor": 1,
+    "Piscina": 1
+  },
+  {
+    "Habitaciones": 2,
+    "Banos": 1,
+    "Comedor": 1,
+    "Piscina": 0
+  },
+  {
+    "Habitaciones": 5,
+    "Banos": 4,
+    "Comedor": 1,
+    "Piscina": 1
+  },
+  {
+    "Habitaciones": 3,
+    "Banos": 2,
+    "Comedor": 1,
+    "Piscina": 0
+  },
+  {
+    "Habitaciones": 4,
+    "Banos": 3,
+    "Comedor": 1,
+    "Piscina": 1
+  },
+  {
+    "Habitaciones": 2,
+    "Banos": 1,
+    "Comedor": 1,
+    "Piscina": 0
+  },
+  {
+    "Habitaciones": 5,
+    "Banos": 4,
+    "Comedor": 1,
+    "Piscina": 1
+  },
+  {
+    "Habitaciones": 3,
+    "Banos": 2,
+    "Comedor": 1,
+    "Piscina": 0
+  },
+  {
+    "Habitaciones": 4,
+    "Banos": 3,
+    "Comedor": 1,
+    "Piscina": 1
+  }
+]
