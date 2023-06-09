@@ -1,6 +1,7 @@
 ﻿namespace Lab.Models.Grupo7;
 
 public class Libro 
+
 {
     public int Id { get; set; }
 
