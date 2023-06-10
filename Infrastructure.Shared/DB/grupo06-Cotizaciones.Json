@@ -27,6 +27,36 @@
     "Tarifa": 7000,
     "Impuesto": 300,
     "Descuento": 15,
-    "RangoDeCotizacion": "5KG-7sKG"
+    "RangoDeCotizacion": "5KG-7KG"
   },
+  {
+    "Tarifa": 8500,
+    "Impuesto": 300,
+    "Descuento": 10,
+    "RangoDeCotizacion": "7KG-8KG"
+  },
+  {
+    "Tarifa": 9800,
+    "Impuesto": 350,
+    "Descuento": 10,
+    "RangoDeCotizacion": "8KG-9KG"
+  },
+  {
+    "Tarifa": 11200,
+    "Impuesto": 400,
+    "Descuento": 10,
+    "RangoDeCotizacion": "9KG-10KG"
+  },
+  {
+    "Tarifa": 12600,
+    "Impuesto": 450,
+    "Descuento": 5,
+    "RangoDeCotizacion": "10KG-11KG"
+  },
+  {
+    "Tarifa": 14000,
+    "Impuesto": 500,
+    "Descuento": 5,
+    "RangoDeCotizacion": "11KG-12KG"
+  }
 ]
