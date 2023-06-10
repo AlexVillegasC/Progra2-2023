@@ -1,45 +1,46 @@
 ﻿
-Envios envios = new Envios();
+using Infrastructure.Shared.Files;
+using Lab.Models.Grupo6;
+using Newtonsoft.Json;
 
-envios.Clientes = new List<Clientes>();
-envios.Cotizaciones = new List<Cotizaciones>();
-envios.Seguimientos = new List<Seguimientos>();
+Envios ObtenerEnvios()
+{
+    var CliVirtualPath = "../../../../Infrastructure.Shared/DB/grupo06-Clientes.Json";
+    var CotVirtualPath = "../../../../Infrastructure.Shared/DB/grupo06-Cotizaciones.Json";
+    var SegVirtualPath = "../../../../Infrastructure.Shared/DB/grupo06-Seguimientos.Json";
+    FileRepository fileRepository = new FileRepository();
 
+    List<Clientes> clientes = fileRepository.ReadJsonFileAsync<List<Clientes>>(CliVirtualPath).Result;
+    List<Cotizaciones> cotizaciones = fileRepository.ReadJsonFileAsync<List<Cotizaciones>>(CotVirtualPath).Result;
+    List<Seguimientos> seguimientos = fileRepository.ReadJsonFileAsync<List<Seguimientos>>(SegVirtualPath).Result;
 
-Clientes cliente1 = new Clientes();
+    Envios envios = new Envios();
+    envios.Clientes = clientes;
+    envios.Cotizaciones = cotizaciones;
+    envios.Seguimientos = seguimientos;
+    return envios;
+}
 
-cliente1.ID = 504520162;
-cliente1.Nombre = "Akion";
-cliente1.Apellido = "Cheng";
+Envios MisEnvios = ObtenerEnvios();
 
-
-envios.clientes.Add(cliente1);
-
-
-foreach (var Clientes in envios.Clientes)
+foreach (var Clientes in MisEnvios.Clientes)
 {
     Console.WriteLine(Clientes.ID);
     Console.WriteLine(Clientes.Nombre);
     Console.WriteLine(Clientes.Apellido);
 }
 
-
-
-Cotizaciones Cotizacion1 = new Cotizaciones();
-
-Cotizacion1.Tarifa = 4200;
-Cotizacion1.Impuesto = 200;
-Cotizacion1.Descuento = 50;
-Cotizacion1.RangoDeCotizacion = "3KG-4KG";
-
-
-envios.Cotizaciones.Add(Cotizacion1);
-
-
-foreach (var Cotizaciones in envios.Cotizaciones)
+foreach (var Cotizaciones in MisEnvios.Cotizaciones)
 {
     Console.WriteLine(Cotizaciones.Tarifa);
     Console.WriteLine(Cotizaciones.Impuesto);
     Console.WriteLine(Cotizaciones.Descuento);
     Console.WriteLine(Cotizaciones.RangoDeCotizacion);
+}
+
+foreach (var Seguimientos in MisEnvios.Seguimientos)
+{
+    Console.WriteLine(Seguimientos.IdEnvio);
+    Console.WriteLine(Seguimientos.EstadoRuta);
+    Console.WriteLine(Seguimientos.IdPaquete);
 }
