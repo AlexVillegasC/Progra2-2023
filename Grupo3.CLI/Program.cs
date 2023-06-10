@@ -8,8 +8,8 @@ Celular GetMyCelular()
 {
     // Read from file
 
-    var Bateriavirtualpath = "../../../../Infrastructure.Shared/DB/grupo3-bateria.json/";
-    var Memoriavirtualpath = "../../../../Infrastructure.Shared/DB/grupo3-memoria.json/";
+    var Bateriavirtualpath = "../../../../Infrastructure.Shared/DB/grupo3-bateria.json";
+    var Memoriavirtualpath = "../../../../Infrastructure.Shared/DB/grupo3-memoria.json";
 
 
     FileRepository filerepo = new FileRepository();
@@ -18,13 +18,12 @@ Celular GetMyCelular()
     List<Bateria> baterias = filerepo.ReadJsonFileAsync<List<Bateria>>(Bateriavirtualpath).Result;
     List<Memoria> memorias = filerepo.ReadJsonFileAsync<List<Memoria>>(Memoriavirtualpath).Result;
 
-    Celular celBatery = new Celular();
-    celBatery.Baterias =baterias;
-    return celBatery;
+    Celular cel1 = new Celular();
+    cel1.Baterias =baterias;
+    cel1.Memorias = memorias;
+    return cel1;
     
-    Celular celMemory = new Celular();
-    celMemory.Memorias = memorias;
-    return celMemory;
+   
 
 
 }
