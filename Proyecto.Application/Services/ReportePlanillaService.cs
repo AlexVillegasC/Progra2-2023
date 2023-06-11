@@ -15,10 +15,15 @@ public class ReportePlanillaService
     public async Task<ReportePlanilla> GetEmpleados()
     {
         List<Empleado> empleados = await _reporteRepository.GetEmpleados();
+        List<Departamento> departamentos = await _reporteRepository.GetDepartamento();
         
+
         ReportePlanilla reportePlanilla = new ReportePlanilla()
+
         {
-            Empleados = empleados
+            Empleados = empleados,
+            departamentos = departamentos
+            
         };
         return reportePlanilla;
     }

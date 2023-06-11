@@ -5,5 +5,8 @@ namespace Infrastructure.Shared.Repositories;
     public interface IReporteRepository
     {
         Task<List<Empleado>> GetEmpleados();
+        Task<List<Departamento>> GetDepartamento();
+
+
 
     }
