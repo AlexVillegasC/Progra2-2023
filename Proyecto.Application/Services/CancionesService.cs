@@ -1,0 +1,34 @@
+﻿using Infrastructure.Shared.Repositories;
+using Lab.Models.Grupo5;
+
+namespace Proyecto.Application.Services;
+
+public class CancionesService
+{
+
+    private readonly ICancionesRepository _cancionesRepository;
+
+    public CancionesService (ICancionesRepository cancionesRepository)
+    {
+    _cancionesRepository = cancionesRepository;
+    }
+
+    public async Task<Canciones> GetMyCanciones()
+    {
+
+        List<Album> albums = await _cancionesRepository.GetAlbums();
+        List<Artista>  artistas = await _cancionesRepository.GetArtistas();
+      
+
+
+        Canciones canciones  = new Canciones()
+        {
+            Albums = albums,
+            Artistas = artistas
+
+           
+        };
+
+        return canciones;
+    }
+}
