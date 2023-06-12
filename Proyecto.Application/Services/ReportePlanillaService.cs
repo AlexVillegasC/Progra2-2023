@@ -16,13 +16,14 @@ public class ReportePlanillaService
     {
         List<Empleado> empleados = await _reporteRepository.GetEmpleados();
         List<Departamento> departamentos = await _reporteRepository.GetDepartamento();
-        
+        List<Salario> salarios = await _reporteRepository.GetSalario();
 
         ReportePlanilla reportePlanilla = new ReportePlanilla()
 
         {
             Empleados = empleados,
-            departamentos = departamentos
+            departamentos = departamentos,
+            salarios= salarios
             
         };
         return reportePlanilla;

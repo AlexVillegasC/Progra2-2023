@@ -6,7 +6,6 @@ namespace Infrastructure.Shared.Repositories;
     {
         Task<List<Empleado>> GetEmpleados();
         Task<List<Departamento>> GetDepartamento();
-
-
+        Task<List<Salario>> GetSalario();
 
     }
