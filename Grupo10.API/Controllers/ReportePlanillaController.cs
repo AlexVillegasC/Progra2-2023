@@ -21,7 +21,7 @@ namespace Grupo10.API.Controllers
         
         public Task<ReportePlanilla> Get()
         {
-            return _reportePlanillaService.GetEmpleados();
+            return _reportePlanillaService.GetReportePlanilla();
         }
     }
 }

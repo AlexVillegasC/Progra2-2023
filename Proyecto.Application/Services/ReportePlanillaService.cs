@@ -12,7 +12,7 @@ public class ReportePlanillaService
         _reporteRepository = reporteRepository;
     }
 
-    public async Task<ReportePlanilla> GetEmpleados()
+    public async Task<ReportePlanilla> GetReportePlanilla()
     {
         List<Empleado> empleados = await _reporteRepository.GetEmpleados();
         List<Departamento> departamentos = await _reporteRepository.GetDepartamento();
