@@ -1,52 +1,52 @@
 [
     {
-        "EspacioTotal": 123,
-        "EspacioUsado": 45,
+        "EspacioTotal": 128,
+        "EspacioUsado": 50,
         "EspacioLibre": 78
     },
     {
-        "EspacioTotal": 456,
-        "EspacioUsado": 78,
-        "EspacioLibre": 378
+        "EspacioTotal": 256,
+        "EspacioUsado": 100,
+        "EspacioLibre": 156
     },
     {
-        "EspacioTotal": 789,
-        "EspacioUsado": 12,
-        "EspacioLibre": 777
+        "EspacioTotal": 512,
+        "EspacioUsado": 200,
+        "EspacioLibre": 312
     },
     {
-        "EspacioTotal": 321,
-        "EspacioUsado": 90,
-        "EspacioLibre": 231
+        "EspacioTotal": 64,
+        "EspacioUsado": 30,
+        "EspacioLibre": 34
     },
     {
-        "EspacioTotal": 654,
-        "EspacioUsado": 34,
-        "EspacioLibre": 620
+        "EspacioTotal": 256,
+        "EspacioUsado": 120,
+        "EspacioLibre": 136
     },
     {
-        "EspacioTotal": 987,
-        "EspacioUsado": 56,
-        "EspacioLibre": 931
+        "EspacioTotal": 512,
+        "EspacioUsado": 250,
+        "EspacioLibre": 262
     },
     {
-        "EspacioTotal": 135,
-        "EspacioUsado": 23,
-        "EspacioLibre": 112
+        "EspacioTotal": 128,
+        "EspacioUsado": 80,
+        "EspacioLibre": 48
     },
     {
-        "EspacioTotal": 246,
-        "EspacioUsado": 78,
-        "EspacioLibre": 168
+        "EspacioTotal": 64,
+        "EspacioUsado": 15,
+        "EspacioLibre": 49
     },
     {
-        "EspacioTotal": 579,
-        "EspacioUsado": 45,
-        "EspacioLibre": 534
+        "EspacioTotal": 256,
+        "EspacioUsado": 180,
+        "EspacioLibre": 76
     },
     {
-        "EspacioTotal": 864,
-        "EspacioUsado": 12,
-        "EspacioLibre": 852
+        "EspacioTotal": 512,
+        "EspacioUsado": 300,
+        "EspacioLibre": 212
     }
 ]
