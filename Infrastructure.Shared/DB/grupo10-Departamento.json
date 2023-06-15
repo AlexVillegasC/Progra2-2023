@@ -1,0 +1,42 @@
+﻿[
+  {
+    "NombreDepartamento": "Desarrollo de Software",
+    "IdDepartamento": "548754"
+  },
+  {
+    "NombreDepartamento": "Soporte Técnico",
+    "IdDepartamento": "569233"
+  },
+  {
+    "NombreDepartamento": "Seguridad Informática",
+    "IdDepartamento": "780369"
+  },
+  {
+    "NombreDepartamento": "Redes y Comunicaciones",
+    "IdDepartamento": "256489"
+  },
+  {
+    "NombreDepartamento": "Ingeniería de Datos",
+    "IdDepartamento": "784265"
+  },
+  {
+    "NombreDepartamento": "Arquitectura de Software",
+    "IdDepartamento": "654987"
+  },
+  {
+    "NombreDepartamento": "Inteligencia Artificial",
+    "IdDepartamento": "031548"
+  },
+  {
+    "NombreDepartamento": "Gestión de Proyectos Tecnológicos",
+    "IdDepartamento": "555447"
+  },
+  {
+    "NombreDepartamento": "Infraestructura de TI",
+    "IdDepartamento": "485999"
+  },
+  {
+    "NombreDepartamento": "Calidad de Software",
+    "IdDepartamento": "124578"
+  }
+]
