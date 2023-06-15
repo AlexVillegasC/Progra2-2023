@@ -1,0 +1,52 @@
+[
+    {
+        "Capacidad": 3000,
+        "Porcentaje": 75,
+        "Estado": "Cargando"
+    },
+    {
+        "Capacidad": 4000,
+        "Porcentaje": 60,
+        "Estado": "Descargando"
+    },
+    {
+        "Capacidad": 5000,
+        "Porcentaje": 85,
+        "Estado": "Cargada"
+    },
+    {
+        "Capacidad": 3500,
+        "Porcentaje": 40,
+        "Estado": "Descargada"
+    },
+    {
+        "Capacidad": 4500,
+        "Porcentaje": 90,
+        "Estado": "Cargando"
+    },
+    {
+        "Capacidad": 6000,
+        "Porcentaje": 25,
+        "Estado": "Descargando"
+    },
+    {
+        "Capacidad": 4000,
+        "Porcentaje": 70,
+        "Estado": "Cargada"
+    },
+    {
+        "Capacidad": 2500,
+        "Porcentaje": 20,
+        "Estado": "Descargada"
+    },
+    {
+        "Capacidad": 3500,
+        "Porcentaje": 50,
+        "Estado": "Cargando"
+    },
+    {
+        "Capacidad": 5000,
+        "Porcentaje": 10,
+        "Estado": "Descargando"
+    }
+]
