@@ -10,9 +10,10 @@ public class CancionesRepository : FileRepository, ICancionesRepository
     private const string ArtistaVirtualPath = "../Infrastructure.Shared/DB/Grupo5-Artista.json";
     private const string LetraVirtualPatch = "../Infrastructure.Shared/DB/Grupo5-Letra.json";
 
+
     public async Task<List<Album>> GetAlbums()
 
-    { 
+    {
         return await ReadJsonFileAsync<List<Album>>(AlbumVirtualPath);
     }
 
