@@ -6,6 +6,8 @@ public interface ICancionesRepository
 {
     Task<List<Album>> GetAlbums();
     Task<List<Artista>> GetArtistas();
-   
+    Task<List<Letra>> GetLetra();
+
+
 
 }

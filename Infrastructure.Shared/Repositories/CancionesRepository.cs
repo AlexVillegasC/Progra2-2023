@@ -8,7 +8,7 @@ public class CancionesRepository : FileRepository, ICancionesRepository
 {
     private const string AlbumVirtualPath = "../Infrastructure.Shared/DB/Grupo5-Album.json";
     private const string ArtistaVirtualPath = "../Infrastructure.Shared/DB/Grupo5-Artista.json";
-   /* private const string LetraVirtualPatch = "../../../../Infrastructure.Shared/DB/Grupo5-Letra.json";*/
+    private const string LetraVirtualPatch = "../Infrastructure.Shared/DB/Grupo5-Letra.json";
 
     public async Task<List<Album>> GetAlbums()
 
@@ -20,7 +20,10 @@ public class CancionesRepository : FileRepository, ICancionesRepository
     {
         return await ReadJsonFileAsync<List<Artista>>(ArtistaVirtualPath);
     }
+    public async Task<List<Letra>> GetLetra()
+    {
+        return await ReadJsonFileAsync<List<Letra>>(LetraVirtualPatch);
+    }
 
-   
 }
      
