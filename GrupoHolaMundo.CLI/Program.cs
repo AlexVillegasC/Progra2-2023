@@ -10,6 +10,19 @@ Alquiler GetDatosAlquiler()
     var casasVirtualPath = "../../../../Infrastructure.Shared/DB/grupoHolaMundo-casas.json";
     var clientesVirtualPath = "../../../../Infrastructure.Shared/DB/grupoHolaMundo-clientes.json";
     var paquetesVirtualPath = "../../../../Infrastructure.Shared/DB/grupoHolaMundo-paquetes.json";
+
+    FileRepository fileRepo = new FileRepository();
+
+    List<Casa> casas = fileRepo.ReadJsonFileAsync<List<Casa>>(casasVirtualPath).Result;
+    List<Cliente> clientes = fileRepo.ReadJsonFileAsync<List<Cliente>>(clientesVirtualPath).Result;
+    List<PaqueteInternet> paquetes = fileRepo.ReadJsonFileAsync<List<PaqueteInternet>>(paquetesVirtualPath).Result;
+
+    Alquiler alquiler = new Alquiler();
+    alquiler.casa = casas;
+    alquiler.cliente = clientes;
+    alquiler.paquete = paquetes;
+
+    return alquiler;
 }
 
 Alquiler myAlquiler = GetDatosAlquiler();
