@@ -4,6 +4,7 @@
     private int banos;
     private int comedor;
     private int piscina;
+    private double totalBase = 0;
 
     public Casa()
     {
@@ -39,5 +40,18 @@
     {
         get { return piscina; }
         set { piscina = value; }
+    }
+
+
+    public void calcularTotalBase()
+    {
+        int precioBanno = 40;
+        int precioComedor = 60;
+        int precioPiscina = 200;
+        int precioHabitaciones = 50;
+        int precioServicios = 100;
+
+        totalBase = (precioBanno * banos) + (precioComedor * comedor) + (precioPiscina * piscina) + (precioHabitaciones * habitaciones) + precioServicios;
+
     }
 }
