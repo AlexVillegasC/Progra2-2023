@@ -8,8 +8,8 @@ namespace Lab.Models.Grupo2
 {
     public class Frutas
     {
-        public int Cantidad { get; set; }
-        public string TipoFruta { get; set; }
+        public float Cantidad { get; set; }
+        public string TipodeFruta { get; set; }
         
     }
 }

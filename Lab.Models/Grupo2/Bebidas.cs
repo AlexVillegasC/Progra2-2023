@@ -8,8 +8,7 @@ namespace Lab.Models.Grupo2
 {
     public class Bebidas
     {
-        public string Marcas { get; set; }
-        public string Tipo { get; set; }
-        public DateOnly FechaEntrega { get; set; }
+        public string Marcas { get; set; } //cocacola , del valle
+        public string TipodeBebida { get; set; } // narutal , gaseosa
     }
 }

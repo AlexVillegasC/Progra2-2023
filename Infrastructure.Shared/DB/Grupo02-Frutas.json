@@ -1,0 +1,42 @@
+[
+  {
+    "Cantidad": 5,
+    "TipodeFruta": "TipodeFruta = dulce"
+  },
+  {
+    "Cantidad": 10,
+    "TipodeFruta": "TipodeFruta = acida"
+  },
+  {
+    "Cantidad":15,
+    "TipodeFruta": "TipodeFruta = semidulce"
+  },
+  {
+    "Cantidad":20,
+    "TipodeFruta": "TipodeFruta = semiacida"
+  },
+  {
+    "Cantidad": 25,
+    "TipodeFruta": "TipodeFruta = dulce"
+  },
+  {
+    "Cantidad": 30,
+    "TipodeFruta": "TipodeFruta = acida"
+  },
+  {
+    "Cantidad": 35,
+    "TipodeFruta": "TipodeFruta = semidulce"
+  },
+  {
+    "Cantidad": 40,
+    "TipodeFruta": "TipodeFruta = semiacida"
+  },
+  {
+    "Cantidad": 45,
+    "TipodeFruta": "TipodeFruta = dulce"
+  },
+  {
+    "Cantidad": 50,
+    "TipodeFruta": "TipodeFruta = acida"
+  }
+]

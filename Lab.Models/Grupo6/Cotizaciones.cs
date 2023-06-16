@@ -1,4 +1,4 @@
-﻿public class Cotizar
+﻿public class Cotizaciones
 {
     public int Tarifa { get; set; }
     public float Impuesto { get; set; }

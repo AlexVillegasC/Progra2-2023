@@ -1,8 +1,28 @@
 ﻿
+using Infrastructure.Shared.Files;
 using Lab.Models.GrupoGamma;
+using Newtonsoft.Json;
 
-Empresa empresa = new Empresa();    
+Empresa getMyEmpresa()
+{
+    var SoftwarevirtualPhat = "../../../../Infrastructure.Shared/DB/grupoGamma-Software.json";
+    var ClientevirtualPhat = "../../../../Infrastructure.Shared/DB/grupoGamma-Clientes.json";
+    var EmpleadovirtualPhat = "../../../../Infrastructure.Shared/DB/grupoGamma-Empleado.json";
+    FileRepository fileRepo = new FileRepository();
 
+    List<Software> softwareList = fileRepo.ReadJsonFileAsync<List<Software>>(SoftwarevirtualPhat).Result;
+    List<Lab.Models.GrupoGamma.Cliente> clienteList = fileRepo.ReadJsonFileAsync<List<Lab.Models.GrupoGamma.Cliente>>(ClientevirtualPhat).Result;
+    List<Empleado> empleadosList = fileRepo.ReadJsonFileAsync<List<Empleado>>(EmpleadovirtualPhat).Result;
+
+    Empresa empresa = new Empresa();
+    empresa.Software = softwareList;
+    empresa.Cliente = clienteList;
+    empresa.Empleado = empleadosList;
+    return empresa;
+}
+
+Empresa myEmpresa = getMyEmpresa();
+Empresa empresa = new Empresa();
 foreach (var cliente in empresa.Cliente)
 {
     Console.WriteLine(cliente.Nombre);
