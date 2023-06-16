@@ -17,17 +17,15 @@ public class CancionesService
     {
 
         List<Album> albums = await _cancionesRepository.GetAlbums();
-        List<Artista>  artistas = await _cancionesRepository.GetArtistas();
+        List<Artista> artistas = await _cancionesRepository.GetArtistas();
         List<Letra> letras = await _cancionesRepository.GetLetra();
 
 
-        Canciones canciones  = new Canciones()
+        Canciones canciones = new Canciones()
         {
             Albums = albums,
             Artistas = artistas,
             Letras = letras
-
-           
         };
 
         return canciones;
