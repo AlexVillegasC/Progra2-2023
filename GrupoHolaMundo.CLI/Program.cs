@@ -1,4 +1,4 @@
-﻿using Infrastructure.Shared.Files;
+using Infrastructure.Shared.Files;
 using Lab.Models.GrupoHolaMundo;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -51,4 +51,3 @@ foreach (var paquetes in myAlquiler.paquete)
     Console.WriteLine(paquetes.Velocidad);
     Console.WriteLine(paquetes.Precio);
 }
-
