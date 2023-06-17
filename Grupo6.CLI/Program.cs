@@ -12,7 +12,7 @@ Envios ObtenerEnvios()
 
     List<Clientes> clientes = fileRepository.ReadJsonFileAsync<List<Clientes>>(CliVirtualPath).Result;
     List<Cotizaciones> cotizaciones = fileRepository.ReadJsonFileAsync<List<Cotizaciones>>(CotVirtualPath).Result;
-    List<Seguimiento> seguimientos = fileRepository.ReadJsonFileAsync<List<Seguimiento>>(SegVirtualPath).Result;
+    List<Seguimientos> seguimientos = fileRepository.ReadJsonFileAsync<List<Seguimientos>>(SegVirtualPath).Result;
 
     Envios envios = new Envios();
     envios.Clientes = clientes;
