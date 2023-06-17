@@ -1,3 +1,7 @@
+using Infrastructure.Shared.Files;
+using Infrastructure.Shared.Repositories;
+using Proyecto.Application.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +10,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddTransient<IFileRepository, FileRepository>();
+builder.Services.AddTransient<IEnviosRepository, EnviosRepository>();
+builder.Services.AddTransient<EnviosService, EnviosService>();
+
 
 var app = builder.Build();
 
