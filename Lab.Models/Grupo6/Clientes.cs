@@ -1,4 +1,6 @@
-﻿public class Clientes
+﻿namespace Lab.Models.Grupo6;
+
+public class Clientes
 {
     public int ID { get; set; }
 
