@@ -15,10 +15,12 @@ public class EnviosService
     public async Task<Envios> GetMyEnvios()
     {
         List<Clientes> clientes = await _enviosRepository.GetClientes();
+        List<Seguimiento> seguimientos = await _enviosRepository.GetSeguimientos();
 
         Envios envios = new Envios()
         {
-            Clientes = clientes
+            Clientes = clientes,
+            Seguimientos = seguimientos
         };
     
       
