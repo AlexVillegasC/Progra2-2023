@@ -14,13 +14,14 @@ public class EnviosService
 
     public async Task<Envios> GetMyEnvios()
     {
-        List<Clientes> clientes = await _enviosRepository.GetClientes();
+        List<Cliente> clientes = await _enviosRepository.GetClientes();
         List<Seguimiento> seguimientos = await _enviosRepository.GetSeguimientos();
-
+        List<Cotizaciones> cotizaciones = await _enviosRepository.GetCotizaciones();
         Envios envios = new Envios()
         {
             Clientes = clientes,
-            Seguimientos = seguimientos
+            Seguimientos = seguimientos,
+            Cotizaciones = cotizaciones
         };
     
       
