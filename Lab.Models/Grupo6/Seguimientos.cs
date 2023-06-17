@@ -1,4 +1,5 @@
-﻿namespace Lab.Models.Grupo6
+﻿namespace Lab.Models.Grupo6;
+
 public class Seguimiento
 {
     public string IdEnvio { get; set; }

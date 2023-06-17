@@ -1,5 +1,5 @@
 ﻿
-namespace Lab.Models.Grupo6
+namespace Lab.Models.Grupo6;
     
     public class Envios
 {
