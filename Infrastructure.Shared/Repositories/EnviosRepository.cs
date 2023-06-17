@@ -18,5 +18,9 @@ public class EnviosRepository : FileRepository, IEnviosRepository
     {
         return await ReadJsonFileAsync<List<Seguimiento>>(SegVirtualPath);
     }
+    public async Task<List<Cotizaciones>> GetCotizaciones()
+    {
+        return await ReadJsonFileAsync<List<Cotizaciones>>(CotVirtualPath);
+    }
 }
 
