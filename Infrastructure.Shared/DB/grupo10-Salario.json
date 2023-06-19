@@ -1,0 +1,54 @@
+﻿[
+  {
+    "Id": "705690263",
+    "Roll": "Gerente General",
+    "Monto" : 1200000
+
+  },
+  {
+    "Id": "501230654",
+    "Roll": "Secretaria",
+    "Monto" : 320000
+  },
+  {
+    "Id": "102650456",
+    "Roll": "Abogado",
+    "Monto" : 1120550
+  },
+  {
+    "Id": "605660859",
+    "Roll": "Contador",
+    "Monto" : 550600
+  },
+  {
+    "Id": "208750412",
+    "Roll": "Enfermero",
+    "Monto" : 856580
+  },
+  {
+    "Id": "30560159",
+    "Roll": "Diseñador Grafico",
+    "Monto" : 500000
+  },
+  {
+    "Id": "408940785",
+    "Roll": "Especialista en marketing digital",
+    "Monto" : 750280
+  },
+  {
+    "Id": "508120645",
+    "Roll": "Analista de recursos humanos",
+    "Monto" : 660105
+  },
+  {
+    "Id": "604860512",
+    "Roll": "ingeniero de software",
+    "Monto" : 1068413
+  },
+  {
+    "Id": "20560159",
+    "Roll": "Tecnico de soporte tecnico",
+    "Monto" : 672480
+  }
+
+]

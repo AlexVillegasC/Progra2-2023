@@ -1,43 +1,43 @@
 [
   {
-    "Marca": "cocacola",
-    "TipodeBebida": "gaseosa"
+    "Marcas": "Marca = Cocacola ",
+    "TipodeBebida": "TipodeBebida = Gaseosa"
   },
   {
-    "Marca": "del valle",
-    "TipodeBebida": "natural"
+    "Marcas": "Marca = Del Valle",
+    "TipodeBebida": "TipodeBebebida = Natural"
   },
   {
-    "Marca": "cocacola",
-    "TipodeBebida": "gaseosa"
+    "Marcas": "Marca = Cocacola ",
+    "TipodeBebida": "TipodeBebida = Gaseosa"
   },
   {
-    "Marca": "del valle",
-    "TipodeBebida": "natural"
+    "Marcas": "Marca = Del Valle",
+    "TipodeBebida": "TipodeBebebida = Natural"
   },
   {
-    "Marca": "cocacola",
-    "TipodeBebida": "gaseosa"
+    "Marcas": "Marca = Cocacola ",
+    "TipodeBebida": "TipodeBebida = Gaseosa"
   },
   {
-    "Marca": "del valle",
-    "TipodeBebida": "natural"
+    "Marcas": "Marca = Del Valle",
+    "TipodeBebida": "TipodeBebebida = Natural"
   },
   {
-    "Marca": "cocacola",
-    "TipodeBebida": "gaseosa"
+    "Marcas": "Marca = Cocacola ",
+    "TipodeBebida": "TipodeBebida = Gaseosa"
   },
   {
-    "Marca": "del valle",
-    "TipodeBebida": "natural"
+    "Marcas": "Marca = Del Valle",
+    "TipodeBebida": "TipodeBebebida = Natural"
   },
   {
-    "Marca": "cocacola",
-    "TipodeBebida": "gaseosa"
+    "Marcas": "Marca = Cocacola ",
+    "TipodeBebida": "TipodeBebida = Gaseosa"
   },
   {
-    "Marca": "del valle",
-    "TipodeBebida": "natural"
-  }
+    "Marcas": "Marca = Del Valle",
+    "TipodeBebida": "TipodeBebebida = Natural"
+  } 
 
 ]
