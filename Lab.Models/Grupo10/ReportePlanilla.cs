@@ -3,45 +3,32 @@
 using System.Collections.Generic;
 public class ReportePlanilla
 {
-    private List<Empleado> empleados;
-    private List<Departamento> departamentos;
-    private List<Salario> Salarios;
+    public List<Departamento> departamentos;
+    public List<Salario> salarios;
+
+    public List<Empleado> Empleados { get; set; }
 
     public ReportePlanilla()
     {
-        empleados = new List<Empleado>();
+        Empleados = new List<Empleado>();
         departamentos = new List<Departamento>();
+        salarios = new List<Salario>();
     }
 
     public void Contratar(Empleado empleado)
     {
-        empleados.Add(empleado);
+        Empleados.Add(empleado);
     }
 
     public void Despedir(Empleado empleado)
     {
-        empleados.Remove(empleado);
+        Empleados.Remove(empleado);
     }
 
-    public Empleado BuscarEmpleado(int id)
-    {
-        return empleados.Find(empleado => empleado.Id == id);
-    }
+    //LINQ (Language-Integrated Query) es una característica de C# que proporciona una forma unificada de consultar
+    //y manipular datos desde diversas fuentes de datos, como colecciones, bases de datos, servicios web, etc.
+    //public double SalarioTotal => Empleados.Sum(empleado => empleado.Salario?.Monto ?? 0);
 
-    public double CalcularSalarioTotal()
-    {
-        double totalSalario = 0;
-        foreach (Empleado empleado in empleados)
-        {
-            totalSalario += empleado.ObtenerSalario();
-        }
-        return totalSalario;
-    }
+    //public double SalarioPromedio => Empleados.Any() ? SalarioTotal / Empleados.Count : 0;
 
-    public double CalcularSalarioPromedio()
-    {
-        double totalSalario = CalcularSalarioTotal();
-        int numEmpleados = empleados.Count;
-        return totalSalario / numEmpleados;
-    }
 }

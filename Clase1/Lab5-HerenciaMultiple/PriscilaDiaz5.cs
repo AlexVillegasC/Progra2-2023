@@ -6,7 +6,36 @@ using System.Threading.Tasks;
 
 namespace Labs.Lab5_HerenciaMultiple
 {
-    internal class PriscilaDiaz5
+    public interface Camina
     {
+        void camina();
+    }
+
+    public interface Corre
+    {
+        void corre();
+    }
+
+    public class Persona : Camina, Corre
+    {
+        public void camina()
+        {
+            Console.WriteLine("La persona está Caminando.");
+        }
+
+        public void corre()
+        {
+            Console.WriteLine("La persona está corriendo.");
+        }
+    }
+
+    internal class PriscilaDiaz
+    {
+        public static void Run()
+        {
+            Persona persona = new Persona();
+            persona.camina();
+            persona.corre();
+        }
     }
 }
