@@ -1,34 +1,35 @@
 ﻿using Infrastructure.Shared.Files;
 using Lab.Models.Grupo4;
+using Newtonsoft.Json;
 
-CPU GetCase()
-{
-    // RUTA CASE
-    var virtualpathcase = "../../../../Infrastructure.Shared/DB/Grupo4-Case.json";
-    FileRepository fileRepoCase = new FileRepository();
+        CPU GetCase()
+        {
+             // RUTA CASE
+            var virtualpathcase = "../../../../Infrastructure.Shared/DB/Grupo4-Case.json";
+            FileRepository fileRepoCase = new FileRepository();
+            
+             //RUTA ALMACENAMIENTO
+          var PathStorage = "../../../../Infrastructure.Shared/DB/Grupo4-Almacenamiento.json";
+          FileRepository fileRepoStorage = new FileRepository();
 
-    //RUTA ALMACENAMIENTO
-    var PathStorage = "../../../../Infrastructure.Shared/DB/Grupo4-Almacenamiento.json";
-    FileRepository fileRepoStorage = new FileRepository();
-
-    //RUTA T_GRAFICA 
-    var PathGraph = "../../../../Infrastructure.Shared/DB/Grupo4-T_Grafica.json";
-    FileRepository fileRepoGraph = new FileRepository();
-
-
-    List<Case> cases = fileRepoCase.ReadJsonFileAsync<List<Case>>(virtualpathcase).Result;
-    List<Almacenamiento> almacenamientos = fileRepoStorage.ReadJsonFileAsync<List<Almacenamiento>>(PathStorage).Result;
-    List<T_Grafica> graficas = fileRepoGraph.ReadJsonFileAsync<List<T_Grafica>>(PathGraph).Result;
-
-    CPU cpu = new CPU();
-    cpu.Cases = cases;
-    cpu.Almacenamientos = almacenamientos;
-    cpu.TarjetaGraficas = graficas;
-    return cpu;
-}
+             //RUTA T_GRAFICA 
+          var PathGraph = "../../../../Infrastructure.Shared/DB/Grupo4-T_Grafica.json";
+          FileRepository fileRepoGraph = new FileRepository();
 
 
-CPU cpu = GetCase();
+           List<Case> cases = fileRepoCase.ReadJsonFileAsync<List<Case>>(virtualpathcase).Result;
+           List<Almacenamiento> almacenamientos = fileRepoStorage.ReadJsonFileAsync<List<Almacenamiento>>(PathStorage).Result;
+           List<T_Grafica> graficas = fileRepoGraph.ReadJsonFileAsync<List<T_Grafica>>(PathGraph).Result;
+
+           CPU cpu = new CPU ();
+           cpu.Cases = cases;
+           cpu.Almacenamientos = almacenamientos;
+           cpu.TarjetasGraficas = graficas;
+           return cpu;
+        }
+
+
+      CPU cpu = GetCase();
 Console.WriteLine("++++++++++++++++++++++++++Cases++++++++++++++++++++++++++++++++++");
 foreach (var box in cpu.Cases)
 {
@@ -52,7 +53,7 @@ foreach (var box in cpu.Almacenamientos)
 }
 
 Console.WriteLine("++++++++++++++++++++++++++Tarjeta Graficas+++++++++++++++++++++++");
-foreach (var box in cpu.TarjetaGraficas)
+foreach (var box in cpu.TarjetasGraficas)
 {
     Console.WriteLine(box.id);
     Console.WriteLine(box.nombre);
