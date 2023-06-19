@@ -1,10 +1,26 @@
 [
-  {
-    "id": 1,
-    "nombre": "Grafica 1",
-    "vram": 4,
-    "conectores": "HDMI, DisplayPort",
-    "marca": "Nvidia",
-    "costo": 200.0
-  }
+    {
+        "conectores": "HDMI, DisplayPort",
+        "costo": 200.0,
+        "id": 1,
+        "marca": "Nvidia",
+        "nombre": "Grafica 1",
+        "vram": 4
+    },
+    {
+        "conectores": "HDMI, DisplayPort",
+        "costo": 2050.0,
+        "id": 2,
+        "marca": "Asus",
+        "nombre": "Grafica 2",
+        "vram": 6
+    },
+    {
+        "conectores": "HDMI, DisplayPort",
+        "costo": 3050.0,
+        "id": 3,
+        "marca": "Intel",
+        "nombre": "Grafica 3",
+        "vram": 8
+    }
 ]

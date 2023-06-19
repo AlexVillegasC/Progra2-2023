@@ -18,6 +18,10 @@
     "nombre": "Almacenamiento3",
     "capacidad": 250,
     "dimensiones": "15x8x3",
-    "costo": 49.99
+    "costo": 49.99,
+    "nombre": "Almacenamiento 1",
+    "capacidad": 500,
+    "dimensiones": "10x5x2",
+    "costo": 100.0
   }
 ]
