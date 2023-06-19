@@ -2,12 +2,12 @@
 public class T_Grafica
 //test
 {
-    private int id;
-    private string nombre;
-    private int vram;
-    private string conectores;
-    private string marca;
-    private double costo;
+    public int id;
+    public string nombre;
+    public int vram;
+    public string conectores;
+    public string marca;
+    public double costo;
 
     public T_Grafica(int id, string nombre, int vram, string conectores, string marca, double costo)
     {
