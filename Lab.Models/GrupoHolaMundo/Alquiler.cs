@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace Lab.Models.GrupoHolaMundo
 {
-    internal class Alquiler
+    public class Alquiler
     {
-        private Cliente cliente;
-        private Casa casa;
+        public List<Casa> casa { get; set; }
+        public List<Cliente> cliente { get; set; }
+        public List<PaqueteInternet> paquete { get; set; }
+
+
         private double totalBase = 0;
         private double totalCost;
 
-        public Alquiler() { }
+        public Alquiler() {}
 
-        public Alquiler(Cliente cliente, Casa casa) 
-        {
-            this.cliente = cliente;
-            this.casa = casa;
-        }
-
-        public Cliente getCliente() { return cliente; }
-        public Casa getCasa() {  return casa; }
 
         public double TotalBase 
         { 
@@ -47,22 +42,12 @@ namespace Lab.Models.GrupoHolaMundo
             get { return totalCost + totalBase; }
         }
 
-        public void setCasa(Casa casa) 
-        {
-            this.casa = casa;
-        }
-
-        public void setCliente(Cliente cliente) 
-        { 
-            this.cliente = cliente;
-        }
-
         public void agregarInternet (PaqueteInternet paqueteInternet) 
         {
             totalCost = paqueteInternet.Precio * paqueteInternet.Velocidad;
         }
 
-        public void calcularTotalBase() 
+        public void calcularTotalBase(int index) 
         {
             int precioBanno = 40;
             int precioComedor = 60;
@@ -70,14 +55,14 @@ namespace Lab.Models.GrupoHolaMundo
             int precioHabitaciones = 50;
             int precioServicios = 100;
 
-            totalBase = (precioBanno * casa.Banos) +  (precioComedor * casa.Comedor) + (precioPiscina * casa.Piscina) + (precioHabitaciones * casa.Habitaciones) + precioServicios;
+            totalBase = (precioBanno * casa[index].Banos) +  (precioComedor * casa[index].Comedor) + (precioPiscina * casa[index].Piscina) + (precioHabitaciones * casa[index].Habitaciones) + precioServicios;
 
         }
 
 
     }
 
-    public class GrupoHolaMundo 
+    /*public class GrupoHolaMundo 
     
     { 
         public static void run() 
@@ -117,5 +102,5 @@ namespace Lab.Models.GrupoHolaMundo
             Console.WriteLine("El precio del primer alquier es " + " " + alquiler3.TotalCost + ".  Al nombre de: " + alquiler3.getCliente().Nombre + " " + alquiler3.getCliente().Apellidos);
         }
     
-    }
+    }*/
 }

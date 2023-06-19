@@ -1,0 +1,112 @@
+﻿[
+  {
+    "Id": 1,
+    "Nombre": "Ana",
+    "Departamento": {
+      "NombreDepartamento": "Dirección"
+    },
+    "Salario": {
+      "Roll": "Directora Ejecutiva",
+      "Monto": 8000
+    }
+  },
+  {
+    "Id": 2,
+    "Nombre": "Pedro",
+    "Departamento": {
+      "NombreDepartamento": "Dirección"
+    },
+    "Salario": {
+      "Roll": "Director de Operaciones",
+      "Monto": 7000
+    }
+  },
+  {
+    "Id": 3,
+    "Nombre": "María",
+    "Departamento": {
+      "NombreDepartamento": "Desarrollo"
+    },
+    "Salario": {
+      "Roll": "Programador Senior",
+      "Monto": 6000
+    }
+  },
+  {
+    "Id": 4,
+    "Nombre": "Carlos",
+    "Departamento": {
+      "NombreDepartamento": "Desarrollo"
+    },
+    "Salario": {
+      "Roll": "Analista Programador",
+      "Monto": 5500
+    }
+  },
+  {
+    "Id": 5,
+    "Nombre": "Laura",
+    "Departamento": {
+      "NombreDepartamento": "IT"
+    },
+    "Salario": {
+      "Roll": "Administrador de Sistemas",
+      "Monto": 5000
+    }
+  },
+  {
+    "Id": 6,
+    "Nombre": "Roberto",
+    "Departamento": {
+      "NombreDepartamento": "IT"
+    },
+    "Salario": {
+      "Roll": "Especialista en Redes",
+      "Monto": 4500
+    }
+  },
+  {
+    "Id": 7,
+    "Nombre": "Andrés",
+    "Departamento": {
+      "NombreDepartamento": "Dirección"
+    },
+    "Salario": {
+      "Roll": "Director de Tecnología",
+      "Monto": 7500
+    }
+  },
+  {
+    "Id": 8,
+    "Nombre": "Isabel",
+    "Departamento": {
+      "NombreDepartamento": "Desarrollo"
+    },
+    "Salario": {
+      "Roll": "Consultor Técnico",
+      "Monto": 5800
+    }
+  },
+  {
+    "Id": 9,
+    "Nombre": "Marta",
+    "Departamento": {
+      "NombreDepartamento": "Dirección"
+    },
+    "Salario": {
+      "Roll": "CMO",
+      "Monto": 6800
+    }
+  },
+  {
+    "Id": 10,
+    "Nombre": "Sergio",
+    "Departamento": {
+      "NombreDepartamento": "Desarrollo"
+    },
+    "Salario": {
+      "Roll": "Jefe de Proyectos",
+      "Monto": 6200
+    }
+  }
+]
