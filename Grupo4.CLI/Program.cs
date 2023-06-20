@@ -4,17 +4,17 @@ using Newtonsoft.Json;
 
         CPU GetCase()
         {
-             // RUTA CASE
-            var virtualpathcase = "../../../../Infrastructure.Shared/DB/Grupo4-Case.json";
-            FileRepository fileRepoCase = new FileRepository();
+         // RUTA CASE
+         var virtualpathcase = "../../../../Infrastructure.Shared/DB/Grupo4-Case.json";
+         FileRepository fileRepoCase = new FileRepository();
             
-             //RUTA ALMACENAMIENTO
-          var PathStorage = "../../../../Infrastructure.Shared/DB/Grupo4-Almacenamiento.json";
-          FileRepository fileRepoStorage = new FileRepository();
+         //RUTA ALMACENAMIENTO
+         var PathStorage = "../../../../Infrastructure.Shared/DB/Grupo4-Almacenamiento.json";
+         FileRepository fileRepoStorage = new FileRepository();
 
-             //RUTA T_GRAFICA 
-          var PathGraph = "../../../../Infrastructure.Shared/DB/Grupo4-T_Grafica.json";
-          FileRepository fileRepoGraph = new FileRepository();
+          //RUTA T_GRAFICA 
+         var PathGraph = "../../../../Infrastructure.Shared/DB/Grupo4-T_Grafica.json";
+         FileRepository fileRepoGraph = new FileRepository();
 
 
            List<Case> cases = fileRepoCase.ReadJsonFileAsync<List<Case>>(virtualpathcase).Result;
