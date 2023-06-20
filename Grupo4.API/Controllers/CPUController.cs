@@ -1,5 +1,6 @@
 ﻿using Lab.Models.Grupo4;
 using Microsoft.AspNetCore.Mvc;
+using Proyecto.Application.Services;
 
 namespace Grupo4.API.Controllers
 {
@@ -7,15 +8,18 @@ namespace Grupo4.API.Controllers
     [Route("[controller]")]
     public class CPUController : Controller
     {
-        public CPUController() 
-        { 
-           
+        private readonly CPUService cPUService;
+        private CPUService _CPUService;
+
+        public CPUController(CPUService cPUService) 
+        {
+            _CPUService = _CPUService;
         }
 
         [HttpGet(Name = "GetCPU")]
         public Task<CPU> Get()
         {
-            return null;
+            return _CPUService.GetCPU;
         }
     }
 }

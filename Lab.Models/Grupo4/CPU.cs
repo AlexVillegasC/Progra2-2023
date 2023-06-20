@@ -14,6 +14,7 @@ public class CPU
     public List<Almacenamiento> Almacenamientos { get; set; }
     public List<Case> Cases { get; set; }
     public List<T_Grafica> TarjetasGraficas { get; set; }
+    public List<T_Grafica> T_Graficas { get; set; }
 }
 
 //    CPU miCPU = new CPU();
