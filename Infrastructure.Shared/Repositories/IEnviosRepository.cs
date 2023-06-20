@@ -4,7 +4,7 @@ namespace Infrastructure.Shared.Repositories;
 
 public interface IEnviosRepository
 {
-    Task<List<Cliente>> GetClientes();
+    Task<List<Clientes>> GetClientes();
     Task<List<Seguimiento>> GetSeguimientos();
     Task<List<Cotizaciones>> GetCotizaciones();
 }
