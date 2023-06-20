@@ -9,11 +9,10 @@ public class EnviosRepository : FileRepository, IEnviosRepository
     private const string CotVirtualPath = "../Infrastructure.Shared/DB/grupo06-Cotizaciones.Json";
     private const string SegVirtualPath = "../Infrastructure.Shared/DB/grupo06-Seguimientos.Json";
 
-    public async Task<List<Cliente>> GetClientes()
+    public async Task<List<Clientes>> GetClientes()
     {
-       return await ReadJsonFileAsync<List<Cliente>>(CliVirtualPath);
+       return await ReadJsonFileAsync<List<Clientes>>(CliVirtualPath);
     }
-
     public async Task<List<Seguimiento>> GetSeguimientos()
     {
         return await ReadJsonFileAsync<List<Seguimiento>>(SegVirtualPath);
