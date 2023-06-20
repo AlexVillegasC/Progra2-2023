@@ -18,7 +18,7 @@ using Newtonsoft.Json;
 
 
            List<Case> cases = fileRepoCase.ReadJsonFileAsync<List<Case>>(virtualpathcase).Result;
-           List<Almacenamiento> almacenamientos = fileRepoStorage.ReadJsonFileAsync<List<Almacenamiento>>(PathStorage).Result;
+           List<Almacenamiento> almacenamientos = fileRepoStorage.ReadJsonFileAsync<List<Almacenamiento>>(PathStorage).Result;a
            List<T_Grafica> graficas = fileRepoGraph.ReadJsonFileAsync<List<T_Grafica>>(PathGraph).Result;
 
            CPU cpu = new CPU ();

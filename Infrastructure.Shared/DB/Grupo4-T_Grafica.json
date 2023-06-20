@@ -6,7 +6,7 @@
         "marca": "Nvidia",
         "nombre": "Grafica 1",
         "vram": 4
-    }
+    },
 
     {
         "conectores": "HDMI, DisplayPort",
@@ -15,7 +15,7 @@
         "marca": "Asus",
         "nombre": "Grafica 2",
         "vram": 6
-    }
+    },
 
     {
         "conectores": "HDMI, DisplayPort",
