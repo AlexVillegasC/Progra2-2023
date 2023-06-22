@@ -8,18 +8,18 @@ namespace Grupo4.API.Controllers
     [Route("[controller]")]
     public class CPUController : Controller
     {
-        private readonly CPUService cPUService;
-        private CPUService _CPUService;
+        private readonly CPUService _cPUService;
+        //private CPUService _CPUService;
 
         public CPUController(CPUService cPUService) 
         {
-            _CPUService = _CPUService;
+            _cPUService = cPUService;
         }
 
         [HttpGet(Name = "GetCPU")]
         public Task<CPU> Get()
         {
-            return _CPUService.GetCPU;
+            return _cPUService.GetCPU();        
         }
     }
 }

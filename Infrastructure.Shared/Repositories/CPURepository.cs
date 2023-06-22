@@ -6,9 +6,9 @@ namespace Infrastructure.Shared.Repositories;
 
 public class CPURepository : FileRepository, ICPURepository
 {
-    private const string virtualpathcase = "../../../../Infrastructure.Shared/DB/Grupo4-Case.json";
-    private const string PathStorage = "../../../../Infrastructure.Shared/DB/Grupo4-Almacenamiento.json";
-    private const string PathGraph = "../../../../Infrastructure.Shared/DB/Grupo4-T_Grafica.json";
+    private const string virtualpathcase = "../Infrastructure.Shared/DB/Grupo4-Case.json";
+    private const string PathStorage = "../Infrastructure.Shared/DB/Grupo4-Almacenamiento.json";
+    private const string PathGraph = "../Infrastructure.Shared/DB/Grupo4-T_Grafica.json";
 
     public async Task<List<Case>> GetCase()
     {

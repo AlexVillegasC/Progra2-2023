@@ -1,7 +1,6 @@
 ﻿
 using Infrastructure.Shared.Repositories;
 using Lab.Models.Grupo4;
-using System.Collections.Generic;
 
 namespace Proyecto.Application.Services;
 
@@ -9,9 +8,9 @@ public class CPUService
 {
     private readonly ICPURepository _CPURepository;
 
-    public CPUService(ICPURepository _CPURepository)
+    public CPUService(ICPURepository CPURepository)
     {
-        _CPURepository = _CPURepository;
+        _CPURepository = CPURepository;
     }
 
     public async Task<CPU> GetCPU()
