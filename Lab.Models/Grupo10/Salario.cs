@@ -5,7 +5,8 @@ public class Salario
 {
     
 private List<Salario> salarios;
-private List<Empleado> empleados;
+
+private List<Empleado> empleados { get; set; }
 
 public Salario()
 {

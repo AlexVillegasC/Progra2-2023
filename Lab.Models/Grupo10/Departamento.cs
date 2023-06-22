@@ -3,12 +3,15 @@ using System.Collections.Generic;
 
 public class Departamento
 {
-    private List<Empleado> empleados;
+    private List<Empleado> empleados { get; set; }
 
-    public string NombreDepartamento { get; set; }
+        public string NombreDepartamento { get; set; }
         public int IdDepartamento { get; set; }
 
-        public Departamento() {
+        
+        public Departamento(string nombreDepartamento)
+        {
+            NombreDepartamento = nombreDepartamento;
             empleados = new List<Empleado>();
         }
 
