@@ -4,9 +4,9 @@ using System.Collections.Generic;
 public class Departamento
 {
     private List<Empleado> empleados;
-    
-    public string NombreDepartamento;
-        public string IdDepartamento;
+
+    public string NombreDepartamento { get; set; }
+        public int IdDepartamento { get; set; }
 
         public Departamento() {
             empleados = new List<Empleado>();
