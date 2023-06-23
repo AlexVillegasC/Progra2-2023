@@ -1,73 +1,10 @@
 ﻿using System;
-public class Almacenamiento
-//Test
+public class  Almacenamiento
 {
-    public int id;
-    public string nombre;
-    public int capacidad;
-    public string dimensiones;
-    public double costo;
-
-    public Almacenamiento(int id, string nombre, int capacidad, string dimensiones, double costo)
-    {
-        this.id = id;
-        this.nombre = nombre;
-        this.capacidad = capacidad;
-        this.dimensiones = dimensiones;
-        this.costo = costo;
-    }
-
-    public Almacenamiento()
-    {
-    }
-
-    public int GetId()
-    {
-        return this.id;
-    }
-
-    public void SetId(int newId)
-    {
-        this.id = newId;
-    }
-
-    public string GetNombre()
-    {
-        return this.nombre;
-    }
-
-    public void SetNombre(string newNombre)
-    {
-        this.nombre = newNombre;
-    }
-
-    public int GetCapacidad()
-    {
-        return this.capacidad;
-    }
-
-    public void SetCapacidad(int newCapacidad)
-    {
-        this.capacidad = newCapacidad;
-    }
-
-    public string GetDimensiones()
-    {
-        return this.dimensiones;
-    }
-
-    public void SetDimensiones(string newDimensiones)
-    {
-        this.dimensiones = newDimensiones;
-    }
-
-    public double GetCosto()
-    {
-        return this.costo;
-    }
-
-    public void SetCosto(double newCosto)
-    {
-        this.costo = newCosto;
-    }
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public double Tamanno { get; set; }
+    public string Color { get; set; }
+    public decimal Costo { get; set; }
+    public string Forma { get; set; }
 }
