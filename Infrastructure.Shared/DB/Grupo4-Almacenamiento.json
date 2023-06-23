@@ -1,6 +1,8 @@
 [
   {
     "id": 1,
+<<<<<<< HEAD
+<<<<<<< HEAD
     "nombre": "Almacenamiento1",
     "capacidad": 500,
     "dimensiones": "20x10x5",
@@ -19,5 +21,11 @@
     "capacidad": 250,
     "dimensiones": "15x8x3",
     "costo": 49.99
-  }
 ]
+=======
+    "nombre": "Almacenamiento1",
+    "capacidad": 500,
+    "dimensiones": "10x5x2",
+    "costo": 100.0
+}
+>>>>>>> origin/Grupo4
