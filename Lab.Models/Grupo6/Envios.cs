@@ -1,4 +1,7 @@
-﻿public class Envios
+﻿
+namespace Lab.Models.Grupo6;
+    
+    public class Envios
 {
     public List<Cotizaciones> Cotizaciones { get; set; }
 
