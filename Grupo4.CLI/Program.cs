@@ -2,7 +2,7 @@
 using Lab.Models.Grupo4;
 using Newtonsoft.Json;
 
-        CPU GetCase()
+        CPU GetCPU()
         {
              // RUTA CASE
             var virtualpathcase = "../../../../Infrastructure.Shared/DB/Grupo4-Case.json";
@@ -29,7 +29,7 @@ using Newtonsoft.Json;
         }
 
 
-      CPU cpu = GetCase();
+      CPU cpu = GetCPU();
 Console.WriteLine("++++++++++++++++++++++++++Cases++++++++++++++++++++++++++++++++++");
 foreach (var box in cpu.Cases)
 {
