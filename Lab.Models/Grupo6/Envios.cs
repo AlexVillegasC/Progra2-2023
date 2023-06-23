@@ -1,15 +1,8 @@
 ﻿public class Envios
 {
-    private Cotizaciones cotizaciones { get; set; }
-    private Seguimiento seguimiento { get; set; }
-    private Paquetes paquete { get; set; }
+    public List<Cotizaciones> Cotizaciones { get; set; }
 
-    public Envios()
-    {
-        cotizaciones = new Cotizaciones();
-        seguimiento = new Seguimiento();
-        paquete = new Paquetes();
+    public List<Seguimiento> Seguimientos { get; set; }
 
-    }
-
+    public List<Clientes> Clientes { get; set; }  
 }
