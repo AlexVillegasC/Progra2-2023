@@ -11,9 +11,9 @@ namespace Lab.Models.Grupo4;
 
 public class CPU
 {
-//    public Almacenamiento Almacenamiento { get; set; }
-    public Case Case { get; set; }
-    public T_Grafica TarjetaGrafica { get; set; }
+    public List<Almacenamiento> Almacenamientos { get; set; }
+    public List<Case> Cases { get; set; }
+    public List<T_Grafica> TarjetasGraficas { get; set; }
 }
 
 //    CPU miCPU = new CPU();
