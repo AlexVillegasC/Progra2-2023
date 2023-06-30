@@ -8,8 +8,8 @@ namespace Grupo6.API.Controllers
     [Route("[Controller]")]
     public class EnviosController : Controller
     {
-        private readonly EnviosService _enviosService;
-        public EnviosController(EnviosService enviosService) 
+        private readonly EnviosGrupo6Service _enviosService;
+        public EnviosController(EnviosGrupo6Service enviosService) 
         {
             _enviosService = enviosService;
         }

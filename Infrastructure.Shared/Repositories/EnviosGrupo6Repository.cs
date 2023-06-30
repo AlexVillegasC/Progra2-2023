@@ -3,7 +3,7 @@ using Infrastructure.Shared.Files;
 
 namespace Infrastructure.Shared.Repositories;
 
-public class EnviosRepository : FileRepository, IEnviosRepository
+public class EnviosGrupo6Repository : FileRepository, IEnviosGrupo6Repository
 {
     private const string CliVirtualPath = "../Infrastructure.Shared/DB/grupo06-Clientes.Json";
     private const string CotVirtualPath = "../Infrastructure.Shared/DB/grupo06-Cotizaciones.Json";

@@ -3,11 +3,11 @@ using Lab.Models.Grupo6;
 
 namespace Proyecto.Application.Services;
 
-public class EnviosService
+public class EnviosGrupo6Service
 {
-    private readonly IEnviosRepository _enviosRepository;
+    private readonly IEnviosGrupo6Repository _enviosRepository;
 
-    public EnviosService(IEnviosRepository enviosRepository)
+    public EnviosGrupo6Service(IEnviosGrupo6Repository enviosRepository)
     {
         _enviosRepository = enviosRepository;
     }

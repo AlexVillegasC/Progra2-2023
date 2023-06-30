@@ -13,8 +13,8 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddTransient<IFileRepository, FileRepository>();
-builder.Services.AddTransient<IEnviosRepository, EnviosRepository>();
-builder.Services.AddTransient<EnviosService, EnviosService>();
+builder.Services.AddTransient<IEnviosGrupo6Repository, EnviosGrupo6Repository>();
+builder.Services.AddTransient<EnviosGrupo6Service, EnviosGrupo6Service>();
 
 
 var app = builder.Build();

@@ -2,7 +2,7 @@
 
 namespace Infrastructure.Shared.Repositories;
 
-public interface IEnviosRepository
+public interface IEnviosGrupo6Repository
 {
     Task<List<Lab.Models.Grupo6.Clientes>> GetClientes();
     Task<List<Seguimiento>> GetSeguimientos();
