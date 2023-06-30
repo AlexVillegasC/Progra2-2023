@@ -24,7 +24,7 @@ using Newtonsoft.Json;
            CPU cpu = new CPU ();
            cpu.Cases = cases;
            cpu.Almacenamientos = almacenamientos;
-           cpu.TarjetasGraficas = graficas;
+           cpu.T_Graficas = graficas;
            return cpu;
         }
 
@@ -45,20 +45,14 @@ foreach (var box in cpu.Cases)
 Console.WriteLine("++++++++++++++++++++++++++Almacenamientos++++++++++++++++++++++++");
 foreach (var box in cpu.Almacenamientos)
 {
-    Console.WriteLine(box.id);
-    Console.WriteLine(box.nombre);
-    Console.WriteLine(box.capacidad);
-    Console.WriteLine(box.dimensiones);
-    Console.WriteLine(box.costo);
+    Console.WriteLine(box.Id);
+    Console.WriteLine(box.Forma);    
 }
 
 Console.WriteLine("++++++++++++++++++++++++++Tarjeta Graficas+++++++++++++++++++++++");
-foreach (var box in cpu.TarjetasGraficas)
+foreach (var box in cpu.T_Graficas)
 {
-    Console.WriteLine(box.id);
-    Console.WriteLine(box.nombre);
-    Console.WriteLine(box.vram);
-    Console.WriteLine(box.conectores);
-    Console.WriteLine(box.marca);
-    Console.WriteLine(box.costo);
+    Console.WriteLine(box.Id);
+    Console.WriteLine(box.Marca);
+    Console.WriteLine(box.Vram);
 }
