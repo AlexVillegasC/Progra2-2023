@@ -6,12 +6,12 @@ using System.Text.Json.Serialization;
 Prestamos ListaPrestamos() 
 {
     //Datos de   archivos JSon
-    var virtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Libro.json";
+    var libroVirtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Libro.json";
     var tarifavirtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Tarifa.json";
     var clientevirtualPath = "../../../../Infrastructure.Shared/DB/grupo7-Cliente.json";
     FileRepository fileRepo = new FileRepository();
 
-    string libroJson = fileRepo.ReadJsonFileAsync<string>(virtualPath).Result;
+    string libroJson = fileRepo.ReadJsonFileAsync<string>(libroVirtualPath).Result;
     string tarifaJson = fileRepo.ReadJsonFileAsync<string>(tarifavirtualPath).Result;
     string clienteJson = fileRepo.ReadJsonFileAsync<string>(clientevirtualPath).Result;
     List<Libro> libros = JsonConvert.DeserializeObject<List<Libro>>(libroJson);
